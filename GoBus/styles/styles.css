@@ -1,0 +1,128 @@
+/* Основные стили страницы */
+body {
+    font-family: 'Arial', sans-serif; /* Общий шрифт для страницы */
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #333; /* Цвет фона шапки */
+    color: white; /* Цвет текста */
+    padding: 10px 0;
+}
+
+nav {
+    display: flex; /* Распределение элементов в строку */
+    justify-content: space-around; /* Равномерное распределение элементов */
+    align-items: center; /* Выравнивание элементов по центру */
+}
+
+nav a {
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+    padding: 5px 10px;
+}
+
+nav button {
+    background-color: #f90; /* Цвет фона кнопки */
+    border: none; /* Убираем границу */
+    padding: 10px 15px;
+    cursor: pointer; /* Курсор в виде руки при наведении */
+}
+
+/* Основной контент */
+main {
+    padding: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button-item {
+    flex-basis: calc(33.333% - 10px); /* Вычитаемое значение зависит от желаемого расстояния между кнопками */
+    margin: 5px; /* Расстояние между кнопками */
+  }
+  
+  .search-button {
+    display: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .route {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .price {
+    font-size: 14px;
+    color: #666;
+  }
+
+h1, h2 {
+    color: #333; /* Цвет заголовков */
+}
+
+form {
+    background-color: #f1f1f1; /* Цвет фона формы */
+    padding: 20px;
+    margin: 20px 0; /* Отступы сверху и снизу формы */
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px; /* Отступ справа от поля ввода */
+    border: 1px solid #ccc; /* Граница поля ввода */
+}
+
+button[type="submit"] {
+    background-color: #333; /* Цвет фона кнопки отправки формы */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем границу */
+    padding: 10px 15px;
+    cursor: pointer; /* Курсор в виде руки при наведении */
+}
+
+/* Популярные направления */
+ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding: 0;
+}
+
+ul li a {
+    display: block; /* Ссылки занимают всю доступную ширину */
+    padding: 10px;
+    background-color: #e9e9e9; /* Цвет фона для ссылок */
+    margin-bottom: 5px; /* Отступ снизу для ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет текста ссылок */
+}
+
+/* Подвал сайта */
+footer {
+    position: fixed;   /* Фиксированное позиционирование относительно вьюпорта */
+    left: 0;           /* Прижимаем к левому краю */
+    bottom: 0;         /* Прижимаем к нижнему краю */
+    width: 100%;       /* Ширина footer'а растягивается на 100% вьюпорта */
+    background-color: #333; /* Цвет фона подвала */
+    color: white;      /* Цвет текста подвала */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 10px 0;   /* Внутренние отступы сверху и снизу */
+    z-index: 1000;     /* Убедимся, что footer будет над остальными элементами */
+}
