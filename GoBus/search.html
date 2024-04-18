@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>GoBus - Сервис заказа автобусных билетов</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <!-- Подключение CSS файлов будет здесь -->
+</head>
+<body>
+
+  <header>
+    <nav>
+        <!-- Логотип как ссылка на главную страницу -->
+        <a href="index.html">
+            <img src="/img/GoBus.png" alt="GoBus">
+        </a>
+        <a href="#home">Главная</a>
+        <a href="#routes">Маршруты</a>
+        <a href="#info">Информация</a>
+        <a href="#contacts">Контакты</a>
+        <button>Позвонить</button>
+    </nav>
+</header>
+
+<main>
+    <!-- Поисковая форма -->
+    <section class="section-background" id="home">
+      <h1>Пассажирские перевозки</h1> 
+      <div class="search-bar-container">
+          <input type="text" placeholder="Откуда">
+          <input type="text" placeholder="Куда">
+          <button type="submit">Найти</button>
+      </div>
+  </section>
+  <h3>При наличии паспорта РФ</h3>
+    <!-- Раздел с предложениями -->
+    <section>
+      <div class="offer">
+          <div class="offer-header">
+              <!-- <img src="path_to_icon" alt="icon" class="offer-icon"> -->
+              <!-- <h3>При наличии паспорта РФ</h3> -->
+              <!-- <img src="path_to_dropdown_icon" alt="dropdown" class="dropdown-icon"> -->
+          </div>
+          <div class="route">
+              <div class="route-details">
+                  <div class="city from-city">
+                      <p>Донецк</p>
+                      <p>Ав Южный, Мотель, Макеевка</p>
+                  </div>
+                  <div class="city to-city">
+                      <p>Киев</p>
+                      <p>Центральный ж/д вокзал Киева</p>
+                  </div>
+              </div>
+              <div class="price-details">
+                  <p>300 €</p>
+                  <button>Подробности</button>
+              </div>
+          </div>
+      </div>
+      <!-- Повторите блок .offer для второго предложения с некоторыми изменениями -->
+  </section>
+</main>
+
+<footer>
+    <!-- Футер сайта -->
+    <p>&copy; 2024 GoBus</p>
+</footer>
+
+</body>
+</html>

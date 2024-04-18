@@ -1,0 +1,238 @@
+/* Общие стили для всего документа */
+body {
+    margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Стили для шапки сайта */
+header {
+    position: fixed; /* Уже задано, удерживает header на одном месте при прокрутке */
+      top: 0; /* Желательно добавить, чтобы явно прижать header к верхнему краю страницы */
+      width: 100%; /* Удерживает header на полной ширине */
+      background-color: #000000; /* Цвет фона */
+      color: white; /* Цвет текста */
+      padding: 10px 0; /* Внутренний отступ */
+      z-index: 1000; /* Высокое значение для наложения поверх других элементов */
+  }
+ 
+  button[type="submit"] {
+    background-color: #f90;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav a, nav button {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  nav button {
+    background-color: #f90;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 15px 15px 15px 0;
+  }
+
+header .logo img {
+    width: 120px; /* Ширина логотипа */
+}
+
+
+
+/* Кнопка "Позвонить" */
+header button {
+    background-color: #ffa500; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Стили для поисковой формы */
+.search-bar-container {
+    max-width: 1000px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Автоматический отступ справа и слева для центрирования */
+    background-color: #fff; /* Белый фоновый цвет */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта возвышения */
+    border-radius: 5px; /* Закругленные углы */
+    overflow: hidden; /* Скрывает любое содержимое, выходящее за пределы границ */
+    display: flex; /* Включает flexbox для дочерних элементов */
+    align-items: center; /* Выравнивание дочерних элементов по центру по вертикали */
+    position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
+  top: 20px;
+  left: 20px; /* Смещаем на 50% ширины влево */
+  right: 50px; /* Смещаем на 50% ширины вправо */
+    
+}
+
+/* Стили для поля ввода и кнопки внутри .search-bar-container */
+.search-bar-container input[type="text"], .search-bar-container button {
+    border: none; /* Отсутствие рамки */
+    padding: 10px; /* Внутренний отступ */
+    outline: none; /* Отсутствие контура при фокусе */
+}
+.search-bar-container input[type="text"], .search-bar-container button {
+    border: 1px solid #ccc; /* Серая рамка толщиной 1 пиксель */
+    padding: 6px; /* Внутренний отступ */
+    margin-bottom: 0px; /* Отступ снизу */
+    border-radius: 4px; /* Закругленные углы */
+    width: 80%; /* Ширина элементов равна 80% от ширины контейнера */
+    box-sizing: border-box; /* Размеры элементов включают padding и border */
+}
+.section-background {
+    background: url('/image/photo_2024-04-14_23-33-25.jpg') no-repeat center center;
+      background-size: cover;
+      width: 100vw; /* Ширина на весь видимый экран */
+      min-height: 150px; /* Минимальная высота, чтобы покрыть весь видимый экран по высоте */
+      position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
+      left: 50%; /* Смещаем на 50% ширины влево */
+      right: 50%; /* Смещаем на 50% ширины вправо */
+      transform: translateX(-50%); /* Сдвигаем обратно на 50% влево, чтобы центрировать */
+  }
+
+  h3{
+    max-width: 1000px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Автоматический отступ справа и слева для центрирования */
+    background-color: #fff; /* Белый фоновый цвет */
+    
+    border-radius: 5px; /* Закругленные углы */
+    overflow: hidden; /* Скрывает любое содержимое, выходящее за пределы границ */
+    display: flex; /* Включает flexbox для дочерних элементов */
+    align-items: center; /* Выравнивание дочерних элементов по центру по вертикали */
+    position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
+  top: 10px;
+  left: 20px; /* Смещаем на 50% ширины влево */
+  right: 50px; /* Смещаем на 50% ширины вправо */
+  }
+/* Стили для раздела с предложениями */
+.offer {
+    background-color: #fff; /* Белый фон карточек */
+    border: 1px solid #ccc; /* Серая граница */
+    border-radius: 10px; /* Скруглённые углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень карточки */
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    padding: 20px;
+    margin: 20px auto; /* Отступ сверху и снизу, и автоматические отступы по бокам для центрирования */
+    max-width: 960px; /* Максимальная ширина карточки */
+}
+
+.offer-header {
+    display: flex;
+    align-items: center; /* Выравнивание иконки и заголовка по центру */
+    justify-content: space-between; /* Распределение пространства между элементами */
+    margin-bottom: 20px; /* Отступ под заголовком */
+}
+
+.offer-icon, .dropdown-icon {
+    /* Добавьте стили для иконок, если они используются */
+margin-right: 10px; /* Отступ справа для иконок */
+}
+
+.offer .route-details {
+display: flex;
+justify-content: space-between; /* Распределение содержимого по горизонтали */
+margin-bottom: 20px; /* Отступ между блоками маршрута и ценой */
+}
+
+.route-details .city {
+display: flex;
+flex-direction: column;
+}
+
+.city > p:first-child {
+font-weight: bold; /* Жирный шрифт для названия города */
+}
+
+.city > p:last-child {
+color: #666; /* Серый цвет для дополнительной информации */
+font-size: 0.9em; /* Меньший размер шрифта */
+}
+
+.offer .price-details {
+display: flex;
+align-items: center;
+justify-content: space-between; /* Распределение цены и кнопки */
+}
+
+.price-details p {
+font-size: 24px; /* Размер шрифта для цены */
+color: #ffa500; /* Цвет цены */
+font-weight: bold; /* Жирность шрифта */
+margin: 0; /* Убрать стандартные отступы */
+}
+
+.offer button {
+background-color: #ffa500; /* Цвет фона */
+color: white; /* Цвет текста */
+border: none;
+border-radius: 20px; /* Скруглённые края кнопки */
+padding: 10px 20px;
+cursor: pointer;
+text-transform: uppercase; /* Текст в верхнем регистре */
+font-weight: bold; /* Жирный текст */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень кнопки */
+transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.offer button:hover {
+background-color: #cc8400; /* Темнее цвет фона кнопки при наведении */
+}
+
+
+
+
+/* Можете добавить дополнительные стили для иконок и элементов, если они есть в вашем дизайне */
+.offer-icon,
+.dropdown-icon {
+/* Стили для иконок, если они есть */
+width: 24px; /* Примерная ширина */
+height: 24px; /* Примерная высота */
+}
+
+/* Добавьте анимации или трансформации по вкусу */
+
+.route p {
+    margin: 0; /* Убираем отступы у параграфов */
+    line-height: 1.6; /* Межстрочный интервал */
+}
+
+.route button {
+    background-color: #ffa500; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Стили для футера */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  body::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #fff;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #ff8c00;
+    border-radius: 15px;
+  }
