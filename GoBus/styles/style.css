@@ -27,7 +27,51 @@ nav a, nav button {
   text-decoration: none;
   padding: 5px 10px;
 }
+.important-label {
+  position: relative; /* Относительное позиционирование для псевдоэлемента */
+  background: linear-gradient(to right, #FFA500, #FF8C00); /* Градиент для фона */
+  color: white; /* Цвет текста */
+  font-family: 'Arial', sans-serif; /* Шрифт */
+  padding: 10px 20px; /* Внутренний отступ */
+  padding-right: 30px; /* Больший отступ справа */
+  font-size: 18px; /* Размер шрифта */
+  font-weight: bold; /* Жирность шрифта */
+  display: inline-block; /* Элемент строчный, но позволяет задавать ширину и высоту */
+  border-top-right-radius: 20px; /* Скругление верхнего правого угла */
+  border-bottom-right-radius: 20px; /* Скругление нижнего правого угла */
+ /*  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */ /* Тень для объемности */
+}
 
+.important-label::before {
+  content: ''; /* Псевдоэлементы требуют свойства content */
+  position: absolute; /* Абсолютное позиционирование относительно родителя */
+  left: -90px; /* Смещение влево */
+  top: 0; /* Смещение сверху */
+  width: 20px; /* Ширина "хвоста" */
+  height: 100%; /* Высота равна высоте основного элемента */
+  background: #FFA500; /* Цвет фона "хвоста", чтобы совпадал с начальным цветом градиента */
+  padding-left: 40px; /* Увеличенный паддинг слева */
+  padding-right: 40px; /* Увеличенный паддинг справа */
+  
+}
+
+.important-block {
+  background-color: #f2f2f2; /* Серый фон для блока */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для блока */
+  width: 100vw; /* Ширина блока равна 100% от ширины вьюпорта */
+  margin-left: calc(-50vw + 50%); /* Центрирование блока */
+  padding: 35px; /* Внутренние отступы для блока */
+  box-sizing: border-box; /* Включение паддинга в общую ширину блока */
+  position: relative; /* Для корректного позиционирования */
+  left: 52%; /* Для корректного позиционирования */
+  right: 50%; /* Для корректного позиционирования */
+  transform: translateX(-50%); /* Для корректного позиционирования */
+  font-family: 'Arial', sans-serif; /* Общий шрифт для блока */
+  font-size: 16px; /* Общий размер шрифта для блока */
+  line-height: 1.5; /* Высота строки */
+  color: #333; /* Цвет текста */
+  
+}
 nav button {
   background-color: #f90;
   border: none;
@@ -77,6 +121,7 @@ main {
  h2 {
   color: #333;
   flex-basis: 50%;
+  left: 10px;
 }
 h1 {
   color: #ffffff;
