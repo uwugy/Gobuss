@@ -184,7 +184,7 @@ body::-webkit-scrollbar-thumb {
     transform: translateX(-50%); /* Сдвигаем обратно на 50% влево, чтобы центрировать */
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 769px) {
   .search-bar-container {
       max-width: 1000px; /* Максимальная ширина контейнера */
       margin: 0 auto; /* Автоматический отступ справа и слева для центрирования */
@@ -210,7 +210,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Применяется для экранов с максимальной шириной 1000 пикселей */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .search-bar-container {
     position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
     top: 200px;
