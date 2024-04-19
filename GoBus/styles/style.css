@@ -66,11 +66,10 @@ nav a, nav button {
   left: 52%; /* Для корректного позиционирования */
   right: 50%; /* Для корректного позиционирования */
   transform: translateX(-50%); /* Для корректного позиционирования */
-  font-family: 'Arial', sans-serif; /* Общий шрифт для блока */
-  font-size: 16px; /* Общий размер шрифта для блока */
   line-height: 1.5; /* Высота строки */
   color: #333; /* Цвет текста */
-  
+  font-family: 'Montserrat', italic;
+  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
 }
 nav button {
   background-color: #f90;
@@ -88,6 +87,8 @@ main {
 .button-group {
   display: flex;
   justify-content: space-between;
+  font-family: 'Montserrat', italic;
+  font-weight: 900; /* Используйте значение веса шрифта, которое вы выбрали */
 }
 
 .button-item {
@@ -107,6 +108,9 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: box-shadow 0.3s ease;
+  
+  width: 350px;  /* Ширина кнопки */
+  height: 55px;  /* Высота кнопки */
 }
 
 .search-button:hover {
@@ -132,14 +136,45 @@ h1 {
 }
 
 /* Стили текстовых полей и кнопок */
+
+@media screen and (max-width :765px){
+  
+
+  input[type="text"], button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 0px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+  
+ }
+}
+@media screen and (min-width :766px){
+  
+
+  input[type="text"], button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 0px 0;
+    border: 1px solid #ccc;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+  
+}
+}
 input[type="text"], button[type="submit"] {
   width: 100%;
   padding: 15px;
   margin: 0px 0;
   border: 1px solid #ccc;
-  border-radius: 5px;
   box-sizing: border-box;
 }
+
+/*стили для поисковой строки*/
+
+
 
 button[type="submit"] {
   background-color: #f90;
@@ -157,11 +192,13 @@ footer {
   color: white;
   text-align: center;
   padding: 10px 0;
+  font-family:'Montserrat', italic;
+  font-weight: 200; /* Используйте значение веса шрифта, которое вы выбрали */
 }
 
 /* Стилизация скроллбара */
 body::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 body::-webkit-scrollbar-track {
@@ -190,7 +227,7 @@ body::-webkit-scrollbar-thumb {
       margin: 0 auto; /* Автоматический отступ справа и слева для центрирования */
       background-color: #fff; /* Белый фоновый цвет */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта возвышения */
-      border-radius: 5px; /* Закругленные углы */
+      border-radius: 15px; /* Закругленные углы */
       overflow: hidden; /* Скрывает любое содержимое, выходящее за пределы границ */
       display: flex; /* Включает flexbox для дочерних элементов */
       align-items: center; /* Выравнивание дочерних элементов по центру по вертикали */
@@ -228,7 +265,7 @@ body::-webkit-scrollbar-thumb {
       border: 1px solid #ccc; /* Серая рамка толщиной 1 пиксель */
       padding: 6px; /* Внутренний отступ */
       margin-bottom: 5px; /* Отступ снизу */
-      border-radius: 4px; /* Закругленные углы */
+      border-radius: 15px; /* Закругленные углы */
       width: 80%; /* Ширина элементов равна 80% от ширины контейнера */
       box-sizing: border-box; /* Размеры элементов включают padding и border */
   }
@@ -302,7 +339,9 @@ body::-webkit-scrollbar-thumb {
 /* Класс .text-column предназначен для колонки с текстом. Свойство flex позволяет элементу заполнить доступное пространство в контейнере flex */
 .text-column {
   flex: 1; /* Элемент растянется на все доступное пространство, которое осталось в контейнере */
-  padding-right: 20px; /* Добавляем отступ справа, чтобы создать пространство между текстом и слайдером */
+  padding-right: 20px; 
+  font-family: 'Montserrat', italic;
+  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали *//* Добавляем отступ справа, чтобы создать пространство между текстом и слайдером */
 }
 
 /* Класс .slider-column используется для колонки со слайдером. Здесь мы задаем фиксированную ширину для этого элемента */
@@ -323,3 +362,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px; /* Скругление углов изображений */
   display: block; /* Это убирает небольшие отступы вокруг изображений */
 }
+
+.section-background {font-family: 'Montserrat', italic;
+  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
+}
+.concha{font-family: 'Montserrat', italic;
+  font-weight: 500; /* Используйте значение веса шрифта, которое вы выбрали */}
+.navi {font-family:'Montserrat', italic;
+  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */}

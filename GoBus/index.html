@@ -5,6 +5,9 @@
     <title>GoBus</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,14 +15,14 @@
 <header>
     <nav>
         <!-- Логотип как ссылка на главную страницу -->
-        <a href="index.html">
+        <a  href="index.html"> 
             <img src="/img/GoBus.png" alt="GoBus">
         </a>
-        <a href="#home">Главная</a>
-        <a href="#routes">Маршруты</a>
-        <a href="#info">Информация</a>
-        <a href="#contacts">Контакты</a>
-        <button>Позвонить</button>
+        <a class="navi" href="#home">Главная</a>
+        <a class="navi" href="#routes">Маршруты</a>
+        <a class="navi" href="#info">Информация</a>
+        <a class="navi" href="#contacts">Контакты</a>
+        <button class="navi">Позвонить</button>
     </nav>
 </header>
 
@@ -36,7 +39,7 @@
     </section>
 
     <!-- Популярные направления -->
-    <section id="routes">
+    <section class="concha" id="routes">
       <h2>Популярные направления</h2>
       <!-- Список направлений -->
       <div class="button-group">
@@ -149,7 +152,7 @@ function showSlides(n) {
 
 <!-- Подвал сайта -->
 <footer>
-    <p>&copy; 2024 GoBus. Все права защищены.</p>
+    <p class="footer">&copy; 2024 GoBus. Все права защищены.</p>
 </footer>
 
 </body>
