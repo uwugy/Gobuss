@@ -29,7 +29,7 @@ nav a, nav button {
 }
 .important-label {
   position: relative; /* Относительное позиционирование для псевдоэлемента */
-  background: linear-gradient(to right, #FFA500, #FF8C00); /* Градиент для фона */
+  background: linear-gradient(to right, #FFA500, #FFA500); /* Градиент для фона */
   color: white; /* Цвет текста */
   font-family: 'Arial', sans-serif; /* Шрифт */
   padding: 10px 20px; /* Внутренний отступ */
@@ -40,14 +40,48 @@ nav a, nav button {
   border-top-right-radius: 20px; /* Скругление верхнего правого угла */
   border-bottom-right-radius: 20px; /* Скругление нижнего правого угла */
  /*  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */ /* Тень для объемности */
+ position: relative;
+  left: 4%;
+  /* right: 20%; */
+  align-items: center;
 }
-
+.important-label-2
+{
+  position: relative;
+  left: 5%;
+  /* right: 20%; */
+  align-items: center;
+}
+.important-label-3
+{
+  position: relative;
+  left: 5%;
+  /* right: ; */
+  max-width: 92%;
+  align-items: center;
+}
+.text-column2
+{
+  position: relative;
+  left: 10%;
+  /* right: ; */
+  max-width: 92%;
+  align-items: center;
+}
+.text-column3
+{
+  position: relative;
+  left: 10%;
+  /* right: ; */
+  max-width: 92%;
+  align-items: center;
+}
 .important-label::before {
   content: ''; /* Псевдоэлементы требуют свойства content */
   position: absolute; /* Абсолютное позиционирование относительно родителя */
-  left: -90px; /* Смещение влево */
+  left: -260px; /* Смещение влево */
   top: 0; /* Смещение сверху */
-  width: 20px; /* Ширина "хвоста" */
+  width: 200px; /* Ширина "хвоста" */
   height: 100%; /* Высота равна высоте основного элемента */
   background: #FFA500; /* Цвет фона "хвоста", чтобы совпадал с начальным цветом градиента */
   padding-left: 40px; /* Увеличенный паддинг слева */
@@ -70,6 +104,25 @@ nav a, nav button {
   color: #333; /* Цвет текста */
   font-family: 'Montserrat', italic;
   font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
+}
+.routes-block
+{
+  background-color: #efeeee; /* Серый фон для блока */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для блока */
+   /* Ширина блока равна 100% от ширины вьюпорта */
+  margin-left: calc(-50vw + 50%); /* Центрирование блока */
+  padding: 35px; /* Внутренние отступы для блока */
+  box-sizing: border-box; /* Включение паддинга в общую ширину блока */
+  position: relative; /* Для корректного позиционирования */
+  left: 52%; /* Для корректного позиционирования */
+  right: 50%; /* Для корректного позиционирования */
+  transform: translateX(-50%); /* Для корректного позиционирования */
+  line-height: 1.5; /* Высота строки */
+  /* color: #333; */ /* Цвет текста */
+  font-family: 'Montserrat', italic;
+  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
+  width: 109%;
+  z-index: 10; /* Чем больше число, тем выше будет элемент */
 }
 nav button {
   background-color: #f90;
@@ -94,6 +147,7 @@ main {
 .button-item {
   flex-basis: calc(33.333% - 10px);
   margin: 5px;
+  
 }
 
 .search-button {
@@ -108,9 +162,13 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: box-shadow 0.3s ease;
-  
-  width: 350px;  /* Ширина кнопки */
+  width: 10%;  /* Ширина кнопки */
   height: 55px;  /* Высота кнопки */
+  position: relative;
+  left: 25%;
+  right: 20%;
+  align-items: center;
+  width: 50%;
 }
 
 .search-button:hover {
@@ -126,6 +184,7 @@ main {
   color: #333;
   flex-basis: 50%;
   left: 10px;
+  
 }
 h1 {
   color: #ffffff;
@@ -133,9 +192,17 @@ h1 {
   top: 50px;
   left: 50px; /* Смещаем на 50% ширины влево */
   right: 50px; /* Смещаем на 50% ширины вправо */
+  
 }
+.concha-text{
+  position: relative;
+top: 0;
 
-/* Стили текстовых полей и кнопок */
+left: 8%; /* Для корректного позиционирования */
+right: 50%; /* Для корректного позиционирования */
+font-family:'Montserrat', italic;
+  font-weight: 750; /* Используйте значение веса шрифта, которое вы выбрали */
+}
 
 @media screen and (max-width :765px){
   
@@ -164,17 +231,15 @@ h1 {
   
 }
 }
+/* Стили текстовых полей и кнопок */
 input[type="text"], button[type="submit"] {
   width: 100%;
   padding: 15px;
   margin: 0px 0;
   border: 1px solid #ccc;
+  /* border-radius: 5px; */
   box-sizing: border-box;
 }
-
-/*стили для поисковой строки*/
-
-
 
 button[type="submit"] {
   background-color: #f90;
@@ -221,9 +286,10 @@ body::-webkit-scrollbar-thumb {
     transform: translateX(-50%); /* Сдвигаем обратно на 50% влево, чтобы центрировать */
 }
 
+
 @media screen and (min-width: 769px) {
   .search-bar-container {
-      max-width: 1000px; /* Максимальная ширина контейнера */
+      max-width: 80%; /* Максимальная ширина контейнера */
       margin: 0 auto; /* Автоматический отступ справа и слева для центрирования */
       background-color: #fff; /* Белый фоновый цвет */
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта возвышения */
@@ -232,9 +298,9 @@ body::-webkit-scrollbar-thumb {
       display: flex; /* Включает flexbox для дочерних элементов */
       align-items: center; /* Выравнивание дочерних элементов по центру по вертикали */
       position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
-    top: 250px;
-    left: 20px; /* Смещаем на 50% ширины влево */
-    right: 50px; /* Смещаем на 50% ширины вправо */
+    top: 200px;
+    left: center; /* Смещаем на 50% ширины влево */
+    right: center; /* Смещаем на 50% ширины вправо */
       
   }
 
@@ -250,7 +316,7 @@ body::-webkit-scrollbar-thumb {
 @media screen and (max-width: 768px) {
   .search-bar-container {
     position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
-    top: 200px;
+    top: 160px;
     left: 50px; /* Смещаем на 50% ширины влево */
     right: 50px; /* Смещаем на 50% ширины вправо */
       display: flex; /* Включает flexbox */
@@ -265,7 +331,7 @@ body::-webkit-scrollbar-thumb {
       border: 1px solid #ccc; /* Серая рамка толщиной 1 пиксель */
       padding: 6px; /* Внутренний отступ */
       margin-bottom: 5px; /* Отступ снизу */
-      border-radius: 15px; /* Закругленные углы */
+      border-radius: 4px; /* Закругленные углы */
       width: 80%; /* Ширина элементов равна 80% от ширины контейнера */
       box-sizing: border-box; /* Размеры элементов включают padding и border */
   }
@@ -273,9 +339,10 @@ body::-webkit-scrollbar-thumb {
 /* Общие стили для слайдера */
 .slider-container {
   position: relative;
-  width: 70%; /* Задайте ширину по вашему вкусу */
+  width: 45%; /* Задайте ширину по вашему вкусу */
   margin: auto; /* Центрирование слайдера на странице */
   overflow: hidden; /* Скрытие неактивных слайдов */
+  top: 10px;
 }
 
 /* Стили для каждого слайда */
@@ -367,6 +434,17 @@ body::-webkit-scrollbar-thumb {
   font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
 }
 .concha{font-family: 'Montserrat', italic;
-  font-weight: 500; /* Используйте значение веса шрифта, которое вы выбрали */}
+  font-weight: 500; /* Используйте значение веса шрифта, которое вы выбрали */
+}
 .navi {font-family:'Montserrat', italic;
-  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */}
+  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
+}
+.section-background-text{
+position: relative;
+top: 80px;
+color: #ccc;
+left: 12%; /* Для корректного позиционирования */
+right: 50%; /* Для корректного позиционирования */
+font-family:'Montserrat', italic;
+  font-weight: 750; /* Используйте значение веса шрифта, которое вы выбрали */
+}

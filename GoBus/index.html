@@ -6,16 +6,16 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
 <body>
 
 <!-- Шапка сайта -->
 <header>
     <nav>
         <!-- Логотип как ссылка на главную страницу -->
-        <a  href="index.html"> 
+        <a  href="index.html">
             <img src="/img/GoBus.png" alt="GoBus">
         </a>
         <a class="navi" href="#home">Главная</a>
@@ -30,7 +30,9 @@
 <main>
     <!-- Раздел поиска путешествий -->
     <section class="section-background" id="home">
-        <h1>Пассажирские перевозки</h1> 
+      <p class="section-background-text">Пассажирские перевозки</p>
+        <h1 class="section-background-text">Украина - Луганск / Донецк </h1> 
+        <p class="section-background-text">Через Польшу/Беларусь</p>
         <div class="search-bar-container">
             <input type="text" placeholder="Откуда">
             <input type="text" placeholder="Куда">
@@ -39,8 +41,8 @@
     </section>
 
     <!-- Популярные направления -->
-    <section class="concha" id="routes">
-      <h2>Популярные направления</h2>
+    <section ъ class="concha routes-block" id="routes" >
+      <h2 class="concha-text">Популярные направления</h2>
       <!-- Список направлений -->
       <div class="button-group">
           <div class="button-item">
@@ -88,8 +90,8 @@
     <!-- Важное уведомление -->
     <section id="info" class="important-block">
         <h2 class="important-label" >Важно! </h2>
-        <h2>Уважаемые пассажиры</h2>
-          <p>Информируем вас, что перевозки из Украины и Европы в Россию продолжают осуществляться по прежним тарифам. Однако для граждан Украины без паспорта РФ введена дополнительная плата в размере приблизительно 100 евро за перелёт Минск-Шереметьево.
+        <h2 class="important-label-2">Уважаемые пассажиры</h2>
+          <p class="important-label-3">Информируем вас, что перевозки из Украины и Европы в Россию продолжают осуществляться по прежним тарифам. Однако для граждан Украины без паспорта РФ введена дополнительная плата в размере приблизительно 100 евро за перелёт Минск-Шереметьево.
           Для минимизации ваших расходов на перелёт мы предлагаем следующую схему транспортировки багажа: основной багаж будет отправлен автомобильным транспортом из Минска, а в самолёт вы сможете взять необходимые и ценные вещи весом до 10 кг. По прибытии в аэропорт Шереметьево за вами прибудет автомобиль, который доставит вас вместе с вашим багажем до места назначения.</p>
     </section>
 
@@ -97,8 +99,8 @@
     <div class="container">
       <!-- Колонка для текста -->
       <div class="text-column">
-          <h2>Наш Транспорт</h2>
-          <p>Компания предлагает услуги пассажирских перевозок на микроавтобусах марок Mercedes Sprinter, Renault Trafic и Opel Vivaro, которые оснащены необходимым оборудованием для комфортного перевоза, включая полноценные сидения, внутрисалонный багажник, системы контроля и кондиционирования климата: отопление, дефлекторы, форточки, и розетки для подзарядки мобильных устройств.</p>
+          <h2 class="text-column2">Наш Транспорт</h2>
+          <p class="text-column3">Компания предлагает услуги пассажирских перевозок на микроавтобусах марок Mercedes Sprinter, Renault Trafic и Opel Vivaro, которые оснащены необходимым оборудованием для комфортного перевоза, включая полноценные сидения, внутрисалонный багажник, системы контроля и кондиционирования климата: отопление, дефлекторы, форточки, и розетки для подзарядки мобильных устройств.</p>
       </div>
   
       <!-- Колонка со слайдером -->
@@ -107,19 +109,20 @@
           <div class="slider-container">
               <!-- Слайды с изображениями -->
               <div class="slide">
-                  <img src="/image/photo_2024-04-14_23-33-25.jpg" alt="Описание изображения 1">
+                  <img src="/img/2Q.png" alt="Описание изображения 1">
               </div>
               <!-- ... дополнительные слайды ... -->
               <div class="slide">
-                  <img src="/image/photo_2024-04-14_23-33-25.jpg" alt="Описание изображения 2">
+                  <img src="/img/OIP.png" alt="Описание изображения 2">
               </div>
               <div class="slide">
-                  <img src="/image/photo_2024-04-14_23-33-25.jpg" alt="Описание изображения 3">
+                  <img src="/img/OIP1.png" alt="Описание изображения 3">
               </div>
               
               <!-- Кнопки управления -->
               <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
               <a class="next" onclick="moveSlide(1)">&#10095;</a>
+              <p>   </p>
           </div>
       </div>
   </div>
