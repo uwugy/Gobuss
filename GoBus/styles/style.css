@@ -15,7 +15,112 @@ header {
     padding: 10px 0; /* Внутренний отступ */
     z-index: 1000; /* Высокое значение для наложения поверх других элементов */
 }
+/* .list {
 
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.link{
+
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+} */
+ul {
+  /* Использование флексбокса для выравнивания элементов списка */
+  display: flex;
+  /* Размещение элементов на равном расстоянии друг от друга */
+  justify-content: space-around;
+  /* Вертикальное выравнивание элементов по центру */
+  align-items: center;
+  /* Убираем абсолютное позиционирование */
+  position: static;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+
+/* Стили для элементов списка */
+ul li {
+  /* Убираем маркеры списка */
+  list-style: none;
+}
+
+/* Стили для ссылок */
+ul li a {
+  align-items: center;
+  /* Устанавливаем относительное позиционирование для ссылок */
+  position:relative;
+  /* Определяем, что ссылка является блочным элементом */
+  display: block;
+  /* Преобразуем текст в верхний регистр */
+  text-transform: uppercase;
+  /* Внешние отступы для ссылок */
+  margin: -10px 0;
+  /* Внутренние отступы для ссылок */
+  padding: 5px 30px;  /* Изменены отступы для соответствия вашему примеру */
+  /* Убираем подчеркивание текста ссылок */
+  text-decoration: none;
+  /* Задаем цвет текста ссылок */
+  color: white;  /* Изменен цвет текста для соответствия вашему примеру */
+  /* Устанавливаем шрифт для текста ссылок */
+  font-family: sans-serif;
+  /* Устанавливаем размер шрифта */
+  font-size: 18px;
+  /* Устанавливаем толщину шрифта */
+  font-weight: 600;
+  /* Определяем переход для изменения свойств */
+  transition: 0.5s;
+  /* Устанавливаем уровень стека для ссылки */
+  z-index: 1;
+}
+
+/* Псевдоэлемент перед содержимым ссылки */
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border-top: 2px solid #FFA500;
+  border-bottom: 2px solid #FFA500;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* Псевдоэлемент после содержимого ссылки */
+ul li a:after {
+  content: "";
+  position: absolute;
+  top: 2px; left: 0;
+  width: 100%; height: 100%;
+  background-color: #FFA500;
+  transition: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+/* Стили для ссылки при наведении */
+ul li a:hover {
+  color: #333;
+}
+
+/* Псевдоэлемент перед содержимым ссылки при наведении */
+ul li a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+/* Псевдоэлемент после содержимого ссылки при наведении */
+ul li a:hover::after {
+  transform: scaleY(1);
+  opacity: 1;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -92,7 +197,7 @@ nav a, nav button {
 .important-block {
   background-color: #f2f2f2; /* Серый фон для блока */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для блока */
-  width: 100vw; /* Ширина блока равна 100% от ширины вьюпорта */
+  width: 109%; /* Ширина блока равна 100% от ширины вьюпорта */
   margin-left: calc(-50vw + 50%); /* Центрирование блока */
   padding: 35px; /* Внутренние отступы для блока */
   box-sizing: border-box; /* Включение паддинга в общую ширину блока */
@@ -105,6 +210,10 @@ nav a, nav button {
   font-family: 'Montserrat', italic;
   font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> 606c11b568434b6a984bbfb67191dbdf606cee30
 .routes-block
 {
   background-color: #efeeee; /* Серый фон для блока */
@@ -276,7 +385,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section-background {
-  background: url('/image/photo_2024-04-14_23-33-25.jpg') no-repeat center center;
+  background: url('image/photo_2024-04-14_23-33-25.jpg') no-repeat center center;
     background-size: cover;
     width: 100vw; /* Ширина на весь видимый экран */
     min-height: 400px; /* Минимальная высота, чтобы покрыть весь видимый экран по высоте */

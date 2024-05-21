@@ -89,7 +89,7 @@ header button {
     box-sizing: border-box; /* Размеры элементов включают padding и border */
 }
 .section-background {
-    background: url('/image/photo_2024-04-14_23-33-25.jpg') no-repeat center center;
+    background: url('image/photo_2024-04-14_23-33-25.jpg') no-repeat center center;
       background-size: cover;
       width: 100vw; /* Ширина на весь видимый экран */
       min-height: 150px; /* Минимальная высота, чтобы покрыть весь видимый экран по высоте */

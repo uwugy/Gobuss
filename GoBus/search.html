@@ -2,12 +2,38 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>GoBus - Сервис заказа автобусных билетов</title>
+    <title>Результаты Поиска - GoBus</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <!-- Подключение CSS файлов будет здесь -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="img/GoBus.png" alt="GoBus">
+            </a>
+            <a href="index.html#home">Главная</a>
+            <a href="index.html#routes">Маршруты</a>
+            <a href="index.html#info">Информация</a>
+            <a href="index.html#contacts">Контакты</a>
+            <button>Позвонить</button>
+        </nav>
+    </header>
 
+<<<<<<< HEAD
+    <main>
+        <h1>Результаты Поиска</h1>
+        
+        <!-- Поисковая форма на второй странице -->
+        <div class="search-bar-container">
+            <input type="text" id="inputA" placeholder="Откуда">
+            <input type="text" id="inputB" placeholder="Куда">
+            <button type="submit" onclick="updateSearchResults()">Найти</button>
+        </div>
+=======
   <header>
     <nav>
         <!-- Логотип как ссылка на главную страницу -->
@@ -21,51 +47,87 @@
         <button>Позвонить</button>
     </nav>
 </header>
+>>>>>>> 606c11b568434b6a984bbfb67191dbdf606cee30
 
-<main>
-    <!-- Поисковая форма -->
-    <section class="section-background" id="home">
-      <h1>Пассажирские перевозки</h1> 
-      <div class="search-bar-container">
-          <input type="text" placeholder="Откуда">
-          <input type="text" placeholder="Куда">
-          <button type="submit">Найти</button>
-      </div>
-  </section>
-  <h3>При наличии паспорта РФ</h3>
-    <!-- Раздел с предложениями -->
-    <section>
-      <div class="offer">
-          <div class="offer-header">
-              <!-- <img src="path_to_icon" alt="icon" class="offer-icon"> -->
-              <!-- <h3>При наличии паспорта РФ</h3> -->
-              <!-- <img src="path_to_dropdown_icon" alt="dropdown" class="dropdown-icon"> -->
-          </div>
-          <div class="route">
-              <div class="route-details">
-                  <div class="city from-city">
-                      <p>Донецк</p>
-                      <p>Ав Южный, Мотель, Макеевка</p>
-                  </div>
-                  <div class="city to-city">
-                      <p>Киев</p>
-                      <p>Центральный ж/д вокзал Киева</p>
-                  </div>
-              </div>
-              <div class="price-details">
-                  <p>300 €</p>
-                  <button>Подробности</button>
-              </div>
-          </div>
-      </div>
-      <!-- Повторите блок .offer для второго предложения с некоторыми изменениями -->
-  </section>
-</main>
+        <div id="searchResults"></div>
+    </main>
 
-<footer>
-    <!-- Футер сайта -->
-    <p>&copy; 2024 GoBus</p>
-</footer>
+    <footer>
+        <p>&copy; 2024 GoBus</p>
+    </footer>
 
+    <script>
+        // Предустановленные маршруты
+        const routes = [
+            { from: 'Донецк', to: 'Киев', fromDetail: 'Ав Южный, Мотель, Макеевка', toDetail: 'Центральный ж/д вокзал Киева', price: '300 €' },
+            { from: 'Донецк', to: 'Львов', fromDetail: 'Ав Центральный', toDetail: 'Центральный автовокзал Львова', price: '350 €' },
+            { from: 'Харьков', to: 'Киев', fromDetail: 'Ав Южный', toDetail: 'Центральный ж/д вокзал Киева', price: '250 €' },
+            { from: 'Харьков', to: 'Львов', fromDetail: 'Ав Центральный', toDetail: 'Центральный автовокзал Львова', price: '400 €' },
+        ];
+
+        // Функция для получения параметров поиска из URL
+        function getSearchParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                a: params.get('a') ? decodeURIComponent(params.get('a')) : '',
+                b: params.get('b') ? decodeURIComponent(params.get('b')) : ''
+            };
+        }
+
+        // Функция для отображения результатов поиска
+        function displaySearchResults(searchParams) {
+            const resultsContainer = document.getElementById('searchResults');
+            resultsContainer.innerHTML = ''; // Очищаем контейнер перед обновлением
+            const matchingRoutes = routes.filter(route => route.from.toLowerCase() === searchParams.a.toLowerCase() && route.to.toLowerCase() === searchParams.b.toLowerCase());
+
+            if (matchingRoutes.length > 0) {
+                matchingRoutes.forEach(route => {
+                    const offerElement = document.createElement('div');
+                    offerElement.className = 'offer';
+
+                    const routeDetails = `
+                        <div class="offer-header">Маршрут: ${route.from} - ${route.to}</div>
+                        <div class="route">
+                            <div class="route-details">
+                                <div class="city from-city">
+                                    <p>${route.from}</p>
+                                    <p>${route.fromDetail}</p>
+                                </div>
+                                <div class="city to-city">
+                                    <p>${route.to}</p>
+                                    <p>${route.toDetail}</p>
+                                </div>
+                            </div>
+                            <div class="price-details">
+                                <p>${route.price}</p>
+                                <button>Подробности</button>
+                            </div>
+                        </div>
+                    `;
+                    offerElement.innerHTML = routeDetails;
+                    resultsContainer.appendChild(offerElement);
+                });
+            } else {
+                resultsContainer.textContent = 'Маршрут не найден';
+            }
+        }
+
+        // Функция для обновления результатов поиска на текущей странице
+        function updateSearchResults() {
+            const inputA = document.getElementById('inputA').value.trim();
+            const inputB = document.getElementById('inputB').value.trim();
+            const searchParams = { a: inputA, b: inputB };
+            displaySearchResults(searchParams);
+        }
+
+        // Вызов функции отображения результатов при загрузке страницы
+        window.onload = function() {
+            const searchParams = getSearchParams();
+            // Устанавливаем значения в поля поиска
+            document.getElementById('inputA').value = searchParams.a;
+            document.getElementById('inputB').value = searchParams.b;
+            displaySearchResults(searchParams);
+        };
+    </script>
 </body>
 </html>

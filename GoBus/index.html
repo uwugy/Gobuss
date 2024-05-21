@@ -5,6 +5,10 @@
     <title>GoBus</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+<<<<<<< HEAD
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+=======
+>>>>>>> 606c11b568434b6a984bbfb67191dbdf606cee30
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,6 +20,23 @@
     <nav>
         <!-- Логотип как ссылка на главную страницу -->
         <a  href="index.html">
+<<<<<<< HEAD
+            <img src="img/GoBus.png" alt="GoBus">
+        </a>
+        <ul >
+          <li><a href="#home" class="link">Главная</a></li>
+          <li><a href="#routes" class="link">Маршруты</a></li>
+          <li><a href="#info" class="link">Информация</a></li>
+          <li><a href="#contacts" class="link">Контакты</a></li>
+
+
+        </ul>
+       <!--  <a class="navi" href="#home">Главная</a>
+        <a class="navi" href="#routes">Маршруты</a>
+        <a class="navi" href="#info">Информация</a>
+        <a class="navi" href="#contacts">Контакты</a > -->
+        <button class="navi">Позвонить</button> 
+=======
             <img src="/img/GoBus.png" alt="GoBus">
         </a>
         <a class="navi" href="#home">Главная</a>
@@ -23,6 +44,7 @@
         <a class="navi" href="#info">Информация</a>
         <a class="navi" href="#contacts">Контакты</a>
         <button class="navi">Позвонить</button>
+>>>>>>> 606c11b568434b6a984bbfb67191dbdf606cee30
     </nav>
 </header>
 
@@ -34,10 +56,10 @@
         <h1 class="section-background-text">Украина - Луганск / Донецк </h1> 
         <p class="section-background-text">Через Польшу/Беларусь</p>
         <div class="search-bar-container">
-            <input type="text" placeholder="Откуда">
-            <input type="text" placeholder="Куда">
-            <button type="submit">Найти</button>
-        </div>
+          <input type="text" id="inputA" placeholder="Откуда">
+          <input type="text" id="inputB" placeholder="Куда">
+          <button type="submit" onclick="startSearch()">Найти</button>
+      </div>
     </section>
 
     <!-- Популярные направления -->
@@ -109,6 +131,16 @@
           <div class="slider-container">
               <!-- Слайды с изображениями -->
               <div class="slide">
+<<<<<<< HEAD
+                  <img src="img/2Q.png" alt="Описание изображения 1">
+              </div>
+              <!-- ... дополнительные слайды ... -->
+              <div class="slide">
+                  <img src="img/OIP.png" alt="Описание изображения 2">
+              </div>
+              <div class="slide">
+                  <img src="img/OIP1.png" alt="Описание изображения 3">
+=======
                   <img src="/img/2Q.png" alt="Описание изображения 1">
               </div>
               <!-- ... дополнительные слайды ... -->
@@ -117,6 +149,7 @@
               </div>
               <div class="slide">
                   <img src="/img/OIP1.png" alt="Описание изображения 3">
+>>>>>>> 606c11b568434b6a984bbfb67191dbdf606cee30
               </div>
               
               <!-- Кнопки управления -->
@@ -127,30 +160,11 @@
       </div>
   </div>
   
-  <script>
-      // Инициализация индекса слайда
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Функция добавляет или убавляет число к индексу слайда (переход вперед/назад)
-function moveSlide(n) {
-  showSlides(slideIndex += n);
-}
-
-// Основная функция для отображения слайдов
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  if (n > slides.length) {slideIndex = 1} // Если n больше количества слайдов, возвращаемся к первому слайду
-  if (n < 1) {slideIndex = slides.length} // Если n меньше 1, переходим к последнему слайду
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; // Сначала скрываем все слайды
-  }
-  slides[slideIndex-1].style.display = "block"; // Показываем выбранный слайд
-}
+  <script src="/script/Sr.js">
+      
   </script>
     
-    </section>
+    
 </main>
 
 <!-- Подвал сайта -->
