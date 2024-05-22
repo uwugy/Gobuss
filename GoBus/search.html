@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Результаты Поиска - GoBus</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
        
@@ -12,15 +13,24 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">
+            <!-- Логотип как ссылка на главную страницу -->
+            <a  href="index.html">
                 <img src="img/GoBus.png" alt="GoBus">
             </a>
-            <a href="index.html#home">Главная</a>
-            <a href="index.html#routes">Маршруты</a>
-            <a href="index.html#info">Информация</a>
-            <a href="index.html#contacts">Контакты</a>
-            <button>Позвонить</button>
-        </nav>
+            <ul >
+              <li><a href=".index.html#home" class="link">Главная</a></li>
+              <li><a href=".index.html#routes" class="link">Маршруты</a></li>
+              <li><a href=".index.html#info" class="link">Информация</a></li>
+              <li><a href=".index.html#contacts" class="link">Контакты</a></li>
+    
+    
+            </ul>
+           <!--  <a class="navi" href="#home">Главная</a>
+            <a class="navi" href="#routes">Маршруты</a>
+            <a class="navi" href="#info">Информация</a>
+            <a class="navi" href="#contacts">Контакты</a > -->
+            <button class="navi">Позвонить</button>
+          </nav>
     </header>
 
     <main>
@@ -28,8 +38,8 @@
         
         <!-- Поисковая форма на второй странице -->
         <div class="search-bar-container">
-            <input type="text" id="inputA" placeholder="Откуда">
-            <input type="text" id="inputB" placeholder="Куда">
+            <input class="inA" type="text" id="inputA" placeholder="Откуда">
+            <input class="inB" type="text" id="inputB" placeholder="Куда">
             <button type="submit" onclick="updateSearchResults()">Найти</button>
         </div>
 
@@ -43,7 +53,11 @@
     <script>
         // Предустановленные маршруты
         const routes = [
-            { from: 'Донецк', to: 'Киев', fromDetail: 'Ав Южный, Мотель, Макеевка', toDetail: 'Центральный ж/д вокзал Киева', price: '300 €' },
+            { passport:'passport', from: 'Донецк', to: 'Киев', fromDetail: 'Ав Южный, Мотель, Макеевка', toDetail: 'Центральный ж/д вокзал Киева', price: '300 €',
+            information:'Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.',
+            passportNot:'passportNot', fromNot: 'Донецк', toNot: 'Киев', fromDetailNot: 'Ав Южный, Мотель, Макеевка', toDetailNot: 'Центральный ж/д вокзал Киева', priceNot: '300 €',
+            informationNot:'Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.'
+             },
             { from: 'Донецк', to: 'Львов', fromDetail: 'Ав Центральный', toDetail: 'Центральный автовокзал Львова', price: '350 €' },
             { from: 'Харьков', to: 'Киев', fromDetail: 'Ав Южный', toDetail: 'Центральный ж/д вокзал Киева', price: '250 €' },
             { from: 'Харьков', to: 'Львов', fromDetail: 'Ав Центральный', toDetail: 'Центральный автовокзал Львова', price: '400 €' },
@@ -67,33 +81,92 @@
             if (matchingRoutes.length > 0) {
                 matchingRoutes.forEach(route => {
                     const offerElement = document.createElement('div');
-                    offerElement.className = 'offer';
+                    offerElement.className = '';
 
                     const routeDetails = `
-                        <div class="offer-header">Маршрут: ${route.from} - ${route.to}</div>
-                        <div class="route">
-                            <div class="route-details">
-                                <div class="city from-city">
-                                    <p>${route.from}</p>
-                                    <p>${route.fromDetail}</p>
-                                </div>
-                                <div class="city to-city">
-                                    <p>${route.to}</p>
-                                    <p>${route.toDetail}</p>
-                                </div>
-                            </div>
-                            <div class="price-details">
-                                <p>${route.price}</p>
-                                <button>Подробности</button>
-                            </div>
-                        </div>
-                    `;
+                    
+    <div class="offer">
+        <div class="passport"> ${route.passport} </div>
+        <div class="offer-header">Маршрут: ${route.from} - ${route.to}</div>
+        <div class="route">
+            <div class="route-details">
+                <div class="city from-city">
+                    <p>${route.from}</p>
+                    <p>${route.fromDetail}</p>
+                </div>
+                <div class="city to-city">
+                    <p>${route.to}</p>
+                    <p>${route.toDetail}</p>
+                </div>
+            </div>
+            <div class="price-details">
+                <p>${route.price}</p>
+                <button class="details-btn">Подробности</button>
+            </div>
+        </div>
+        <div class="details">
+            <p>${route.information}</p>
+        </div>
+        </div>
+        
+
+        
+        <div class="offerr">
+            <div class="passport"> ${route.passportNot} </div>
+        <div class="offer-header">Маршрут: ${route.fromNot} - ${route.toNot}</div>
+        <div class="route">
+            <div class="route-details">
+                <div class="city from-city">
+                    <p>${route.fromNot}</p>
+                    <p>${route.fromDetailNot}</p>
+                </div>
+                <div class="city to-city">
+                    <p>${route.toNot}</p>
+                    <p>${route.toDetailNot}</p>
+                </div>
+            </div>
+            <div class="price-details">
+                <p>${route.priceNot}</p>
+                <button class="details-btn">Подробности</button>
+            </div>
+        </div>
+        <div class="details">
+            <p>${route.informationNot}</p>
+        </div>
+        </div>
+     
+                    `
+                    ;
+                    resultsContainer.classList.remove('no-route-found');
+                    
+                    
+
+                    
+                    
                     offerElement.innerHTML = routeDetails;
                     resultsContainer.appendChild(offerElement);
                 });
+
+
+                 // Назначаем обработчики событий для всех кнопок "Подробности"
+                document.querySelectorAll('.details-btn').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const details = this.parentElement.parentElement.nextElementSibling;
+                        if (details.style.display === 'none' || details.style.display === '') {
+                            details.style.display = 'block';
+                            this.textContent = 'Скрыть';
+                        } else {
+                            details.style.display = 'none';
+                            this.textContent = 'Подробности';
+                        }
+                    });
+                });
+                
+            
             } else {
-                resultsContainer.textContent = 'Маршрут не найден';
-            }
+    resultsContainer.textContent = 'Маршрут не найден';
+    resultsContainer.classList.add('no-route-found');
+}
         }
 
         // Функция для обновления результатов поиска на текущей странице
@@ -112,6 +185,11 @@
             document.getElementById('inputB').value = searchParams.b;
             displaySearchResults(searchParams);
         };
+
+
+
+        
     </script>
 </body>
 </html>
+

@@ -90,6 +90,13 @@ nav a, nav button {
   text-decoration: none;
   padding: 5px 10px;
 }
+nav button {
+  background-color: #E3730B;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 15px 15px 15px 0;
+}
 .important-label {
   position: relative; /* Относительное позиционирование для псевдоэлемента */
   background: linear-gradient(to right, #E3730B, #E3730B); /* Градиент для фона */
@@ -187,13 +194,7 @@ nav a, nav button {
   width: 109%;
   z-index: 10; /* Чем больше число, тем выше будет элемент */
 }
-nav button {
-  background-color: #E3730B;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 15px 15px 15px 0;
-}
+
 
 /* Основной контент */
 main {
@@ -339,7 +340,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section-background {
-  background: url('/image/photo_2024-04-14_23-33-25.jpg') no-repeat center center;
+  background: url('/GoBus/image/') no-repeat center center;
     background-size: cover;
     width: 100vw; /* Ширина на весь видимый экран */
     min-height: 400px; /* Минимальная высота, чтобы покрыть весь видимый экран по высоте */

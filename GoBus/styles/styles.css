@@ -18,7 +18,75 @@ header {
   padding: 10px 0; /* Внутренний отступ */
   z-index: 1000; /* Высокое значение для наложения поверх других элементов */
 }
+.no-route-found {
+ color: rgb(78, 255, 7);
+  position:absolute;
+  top: 25%;left: 40%;right: 40%;
+  font-size: 40px;
+}
+ul {
+  display: flex; /* Использование флексбокса для выравнивания элементов списка */
+  justify-content: space-around; /* Размещение элементов на равном расстоянии друг от друга */
+  align-items: center; /* Вертикальное выравнивание элементов по центру */
+  position: static; /* Убираем абсолютное позиционирование */
+  top: auto;
+  left: auto;
+  transform: none;
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Убираем маркеры списка */
+  font-family: 'Montserrat', italic;
+  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
+}
 
+ul li a {
+  display: block; /* Определяем, что ссылка является блочным элементом */
+  position: relative; /* Устанавливаем относительное позиционирование для ссылок */
+  align-items: center;
+  text-transform: none; /* Преобразуем текст в верхний регистр */
+  margin: -10px 0; /* Внешние отступы для ссылок */
+  padding: 5px 30px; /* Внутренние отступы для ссылок */
+  text-decoration: none; /* Убираем подчеркивание текста ссылок */
+  color: white; /* Задаем цвет текста ссылок */
+  font-family: sans-serif; /* Устанавливаем шрифт для текста ссылок */
+  font-size: 18px; /* Устанавливаем размер шрифта */
+  font-weight: 600; /* Устанавливаем толщину шрифта */
+  transition: 0.1s; /* Определяем переход для изменения свойств */
+  z-index: 1; /* Устанавливаем уровень стека для ссылки */
+}
+
+ul li a:before, ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+ul li a:before {
+  top: 0;
+  border-top: 2px solid #E3730B;
+  border-bottom: 2px solid #E3730B;
+  transform: scaleY(2);
+}
+
+ul li a:after {
+  top: 2px;
+  background-color: #E3730B;
+  transform: scaleY(0);
+}
+
+ul li a:hover {
+  color: #ffffff;
+}
+
+ul li a:hover:before, ul li a:hover:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -52,33 +120,118 @@ header button {
   cursor: pointer;
 }
 
+@media screen and (max-width :765px){
+  
+
+  input[type="text"], button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 0px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+  
+ }
+}
+@media screen and (min-width :766px){
+  
+
+  input[type="text"], button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 0px 0;
+    border: 1px solid #ccc;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-sizing: border-box;
+  
+}
+}
+/* Стили текстовых полей и кнопок */
+input[type="text"], button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin: 0px 0;
+  border: 1px solid #ccc;
+  /* border-radius: 5px; */
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #E3730B;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.details {
+  display: none;
+  text-align: left;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  
+}
+
+.details-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 /* Стили для поисковой формы */
-.search-bar-container {
-  max-width: 1000px; /* Максимальная ширина контейнера */
-  margin: 0 auto; /* Автоматический отступ справа и слева для центрирования */
-  background-color: #fff; /* Белый фоновый цвет */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта возвышения */
-  border-radius: 5px; /* Закругленные углы */
-  overflow: hidden; /* Скрывает любое содержимое, выходящее за пределы границ */
-  display: flex; /* Включает flexbox для дочерних элементов */
-  align-items: center; /* Выравнивание дочерних элементов по центру по вертикали */
-  position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
-  top: 20px;
-  left: 20px;
-  right: 50px;
+@media screen and (min-width: 769px) {
+  .search-bar-container {
+      max-width: 80%; /* Максимальная ширина контейнера */
+      margin: 0 auto; /* Автоматический отступ справа и слева для центрирования */
+      background-color: #fff; /* Белый фоновый цвет */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта возвышения */
+      border-radius: 15px ; /* Закругленные углы */
+      overflow: hidden; /* Скрывает любое содержимое, выходящее за пределы границ */
+      display: flex; /* Включает flexbox для дочерних элементов */
+      align-items: center; /* Выравнивание дочерних элементов по центру по вертикали */
+      position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
+    top: 30px;
+    left: center; /* Смещаем на 50% ширины влево */
+    right: center; /* Смещаем на 50% ширины вправо */
+      
+  }
+
+  /* Стили для поля ввода и кнопки внутри .search-bar-container */
+  .search-bar-container input[type="text"], .search-bar-container button {
+      border: none; /* Отсутствие рамки */
+      padding: 10px; /* Внутренний отступ */
+      outline: none; /* Отсутствие контура при фокусе */
+  }
 }
 
-/* Стили для поля ввода и кнопки внутри .search-bar-container */
-.search-bar-container input[type="text"], .search-bar-container button {
-  border: 1px solid #ccc; /* Серая рамка толщиной 1 пиксель */
-  padding: 6px; /* Внутренний отступ */
-  margin-bottom: 0px; /* Отступ снизу */
-  border-radius: 4px; /* Закругленные углы */
-  width: 80%; /* Ширина элементов равна 80% от ширины контейнера */
-  box-sizing: border-box; /* Размеры элементов включают padding и border */
-  outline: none; /* Отсутствие контура при фокусе */
-}
+/* Применяется для экранов с максимальной шириной 1000 пикселей */
+@media screen and (max-width: 768px) {
+  .search-bar-container {
+    position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
+    top: 30px;
+    left: 50px; /* Смещаем на 50% ширины влево */
+    right: 50px; /* Смещаем на 50% ширины вправо */
+      display: flex; /* Включает flexbox */
+      flex-direction: column; /* Дочерние элементы располагаются вертикально */
+      align-items: flex-start; /* Выравнивание дочерних элементов по началу контейнера */
+      /* padding: 100px; */ /* Внутренний отступ со всех сторон */
+      width: 100%; /* Ширина контейнера равна 100% от родительского элемента */
+  }
 
+  /* Стили для поля ввода и кнопки, когда ширина экрана меньше или равна 1000 пикселей */
+  .search-bar-container input[type="text"], .search-bar-container button {
+      border: 1px solid #ccc; /* Серая рамка толщиной 1 пиксель */
+      padding: 6px; /* Внутренний отступ */
+      margin-bottom: 5px; /* Отступ снизу */
+      border-radius: 4px; /* Закругленные углы */
+      width: 80%; /* Ширина элементов равна 80% от ширины контейнера */
+      box-sizing: border-box; /* Размеры элементов включают padding и border */
+  }
+
+}
 /* Стили для фона секции */
 .section-background {
   background: url('image/photo_2024-04-14_23-33-25.jpg') no-repeat center center;
@@ -89,7 +242,10 @@ header button {
   left: 50%;
   transform: translateX(-50%); /* Сдвигаем обратно на 50% влево, чтобы центрировать */
 }
+.passport{
 
+  font-size: 40px;
+}
 /* Стили для заголовка h3 */
 h3 {
   max-width: 1000px; /* Максимальная ширина контейнера */
@@ -111,8 +267,12 @@ h3 {
   display: flex;
   flex-direction: column; /* Вертикальное расположение элементов */
   padding: 20px;
-  margin: 20px auto; /* Отступ сверху и снизу, и автоматические отступы по бокам для центрирования */
+  margin: 80px auto; /* Отступ сверху и снизу, и автоматические отступы по бокам для центрирования */
   max-width: 960px; /* Максимальная ширина карточки */
+  width:1000%;
+  /* position:fixed;
+  top: 20%;
+  left: 20%; right: 20%; */
 }
 
 .offer-header {
@@ -120,6 +280,7 @@ h3 {
   align-items: center; /* Выравнивание иконки и заголовка по центру */
   justify-content: space-between; /* Распределение пространства между элементами */
   margin-bottom: 20px; /* Отступ под заголовком */
+  
 }
 
 .offer-icon, .dropdown-icon {
@@ -152,6 +313,7 @@ h3 {
   justify-content: space-between; /* Распределение цены и кнопки */
 }
 
+
 .price-details p {
   font-size: 24px; /* Размер шрифта для цены */
   color: #ffa500; /* Цвет цены */
@@ -175,6 +337,85 @@ h3 {
 .offer button:hover {
   background-color: #cc8400; /* Темнее цвет фона кнопки при наведении */
 }
+
+.offerr {
+  background-color: #fff; /* Белый фон карточек */
+  border: 1px solid #ccc; /* Серая граница */
+  border-radius: 10px; /* Скруглённые углы */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень карточки */
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  padding: 20px;
+  margin: 0px auto; /* Отступ сверху и снизу, и автоматические отступы по бокам для центрирования */
+  max-width: 960px; /* Максимальная ширина карточки */
+  width:1000%;
+  /* position:fixed;
+  top: 60%;
+  left: 20%; right: 20%; */
+}
+.offerr-header {
+  display: flex;
+  align-items: center; /* Выравнивание иконки и заголовка по центру */
+  justify-content: space-between; /* Распределение пространства между элементами */
+  margin-bottom: 20px; /* Отступ под заголовком */
+  
+}
+
+.offerr-icon, .dropdown-icon {
+  margin-right: 10px; /* Отступ справа для иконок */
+}
+
+.offerr .route-details {
+  display: flex;
+  justify-content: space-between; /* Распределение содержимого по горизонтали */
+  margin-bottom: 20px; /* Отступ между блоками маршрута и ценой */
+}
+
+.route-details .city {
+  display: flex;
+  flex-direction: column;
+}
+
+.city > p:first-child {
+  font-weight: bold; /* Жирный шрифт для названия города */
+}
+
+.city > p:last-child {
+  color: #666; /* Серый цвет для дополнительной информации */
+  font-size: 0.9em; /* Меньший размер шрифта */
+}
+
+.offerr .price-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Распределение цены и кнопки */
+}
+
+
+.price-details p {
+  font-size: 24px; /* Размер шрифта для цены */
+  color: #ffa500; /* Цвет цены */
+  font-weight: bold; /* Жирность шрифта */
+  margin: 0; /* Убрать стандартные отступы */
+}
+
+.offerr button {
+  background-color: #ffa500; /* Цвет фона */
+  color: white; /* Цвет текста */
+  border: none;
+  border-radius: 20px; /* Скруглённые края кнопки */
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase; /* Текст в верхнем регистре */
+  font-weight: bold; /* Жирный текст */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень кнопки */
+  transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.offerr button:hover {
+  background-color: #cc8400; /* Темнее цвет фона кнопки при наведении */
+}
+
 
 .route p {
   margin: 0; /* Убираем отступы у параграфов */
