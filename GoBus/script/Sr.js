@@ -1,5 +1,4 @@
 
-
 //поиск 
 function startSearch() {
     const inputA = document.getElementById('inputA').value;

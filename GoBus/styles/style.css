@@ -179,6 +179,7 @@ nav button {
   color: #333; /* Цвет текста */
   font-family: 'Montserrat', italic;
   font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
+  z-index: 9;
 }
 .routes-block
 {
@@ -198,6 +199,7 @@ nav button {
   font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
   width: 109%;
   z-index: 10; /* Чем больше число, тем выше будет элемент */
+  
 }
 
 
@@ -344,7 +346,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section-background {
-  background: url('/GoBus/image/') no-repeat center center;
+  background: url('/GoBus/image/photo_2024-04-14_23-33-25.jpg') no-repeat center center;
     background-size: cover;
     width: 100vw; /* Ширина на весь видимый экран */
     min-height: 400px; /* Минимальная высота, чтобы покрыть весь видимый экран по высоте */
@@ -403,6 +405,230 @@ body::-webkit-scrollbar-thumb {
       width: 80%; /* Ширина элементов равна 80% от ширины контейнера */
       box-sizing: border-box; /* Размеры элементов включают padding и border */
   }
+}
+.details {
+  display: none;
+  text-align: left;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+  
+}
+
+.details-btn {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.searchResultsBlock{
+
+  background-color: #e2e2e2; /* Серый фон для блока */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для блока */
+   /* Ширина блока равна 100% от ширины вьюпорта */
+  margin-left: calc(-50vw + 50%); /* Центрирование блока */
+  padding: 35px; /* Внутренние отступы для блока */
+  box-sizing: border-box; /* Включение паддинга в общую ширину блока */
+  position: relative; /* Для корректного позиционирования */
+  left: 52%; /* Для корректного позиционирования */
+  right: 50%; /* Для корректного позиционирования */
+  transform: translateX(-50%); /* Для корректного позиционирования */
+  line-height: 1.5; /* Высота строки */
+  /* color: #333; */ /* Цвет текста */
+  font-family: 'Montserrat', italic;
+  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
+  width: 109%;
+  z-index: 11; /* Чем больше число, тем выше будет элемент */
+
+
+}
+.no-route-found {
+  color: rgb(78, 255, 7);
+  display: flex;
+  justify-content:center; /* или space-between */
+  font-family: 'Montserrat', italic;
+  
+   font-size: 40px;
+ }
+/* Стили для раздела с предложениями */
+.offer {
+  background-color: #fff; /* Белый фон карточек */
+  border: 1px solid #ccc; /* Серая граница */
+  border-radius: 10px; /* Скруглённые углы */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень карточки */
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  padding: 20px;
+  margin: 20px auto; /* Отступ сверху и снизу, и автоматические отступы по бокам для центрирования */
+  max-width: 960px; /* Максимальная ширина карточки */
+  width:1000%;
+  /* position:fixed;
+  top: 20%;
+  left: 20%; right: 20%; */
+}
+
+.offer-header {
+  display: flex;
+  align-items: center; /* Выравнивание иконки и заголовка по центру */
+  justify-content: space-between; /* Распределение пространства между элементами */
+  margin-bottom: 20px; /* Отступ под заголовком */
+  
+}
+
+.offer-icon, .dropdown-icon {
+  margin-right: 10px; /* Отступ справа для иконок */
+}
+
+.offer .route-details {
+  display: flex;
+  justify-content: space-between; /* Распределение содержимого по горизонтали */
+  margin-bottom: 20px; /* Отступ между блоками маршрута и ценой */
+}
+
+.route-details .city {
+  display: flex;
+  flex-direction: column;
+}
+
+.city > p:first-child {
+  font-weight: bold; /* Жирный шрифт для названия города */
+}
+
+.city > p:last-child {
+  color: #666; /* Серый цвет для дополнительной информации */
+  font-size: 0.9em; /* Меньший размер шрифта */
+}
+
+.offer .price-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Распределение цены и кнопки */
+}
+
+
+.price-details p {
+  font-size: 24px; /* Размер шрифта для цены */
+  color: #ffa500; /* Цвет цены */
+  font-weight: bold; /* Жирность шрифта */
+  margin: 0; /* Убрать стандартные отступы */
+}
+
+.offer button {
+  background-color: #ffa500; /* Цвет фона */
+  color: white; /* Цвет текста */
+  border: none;
+  border-radius: 20px; /* Скруглённые края кнопки */
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase; /* Текст в верхнем регистре */
+  font-weight: bold; /* Жирный текст */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень кнопки */
+  transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.offer button:hover {
+  background-color: #cc8400; /* Темнее цвет фона кнопки при наведении */
+}
+
+.offerr {
+  background-color: #fff; /* Белый фон карточек */
+  border: 1px solid #ccc; /* Серая граница */
+  border-radius: 10px; /* Скруглённые углы */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень карточки */
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  padding: 20px;
+  margin: 0px auto; /* Отступ сверху и снизу, и автоматические отступы по бокам для центрирования */
+  max-width: 960px; /* Максимальная ширина карточки */
+  width:1000%;
+  /* position:fixed;
+  top: 60%;
+  left: 20%; right: 20%; */
+}
+.offerr-header {
+  display: flex;
+  align-items: center; /* Выравнивание иконки и заголовка по центру */
+  justify-content: space-between; /* Распределение пространства между элементами */
+  margin-bottom: 20px; /* Отступ под заголовком */
+  
+}
+
+.offerr-icon, .dropdown-icon {
+  margin-right: 10px; /* Отступ справа для иконок */
+}
+
+.offerr .route-details {
+  display: flex;
+  justify-content: space-between; /* Распределение содержимого по горизонтали */
+  margin-bottom: 20px; /* Отступ между блоками маршрута и ценой */
+}
+
+.route-details .city {
+  display: flex;
+  flex-direction: column;
+}
+
+.city > p:first-child {
+  font-weight: bold; /* Жирный шрифт для названия города */
+}
+
+.city > p:last-child {
+  color: #666; /* Серый цвет для дополнительной информации */
+  font-size: 0.9em; /* Меньший размер шрифта */
+}
+
+.offerr .price-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Распределение цены и кнопки */
+}
+
+
+.price-details p {
+  font-size: 24px; /* Размер шрифта для цены */
+  color: #ffa500; /* Цвет цены */
+  font-weight: bold; /* Жирность шрифта */
+  margin: 0; /* Убрать стандартные отступы */
+}
+
+.offerr button {
+  background-color: #ffa500; /* Цвет фона */
+  color: white; /* Цвет текста */
+  border: none;
+  border-radius: 20px; /* Скруглённые края кнопки */
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase; /* Текст в верхнем регистре */
+  font-weight: bold; /* Жирный текст */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень кнопки */
+  transition: background-color 0.3s; /* Плавный переход цвета при наведении */
+}
+
+.offerr button:hover {
+  background-color: #cc8400; /* Темнее цвет фона кнопки при наведении */
+}
+
+
+.autoBlock{
+
+  background-color: #f7f7f7; /* Серый фон для блока */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для блока */
+   /* Ширина блока равна 100% от ширины вьюпорта */
+  margin-left: calc(-50vw + 50%); /* Центрирование блока */
+  padding: 35px; /* Внутренние отступы для блока */
+  box-sizing: border-box; /* Включение паддинга в общую ширину блока */
+  position: relative; /* Для корректного позиционирования */
+  left: 52%; /* Для корректного позиционирования */
+  right: 50%; /* Для корректного позиционирования */
+  transform: translateX(-50%); /* Для корректного позиционирования */
+  line-height: 1.5; /* Высота строки */
+  /* color: #333; */ /* Цвет текста */
+  font-family: 'Montserrat', italic;
+  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
+  width: 109%;
+  z-index: 0; /* Чем больше число, тем выше будет элемент */
 }
 /* Общие стили для слайдера */
 .slider-container {
