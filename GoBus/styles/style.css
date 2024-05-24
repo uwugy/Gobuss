@@ -4,7 +4,11 @@ body {
   padding: 0;
   overflow-x: hidden; /* Предотвращает появление горизонтальной прокрутки */
 }
+html{
 
+scroll-behavior: smooth;
+
+}
 /* Шапка сайта */
 header {
   position: fixed; /* Уже задано, удерживает header на одном месте при прокрутке */
@@ -15,6 +19,7 @@ header {
     padding: 10px 0; /* Внутренний отступ */
     z-index: 1000; /* Высокое значение для наложения поверх других элементов */
 }
+
 ul {
   display: flex; /* Использование флексбокса для выравнивания элементов списка */
   justify-content: space-around; /* Размещение элементов на равном расстоянии друг от друга */
@@ -203,15 +208,14 @@ main {
 
 .button-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* или space-between */
   font-family: 'Montserrat', italic;
-  font-weight: 900; /* Используйте значение веса шрифта, которое вы выбрали */
+  font-weight: 900;
 }
 
 .button-item {
   flex-basis: calc(33.333% - 10px);
-  margin: 5px;
-  
+  margin: 5px 2px; /* Уменьшаем отступы слева и справа */
 }
 
 .search-button {
@@ -227,7 +231,7 @@ main {
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   width: 10%;  /* Ширина кнопки */
-  height: 55px;  /* Высота кнопки */
+  height: 70px;  /* Высота кнопки */
   position: relative;
   left: 25%;
   right: 20%;
@@ -492,6 +496,61 @@ body::-webkit-scrollbar-thumb {
   /* ... остальные стили ... */
   border-radius: 10px; /* Скругление углов изображений */
   display: block; /* Это убирает небольшие отступы вокруг изображений */
+}
+.swiper {
+  width: 30%;
+  height: 30%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.contact-section {
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.contact-section p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.button-container {
+  margin-top: 20px;
+}
+.button-container .circle-button {
+  width: 40px;
+  height: 40px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.circle-button:hover {
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .section-background {font-family: 'Montserrat', italic;

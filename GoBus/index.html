@@ -4,143 +4,175 @@
     <meta charset="UTF-8">
     <title>GoBus</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+   <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
 <body>
 
 <!-- Шапка сайта -->
 <header>
     <nav>
         <!-- Логотип как ссылка на главную страницу -->
-        <a  href="index.html">
+        <a href="index.html">
             <img src="img/GoBus.png" alt="GoBus">
         </a>
-        <ul >
-          <li><a href="#home" class="link">Главная</a></li>
-          <li><a href="#routes" class="link">Маршруты</a></li>
-          <li><a href="#info" class="link">Информация</a></li>
-          <li><a href="#contacts" class="link">Контакты</a></li>
-
-
+        <ul>
+            <li><a href="#home" class="link">Главная</a></li>
+            <li><a href="#routes" class="link">Маршруты</a></li>
+            <li><a href="#info" class="link">Информация</a></li>
+            <li><a href="#contacts" class="link">Контакты</a></li>
         </ul>
-       <!--  <a class="navi" href="#home">Главная</a>
-        <a class="navi" href="#routes">Маршруты</a>
-        <a class="navi" href="#info">Информация</a>
-        <a class="navi" href="#contacts">Контакты</a > -->
         <button class="navi">Позвонить</button>
-      </nav>
+    </nav>
 </header>
 
 <!-- Основной контент -->
 <main>
     <!-- Раздел поиска путешествий -->
     <section class="section-background" id="home">
-      <p class="section-background-text">Пассажирские перевозки</p>
-        <h1 class="section-background-text">Украина - Луганск / Донецк </h1> 
+        <p class="section-background-text">Пассажирские перевозки</p>
+        <h1 class="section-background-text">Украина - Луганск / Донецк</h1>
         <p class="section-background-text">Через Польшу/Беларусь</p>
         <div class="search-bar-container">
-          <input type="text" id="inputA" placeholder="Откуда">
-          <input type="text" id="inputB" placeholder="Куда">
-          <button type="submit" onclick="startSearch()">Найти</button>
-      </div>
+            <input type="text" id="inputA" placeholder="Откуда">
+            <input type="text" id="inputB" placeholder="Куда">
+            <button type="submit" onclick="startSearch()">Найти</button>
+        </div>
     </section>
 
     <!-- Популярные направления -->
     <section class="concha routes-block" id="routes">
-      <h2 class="concha-text">Популярные направления</h2>
-      <!-- Список направлений -->
-      <div class="button-group">
-        <div class="button-item">
-          <button type="button" class="search-button">
-            <span class="route">Донецк - Киев</span>
-            <span class="price">от 300 €</span>
-          </button>
+        <h2 class="concha-text">Популярные направления</h2>
+        <!-- Список направлений -->
+        <div class="button-group">
+            <div class="button-item">
+                <button type="button" class="search-button">
+                    <span class="route">Донецк - Киев</span>
+                    <span class="price">от 300 €</span>
+                </button>
+            </div>
+            <div class="button-item">
+                <button type="button" class="search-button">
+                    <span class="route">Мариуполь - Киев</span>
+                    <span class="price">от 300 €</span>
+                </button>
+            </div>
+            <div class="button-item">
+                <button type="button" class="search-button">
+                    <span class="route">Польша - Донецк</span>
+                    <span class="price">от 250 €</span>
+                </button>
+            </div>
         </div>
-        <div class="button-item">
-          <button type="button" class="search-button">
-            <span class="route">Мариуполь - Киев</span>
-            <span class="price">от 300 €</span>
-          </button>
+        <div class="button-group">
+            <div class="button-item">
+                <button type="button" class="search-button">
+                    <span class="route">Киев - Бердянск</span>
+                    <span class="price">от 350 €</span>
+                </button>
+            </div>
+            <div class="button-item">
+                <button type="button" class="search-button">
+                    <span class="route">Варшава - Минск</span>
+                    <span class="price">от 150 €</span>
+                </button>
+            </div>
+            <div class="button-item">
+                <button type="button" class="search-button">
+                    <span class="route">Донецк - Германия</span>
+                    <span class="price">от 400 €</span>
+                </button>
+            </div>
         </div>
-        <div class="button-item">
-          <button type="button" class="search-button">
-            <span class="route">Польша - Донецк</span>
-            <span class="price">от 250 €</span>
-          </button>
-        </div>
-      </div>
-    
-      <div class="button-group">
-        <div class="button-item">
-          <button type="button" class="search-button">
-            <span class="route">Киев - Бердянск</span>
-            <span class="price">от 350 €</span>
-          </button>
-        </div>
-        <div class="button-item">
-          <button type="button" class="search-button">
-            <span class="route">Варшава - Минск</span>
-            <span class="price">от 150 €</span>
-          </button>
-        </div>
-        <div class="button-item">
-          <button type="button" class="search-button">
-            <span class="route">Донецк - Германия</span>
-            <span class="price">от 400 €</span>
-          </button>
-        </div>
-      </div>
     </section>
-    
+
     <!-- Важное уведомление -->
     <section id="info" class="important-block">
-        <h2 class="important-label" >Важно! </h2>
+        <h2 class="important-label">Важно!</h2>
         <h2 class="important-label-2">Уважаемые пассажиры</h2>
-          <p class="important-label-3">Информируем вас, что перевозки из Украины и Европы в Россию продолжают осуществляться по прежним тарифам. Однако для граждан Украины без паспорта РФ введена дополнительная плата в размере приблизительно 100 евро за перелёт Минск-Шереметьево.
-          Для минимизации ваших расходов на перелёт мы предлагаем следующую схему транспортировки багажа: основной багаж будет отправлен автомобильным транспортом из Минска, а в самолёт вы сможете взять необходимые и ценные вещи весом до 10 кг. По прибытии в аэропорт Шереметьево за вами прибудет автомобиль, который доставит вас вместе с вашим багажем до места назначения.</p>
+        <p class="important-label-3">
+            Информируем вас, что перевозки из Украины и Европы в Россию продолжают осуществляться по прежним тарифам. 
+            Однако для граждан Украины без паспорта РФ введена дополнительная плата в размере приблизительно 100 евро за перелёт Минск-Шереметьево.
+            Для минимизации ваших расходов на перелёт мы предлагаем следующую схему транспортировки багажа: основной багаж будет отправлен автомобильным транспортом из Минска, 
+            а в самолёт вы сможете взять необходимые и ценные вещи весом до 10 кг. По прибытии в аэропорт Шереметьево за вами прибудет автомобиль, который доставит вас вместе с вашим багажем до места назначения.
+        </p>
     </section>
 
     <!-- Информация о транспорте -->
     <div class="container">
-      <!-- Колонка для текста -->
-      <div class="text-column">
-          <h2 class="text-column2">Наш Транспорт</h2>
-          <p class="text-column3">Компания предлагает услуги пассажирских перевозок на микроавтобусах марок Mercedes Sprinter, Renault Trafic и Opel Vivaro, которые оснащены необходимым оборудованием для комфортного перевоза, включая полноценные сидения, внутрисалонный багажник, системы контроля и кондиционирования климата: отопление, дефлекторы, форточки, и розетки для подзарядки мобильных устройств.</p>
-      </div>
-  
-      <!-- Колонка со слайдером -->
-      <div class="slider-column">
-          <!-- Контейнер для слайдера -->
-          <div class="slider-container">
-              <!-- Слайды с изображениями -->
-              <div class="slide">
-                  <img src="img/2Q.png" alt="Описание изображения 1">
-              </div>
-              <!-- ... дополнительные слайды ... -->
-              <div class="slide">
-                  <img src="img/OIP.png" alt="Описание изображения 2">
-              </div>
-              <div class="slide">
-                  <img src="img/OIP1.png" alt="Описание изображения 3">
-              </div>
-              
-              <!-- Кнопки управления -->
-              <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-              <a class="next" onclick="moveSlide(1)">&#10095;</a>
-              <p>   </p>
+        <!-- Колонка для текста -->
+        <div class="text-column">
+            <h2 class="text-column2">Наш Транспорт</h2>
+            <p class="text-column3">
+                Компания предлагает услуги пассажирских перевозок на микроавтобусах марок Mercedes Sprinter, Renault Trafic и Opel Vivaro, 
+                которые оснащены необходимым оборудованием для комфортного перевоза, включая полноценные сидения, внутрисалонный багажник, 
+                системы контроля и кондиционирования климата: отопление, дефлекторы, форточки, и розетки для подзарядки мобильных устройств.
+            </p>
+        </div>
+
+        <!-- Колонка со слайдером -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" ><img src="/GoBus/img/2Q.png"> </div>
+            <div class="swiper-slide"><img src="/GoBus/img/GoBus.png"></div>
+            
           </div>
-      </div>
-  </div>
-  
-  <script src="/script/Sr.js">
-      
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Контактная информация -->
+    <div class="contact-section" id="contacts">
+        <h2>Записаться на рейс:</h2>
+        <p>+38 095 240 40 95</p>
+        <p>+48 452 622 852</p>
+        <p>+7 949 332 6499</p>
+        <div class="button-container">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button"></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button"></a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script> 
+    function startSearch() {
+      const inputA = document.getElementById('inputA').value;
+      const inputB = document.getElementById('inputB').value;
+      const searchParams = new URLSearchParams({ a: inputA, b: inputB });
+      window.location.href = `search.html?${searchParams.toString()}`;
+  }</script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+   var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
-    
-    
+
 </main>
 
 <!-- Подвал сайта -->
