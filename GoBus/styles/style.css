@@ -1,799 +1,673 @@
 /* Основные стили страницы */
 body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Предотвращает появление горизонтальной прокрутки */
+  margin: 0; /* Убираем отступы */
+  padding: 0; /* Убираем внутренние отступы */
+  overflow-x: hidden; /* Предотвращает горизонтальную прокрутку */
 }
-html{
-
-scroll-behavior: smooth;
-
+html {
+  scroll-behavior: smooth; /* Плавная прокрутка */
 }
+
 /* Шапка сайта */
 header {
-  position: fixed; /* Уже задано, удерживает header на одном месте при прокрутке */
-    top: 0; /* Желательно добавить, чтобы явно прижать header к верхнему краю страницы */
-    width: 100%; /* Удерживает header на полной ширине */
-    background-color: #000000; /* Цвет фона */
-    color: white; /* Цвет текста */
-    padding: 10px 0; /* Внутренний отступ */
-    z-index: 1000; /* Высокое значение для наложения поверх других элементов */
+  position: fixed; /* Фиксированное положение */
+  top: 0; /* Прижатие к верху */
+  width: 100%; /* На всю ширину */
+  background-color: #000000; /* Черный фон */
+  color: white; /* Белый текст */
+  padding: 10px 0; /* Внутренние отступы сверху и снизу */
+  z-index: 1000; /* Поверх всех элементов */
 }
 
 ul {
-  display: flex; /* Использование флексбокса для выравнивания элементов списка */
-  justify-content: space-around; /* Размещение элементов на равном расстоянии друг от друга */
-  align-items: center; /* Вертикальное выравнивание элементов по центру */
-  position: static; /* Убираем абсолютное позиционирование */
-  top: auto;
-  left: auto;
-  transform: none;
-  padding: 0;
-  margin: 0;
+  display: flex; /* Горизонтальное выравнивание */
+  justify-content: space-around; /* Распределение элементов */
+  align-items: center; /* Выравнивание по центру */
+  position: static; /* Статичное позиционирование */
+  top: auto; /* Без смещения сверху */
+  left: auto; /* Без смещения слева */
+  transform: none; /* Без трансформации */
+  padding: 0; /* Без внутренних отступов */
+  margin: 0; /* Без внешних отступов */
   list-style: none; /* Убираем маркеры списка */
-  font-family: 'Montserrat', italic;
-  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 350; /* Толщина шрифта */
 }
 
 ul li a {
-  display: block; /* Определяем, что ссылка является блочным элементом */
-  position: relative; /* Устанавливаем относительное позиционирование для ссылок */
-  align-items: center;
-  text-transform: none; /* Преобразуем текст в верхний регистр */
-  margin: -10px 0; /* Внешние отступы для ссылок */
-  padding: 5px 30px; /* Внутренние отступы для ссылок */
-  text-decoration: none; /* Убираем подчеркивание текста ссылок */
-  color: white; /* Задаем цвет текста ссылок */
-  font-family: sans-serif; /* Устанавливаем шрифт для текста ссылок */
-  font-size: 18px; /* Устанавливаем размер шрифта */
-  font-weight: 600; /* Устанавливаем толщину шрифта */
-  transition: 0.1s; /* Определяем переход для изменения свойств */
-  z-index: 1; /* Устанавливаем уровень стека для ссылки */
+  display: block; /* Блочный элемент */
+  position: relative; /* Относительное позиционирование */
+  align-items: center; /* Выравнивание по центру */
+  text-transform: none; /* Без изменения регистра */
+  margin: -10px 0; /* Отступы сверху и снизу */
+  padding: 5px 30px; /* Внутренние отступы */
+  text-decoration: none; /* Без подчеркивания */
+  color: white; /* Белый текст */
+  font-family: sans-serif; /* Шрифт Sans-serif */
+  font-size: 18px; /* Размер текста */
+  font-weight: 600; /* Толщина шрифта */
+  transition: 0.1s; /* Переход 0.1с */
+  z-index: 1; /* Поверх всех элементов */
 }
 
 ul li a:before, ul li a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 0.3s;
-  z-index: -1;
+  content: ""; /* Пустое содержание */
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0; /* Прижатие к левому краю */
+  width: 100%; /* На всю ширину */
+  height: 100%; /* На всю высоту */
+  opacity: 0; /* Прозрачность */
+  transition: 0.3s; /* Переход 0.3с */
+  z-index: -1; /* Под всеми элементами */
 }
 
 ul li a:before {
-  top: 0;
-  border-top: 2px solid #E3730B;
-  border-bottom: 2px solid #E3730B;
-  transform: scaleY(2);
+  top: 0; /* Прижатие к верху */
+  border-top: 2px solid #E3730B; /* Верхняя граница */
+  border-bottom: 2px solid #E3730B; /* Нижняя граница */
+  transform: scaleY(2); /* Масштабирование по вертикали */
 }
 
 ul li a:after {
-  top: 2px;
-  background-color: #E3730B;
-  transform: scaleY(0);
+  top: 2px; /* Смещение сверху */
+  background-color: #E3730B; /* Фон */
+  transform: scaleY(0); /* Масштабирование по вертикали */
 }
 
 ul li a:hover {
-  color: #ffffff;
+  color: #ffffff; /* Цвет текста при наведении */
 }
 
 ul li a:hover:before, ul li a:hover:after {
-  transform: scaleY(1);
-  opacity: 1;
+  transform: scaleY(1); /* Масштабирование по вертикали */
+  opacity: 1; /* Прозрачность */
 }
 
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: flex; /* Горизонтальное выравнивание */
+  justify-content: space-around; /* Распределение элементов */
+  align-items: center; /* Выравнивание по центру */
 }
 
 nav a, nav button {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
+  color: white; /* Белый текст */
+  text-decoration: none; /* Без подчеркивания */
+  padding: 5px 10px; /* Внутренние отступы */
 }
+
 nav button {
-  background-color: #E3730B;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 15px 15px 15px 0;
-}
-.important-label {
-  position: relative; /* Относительное позиционирование для псевдоэлемента */
-  background: linear-gradient(to right, #E3730B, #E3730B); /* Градиент для фона */
-  color: white; /* Цвет текста */
-  font-family: 'Arial', sans-serif; /* Шрифт */
-  padding: 10px 20px; /* Внутренний отступ */
-  padding-right: 30px; /* Больший отступ справа */
-  font-size: 18px; /* Размер шрифта */
-  font-weight: bold; /* Жирность шрифта */
-  display: inline-block; /* Элемент строчный, но позволяет задавать ширину и высоту */
-  border-top-right-radius: 20px; /* Скругление верхнего правого угла */
-  border-bottom-right-radius: 20px; /* Скругление нижнего правого угла */
- /*  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); */ /* Тень для объемности */
- position: relative;
-  left: 4%;
-  /* right: 20%; */
-  align-items: center;
-}
-.important-label-2
-{
-  position: relative;
-  left: 5%;
-  /* right: 20%; */
-  align-items: center;
-}
-.important-label-3
-{
-  position: relative;
-  left: 5%;
-  /* right: ; */
-  max-width: 92%;
-  align-items: center;
-}
-.text-column2
-{
-  position: relative;
-  left: 10%;
-  /* right: ; */
-  max-width: 92%;
-  align-items: center;
-}
-.text-column3
-{
-  position: relative;
-  left: 10%;
-  /* right: ; */
-  max-width: 92%;
-  align-items: center;
-}
-.important-label::before {
-  content: ''; /* Псевдоэлементы требуют свойства content */
-  position: absolute; /* Абсолютное позиционирование относительно родителя */
-  left: -260px; /* Смещение влево */
-  top: 0; /* Смещение сверху */
-  width: 200px; /* Ширина "хвоста" */
-  height: 100%; /* Высота равна высоте основного элемента */
-  background: #E3730B; /* Цвет фона "хвоста", чтобы совпадал с начальным цветом градиента */
-  padding-left: 40px; /* Увеличенный паддинг слева */
-  padding-right: 40px; /* Увеличенный паддинг справа */
-  
+  background-color: #E3730B; /* Оранжевый фон */
+  border: none; /* Без границы */
+  padding: 10px 15px; /* Внутренние отступы */
+  cursor: pointer; /* Курсор-указатель */
+  border-radius: 15px 15px 15px 0; /* Скругленные углы */
 }
 
+/* Важное уведомление */
 .important-block {
-  background-color: #f2f2f2; /* Серый фон для блока */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для блока */
-  width: 109%; /* Ширина блока равна 100% от ширины вьюпорта */
-  margin-left: calc(-50vw + 50%); /* Центрирование блока */
-  padding: 35px; /* Внутренние отступы для блока */
-  box-sizing: border-box; /* Включение паддинга в общую ширину блока */
-  position: relative; /* Для корректного позиционирования */
-  left: 52%; /* Для корректного позиционирования */
-  right: 50%; /* Для корректного позиционирования */
-  transform: translateX(-50%); /* Для корректного позиционирования */
+  background-color: #f2f2f2; /* Серый фон */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+  width: 109%; /* На 109% ширины */
+  margin-left: calc(-50vw + 50%); /* Центрирование */
+  padding: 35px; /* Внутренние отступы */
+  box-sizing: border-box; /* Включение паддинга */
+  position: relative; /* Относительное позиционирование */
+  left: 52%; /* Смещение слева */
+  right: 50%; /* Смещение справа */
+  transform: translateX(-50%); /* Трансформация по горизонтали */
   line-height: 1.5; /* Высота строки */
-  color: #333; /* Цвет текста */
-  font-family: 'Montserrat', italic;
-  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
-  z-index: 9;
+  color: #333; /* Темно-серый текст */
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 350; /* Толщина шрифта */
+  z-index: 9; /* Поверх всех элементов */
 }
-.routes-block
-{
-  background-color: #efeeee; /* Серый фон для блока */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень для блока */
-   /* Ширина блока равна 100% от ширины вьюпорта */
-  margin-left: calc(-50vw + 50%); /* Центрирование блока */
-  padding: 35px; /* Внутренние отступы для блока */
-  box-sizing: border-box; /* Включение паддинга в общую ширину блока */
-  position: relative; /* Для корректного позиционирования */
-  left: 52%; /* Для корректного позиционирования */
-  right: 50%; /* Для корректного позиционирования */
-  transform: translateX(-50%); /* Для корректного позиционирования */
+
+.important-label {
+  position: relative; /* Относительное позиционирование */
+  background: linear-gradient(to right, #E3730B, #E3730B); /* Градиент фона */
+  color: white; /* Белый текст */
+  font-family: 'Arial', sans-serif; /* Шрифт Arial */
+  padding: 10px 20px; /* Внутренние отступы */
+  padding-right: 30px; /* Дополнительный отступ справа */
+  font-size: 18px; /* Размер шрифта */
+  font-weight: bold; /* Жирный текст */
+  display: inline-block; /* Строчный элемент */
+  border-top-right-radius: 20px; /* Скругление углов */
+  border-bottom-right-radius: 20px; /* Скругление углов */
+  position: relative;
+  left: 4%; /* Смещение слева */
+  align-items: center; /* Выравнивание по центру */
+}
+
+.important-label::before {
+  content: ''; /* Пустое содержание */
+  position: absolute; /* Абсолютное позиционирование */
+  left: -260px; /* Смещение слева */
+  top: 0; /* Прижатие к верху */
+  width: 200px; /* Ширина элемента */
+  height: 100%; /* Высота элемента */
+  background: #E3730B; /* Фон */
+  padding-left: 40px; /* Внутренний отступ слева */
+  padding-right: 40px; /* Внутренний отступ справа */
+}
+
+.important-label-2 {
+  position: relative; /* Относительное позиционирование */
+  left: 5%; /* Смещение слева */
+  align-items: center; /* Выравнивание по центру */
+}
+
+.important-label-3 {
+  position: relative; /* Относительное позиционирование */
+  left: 5%; /* Смещение слева */
+  max-width: 92%; /* Максимальная ширина */
+  align-items: center; /* Выравнивание по центру */
+}
+
+/* Информация о транспорте */
+.autoBlock {
+  background-color: #f7f7f7; /* Серый фон */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень */
+  margin-left: calc(-50vw + 50%); /* Центрирование */
+  padding: 35px; /* Внутренние отступы */
+  box-sizing: border-box; /* Включение паддинга */
+  position: relative; /* Относительное позиционирование */
+  left: 52%; /* Смещение слева */
+  right: 50%; /* Смещение справа */
+  transform: translateX(-50%); /* Трансформация по горизонтали */
   line-height: 1.5; /* Высота строки */
-  /* color: #333; */ /* Цвет текста */
-  font-family: 'Montserrat', italic;
-  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
-  width: 109%;
-  z-index: 10; /* Чем больше число, тем выше будет элемент */
-  
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 350; /* Толщина шрифта */
+  width: 109%; /* На 109% ширины */
+  z-index: 0; /* Под всеми элементами */
 }
 
-
-/* Основной контент */
-main {
-  padding: 30px;
+.container {
+  border-radius: 10px; /* Скругленные углы */
+  overflow: hidden; /* Скрытие переполнения */
+  display: flex; /* Горизонтальное выравнивание */
+  justify-content: space-between; /* Распределение элементов */
+  align-items: flex-start; /* Выравнивание по верхнему краю */
 }
 
-.button-group {
-  display: flex;
-  justify-content: flex-end; /* или space-between */
-  font-family: 'Montserrat', italic;
-  font-weight: 900;
+.text-column {
+  flex: 1; /* Заполнение доступного пространства */
+  padding-right: 20px; /* Отступ справа */
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 350; /* Толщина шрифта */
 }
 
-.button-item {
-  flex-basis: calc(33.333% - 10px);
-  margin: 5px 2px; /* Уменьшаем отступы слева и справа */
+.text-column2 {
+  position: relative; /* Относительное позиционирование */
+  left: 10%; /* Смещение слева */
+  max-width: 92%; /* Максимальная ширина */
+  align-items: center; /* Выравнивание по центру */
 }
 
-.search-button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  border: 1px solid #ddd;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
-  width: 10%;  /* Ширина кнопки */
-  height: 70px;  /* Высота кнопки */
-  position: relative;
-  left: 25%;
-  right: 20%;
-  align-items: center;
-  width: 50%;
+.text-column3 {
+  position: relative; /* Относительное позиционирование */
+  left: 10%; /* Смещение слева */
+  max-width: 92%; /* Максимальная ширина */
+  align-items: center; /* Выравнивание по центру */
 }
 
-.search-button:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.slider-column {
+  top: 23px; /* Смещение сверху */
+  left: 60px; /* Смещение слева */
+  flex-basis: 50%; /* Начальная ширина */
+  flex-shrink: 0; /* Предотвращение сжатия */
 }
 
-.route, .price {
-  color: #333;
-  margin-bottom: 8px;
+.slider-container {
+  position: relative; /* Относительное позиционирование */
+  width: 45%; /* Ширина контейнера */
+  margin: auto; /* Центрирование */
+  overflow: hidden; /* Скрытие переполнения */
+  top: 10px; /* Смещение сверху */
 }
 
- h2 {
-  color: #333;
-  flex-basis: 50%;
-  left: 10px;
-  
-}
-h1 {
-  color: #ffffff;
-  position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
-  top: 50px;
-  left: 50px; /* Смещаем на 50% ширины влево */
-  right: 50px; /* Смещаем на 50% ширины вправо */
-  
-}
-.concha-text{
-  position: relative;
-top: 0;
-
-left: 8%; /* Для корректного позиционирования */
-right: 50%; /* Для корректного позиционирования */
-font-family:'Montserrat', italic;
-  font-weight: 750; /* Используйте значение веса шрифта, которое вы выбрали */
+.slide {
+  display: none; /* Скрытие слайдов */
+  width: 100%; /* На всю ширину */
+  border-radius: 10px; /* Скругленные углы */
 }
 
-@media screen and (max-width :765px){
-  
+.slide img {
+  width: 100%; /* На всю ширину */
+  border-radius: 10px; /* Скругленные углы */
+  display: block; /* Блочный элемент */
+}
 
+.prev, .next {
+  cursor: pointer; /* Курсор-указатель */
+  position: absolute; /* Абсолютное позиционирование */
+  top: 50%; /* Смещение сверху */
+  width: auto; /* Автоматическая ширина */
+  padding: 16px; /* Внутренние отступы */
+  margin-top: -22px; /* Смещение сверху */
+  color: white; /* Белый текст */
+  font-weight: bold; /* Жирный текст */
+  font-size: 18px; /* Размер текста */
+  transition: 0.6s ease; /* Плавный переход */
+  border-radius: 0 3px 3px 0; /* Скругленные углы */
+  user-select: none; /* Запрет выделения текста */
+}
+
+.next {
+  right: 0; /* Смещение справа */
+  border-radius: 3px 0 0 3px; /* Скругленные углы */
+}
+
+.prev {
+  left: 0; /* Смещение слева */
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8); /* Фон при наведении */
+}
+
+.slide:first-child {
+  display: block; /* Отображение первого слайда */
+}
+
+.swiper {
+  width: 30%; /* Ширина слайдера */
+  height: 30%; /* Высота слайдера */
+  margin-left: auto; /* Смещение слева */
+  margin-right: auto; /* Смещение справа */
+}
+
+.swiper-slide {
+  text-align: center; /* Выравнивание по центру */
+  font-size: 18px; /* Размер текста */
+  background: #fff; /* Белый фон */
+  display: flex; /* Горизонтальное выравнивание */
+  justify-content: center; /* Центрирование элементов */
+  align-items: center; /* Выравнивание по центру */
+}
+
+.swiper-slide img {
+  display: block; /* Блочный элемент */
+  width: 100%; /* На всю ширину */
+  height: 100%; /* На всю высоту */
+  object-fit: cover; /* Обрезка изображения */
+}
+
+/* Поисковая строка */
+.section-background {
+  background: url('/GoBus/image/photo_2024-04-14_23-33-25.jpg') no-repeat center center; /* Фон */
+  background-size: cover; /* Масштабирование фона */
+  width: 100vw; /* На всю ширину экрана */
+  min-height: 400px; /* Минимальная высота */
+  position: relative; /* Относительное позиционирование */
+  left: 50%; /* Смещение слева */
+  right: 50%; /* Смещение справа */
+  transform: translateX(-50%); /* Трансформация по горизонтали */
+}
+
+.section-background-text {
+  position: relative; /* Относительное позиционирование */
+  top: 80px; /* Смещение сверху */
+  color: #ccc; /* Цвет текста */
+  left: 12%; /* Смещение слева */
+  right: 50%; /* Смещение справа */
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 750; /* Толщина шрифта */
+}
+
+.search-bar-container {
+  max-width: 1000px; /* Максимальная ширина */
+  margin: 0 auto; /* Центрирование */
+  background-color: #fff; /* Белый фон */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+  border-radius: 5px; /* Скругленные углы */
+  overflow: hidden; /* Скрытие переполнения */
+  display: flex; /* Горизонтальное выравнивание */
+  align-items: center; /* Выравнивание по центру */
+  position: relative; /* Относительное позиционирование */
+  top: 20px; /* Смещение сверху */
+  left: 20px; /* Смещение слева */
+  right: 50px; /* Смещение справа */
+}
+
+@media screen and (max-width: 765px) {
   input[type="text"], button[type="submit"] {
-    width: 100%;
-    padding: 15px;
-    margin: 0px 0;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    box-sizing: border-box;
-  
- }
+    width: 100%; /* На всю ширину */
+    padding: 15px; /* Внутренние отступы */
+    margin: 0; /* Без отступов */
+    border: 1px solid #a19f9f; /* Серая граница */
+    border-radius: 15px; /* Скругленные углы */
+    box-sizing: border-box; /* Включение паддинга */
+  }
 }
-@media screen and (min-width :766px){
-  
 
+@media screen and (min-width: 766px) {
   input[type="text"], button[type="submit"] {
-    width: 100%;
-    padding: 15px;
-    margin: 0px 0;
-    border: 1px solid #ccc;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    box-sizing: border-box;
-  
+    width: 100%; /* На всю ширину */
+    padding: 15px; /* Внутренние отступы */
+    margin: 0; /* Без отступов */
+    border: 1px solid #cccccc; /* Серая граница */
+    border-top-right-radius: 15px; /* Скругление сверху справа */
+    border-bottom-right-radius: 15px; /* Скругление снизу справа */
+    box-sizing: border-box; /* Включение паддинга */
+  }
 }
+
+@media screen and (min-width: 769px) {
+  .search-bar-container {
+    max-width: 80%; /* Максимальная ширина */
+    margin: 0 auto; /* Центрирование */
+    background-color: #ffffff; /* Белый фон */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+    border-radius: 15px; /* Скругленные углы */
+    overflow: hidden; /* Скрытие переполнения */
+    display: flex; /* Горизонтальное выравнивание */
+    align-items: center; /* Выравнивание по центру */
+    position: relative; /* Относительное позиционирование */
+    top: 200px; /* Смещение сверху */
+    left: center; /* Смещение слева */
+    right: center; /* Смещение справа */
+  }
+
+  .search-bar-container input[type="text"], .search-bar-container button {
+    border: none; /* Без границы */
+    padding: 10px; /* Внутренние отступы */
+    outline: none; /* Без контура */
+  }
 }
-/* Стили текстовых полей и кнопок */
+
+@media screen and (max-width: 768px) {
+  .search-bar-container {
+    position: relative; /* Относительное позиционирование */
+    top: 160px; /* Смещение сверху */
+    left: 50px; /* Смещение слева */
+    right: 50px; /* Смещение справа */
+    display: flex; /* Горизонтальное выравнивание */
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: flex-start; /* Выравнивание по началу */
+    width: 100%; /* На всю ширину */
+  }
+
+  .search-bar-container input[type="text"], .search-bar-container button {
+    border: 1px solid #cccccc; /* Серая граница */
+    padding: 6px; /* Внутренние отступы */
+    margin-bottom: 5px; /* Отступ снизу */
+    border-radius: 4px; /* Скругленные углы */
+    width: 80%; /* На 80% ширины */
+    box-sizing: border-box; /* Включение паддинга */
+  }
+}
+
 input[type="text"], button[type="submit"] {
-  width: 100%;
-  padding: 15px;
-  margin: 0px 0;
-  border: 1px solid #ccc;
-  /* border-radius: 5px; */
-  box-sizing: border-box;
+  width: 100%; /* На всю ширину */
+  padding: 15px; /* Внутренние отступы */
+  margin: 0; /* Без отступов */
+  border: 1px solid #ffffff; /* Белая граница */
+  box-sizing: border-box; /* Включение паддинга */
 }
 
 button[type="submit"] {
-  background-color: #E3730B;
-  color: white;
-  border: none;
-  cursor: pointer;
+  background-color: #E3730B; /* Оранжевый фон */
+  color: white; /* Белый текст */
+  border: none; /* Без границы */
+  cursor: pointer; /* Курсор-указатель */
+}
+
+.details {
+  display: none; /* Скрытие элемента */
+  text-align: left; /* Выравнивание текста слева */
+  border-top: 1px solid #ddd; /* Верхняя граница */
+  padding-top: 20px; /* Внутренний отступ сверху */
+}
+
+.details-btn {
+  background-color: orange; /* Оранжевый фон */
+  color: white; /* Белый текст */
+  border: none; /* Без границы */
+  padding: 10px 20px; /* Внутренние отступы */
+  cursor: pointer; /* Курсор-указатель */
+  border-radius: 5px; /* Скругленные углы */
+  margin-top: 20px; /* Внешний отступ сверху */
+}
+
+/* Популярные направления */
+.routes-block {
+  background-color: #efeeee; /* Серый фон */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень */
+  margin-left: calc(-50vw + 50%); /* Центрирование */
+  padding: 35px; /* Внутренние отступы */
+  box-sizing: border-box; /* Включение паддинга */
+  position: relative; /* Относительное позиционирование */
+  left: 52%; /* Смещение слева */
+  right: 50%; /* Смещение справа */
+  transform: translateX(-50%); /* Трансформация по горизонтали */
+  line-height: 1.5; /* Высота строки */
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 350; /* Толщина шрифта */
+  width: 109%; /* На 109% ширины */
+  z-index: 10; /* Поверх всех элементов */
+}
+
+.concha-text {
+  position: relative; /* Относительное позиционирование */
+  top: 0; /* Прижатие к верху */
+  left: 8%; /* Смещение слева */
+  right: 50%; /* Смещение справа */
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 750; /* Толщина шрифта */
+}
+
+.button-group {
+  display: flex; /* Горизонтальное выравнивание */
+  justify-content: flex-end; /* Выравнивание справа */
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 900; /* Толщина шрифта */
+}
+
+.button-item {
+  flex-basis: calc(33.333% - 10px); /* Начальная ширина */
+  margin: 5px 2px; /* Внешние отступы */
+}
+
+.search-button {
+  display: flex; /* Горизонтальное выравнивание */
+  flex-direction: column; /* Вертикальное расположение */
+  align-items: center; /* Выравнивание по центру */
+  justify-content: center; /* Центрирование */
+  padding: 15px; /* Внутренние отступы */
+  border: 1px solid #ddd; /* Серая граница */
+  background-color: #fff; /* Белый фон */
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+  cursor: pointer; /* Курсор-указатель */
+  transition: box-shadow 0.3s ease; /* Плавный переход */
+  width: 10%; /* Ширина кнопки */
+  height: 70px; /* Высота кнопки */
+  position: relative; /* Относительное позиционирование */
+  left: 25%; /* Смещение слева */
+  right: 20%; /* Смещение справа */
+  align-items: center; /* Выравнивание по центру */
+  width: 50%; /* Ширина кнопки */
+}
+
+.search-button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+.route, .price {
+  color: #333; /* Цвет текста */
+  margin-bottom: 8px; /* Внешний отступ снизу */
+}
+
+/* Поисковые результаты */
+.searchResultsBlock {
+  background-color: #e2e2e2; /* Серый фон */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень */
+  margin-left: calc(-50vw + 50%); /* Центрирование */
+  padding: 35px; /* Внутренние отступы */
+  box-sizing: border-box; /* Включение паддинга */
+  position: relative; /* Относительное позиционирование */
+  left: 52%; /* Смещение слева */
+  right: 50%; /* Смещение справа */
+  transform: translateX(-50%); /* Трансформация по горизонтали */
+  line-height: 1.5; /* Высота строки */
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 500; /* Толщина шрифта */
+  width: 109%; /* На 109% ширины */
+  z-index: 11; /* Поверх всех элементов */
+}
+
+.no-route-found {
+  color: #E3730B; /* Цвет текста */
+  display: flex; /* Горизонтальное выравнивание */
+  justify-content: center; /* Центрирование */
+  font-family: 'Montserrat', Medium ;/* Шрифт Montserrat*/
+  font-weight: 500;
+  font-size: 24px; /* Размер текста */
+}
+
+.offer, .offerr {
+  background-color: #fff; /* Белый фон */
+  border: 1px solid #ccc; /* Серая граница */
+  border-radius: 10px; /* Скругленные углы */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+  display: flex; /* Горизонтальное выравнивание */
+  flex-direction: column; /* Вертикальное расположение */
+  padding: 20px; /* Внутренние отступы */
+  margin: 20px auto; /* Внешние отступы */
+  max-width: 960px; /* Максимальная ширина */
+  width: 1000%; /* Ширина */
+}
+
+.offer-header, .offerr-header {
+  display: flex; /* Горизонтальное выравнивание */
+  align-items: center; /* Выравнивание по центру */
+  justify-content: space-between; /* Распределение элементов */
+  margin-bottom: 20px; /* Внешний отступ снизу */
+}
+
+.offer-icon, .dropdown-icon, .offerr-icon {
+  margin-right: 10px; /* Внешний отступ справа */
+}
+
+.route-details .city, .offerr .route-details .city {
+  display: flex; /* Горизонтальное выравнивание */
+  flex-direction: column; /* Вертикальное расположение */
+}
+
+.city > p:first-child {
+  font-weight: bold; /* Жирный текст */
+}
+
+.city > p:last-child {
+  color: #666; /* Серый текст */
+  font-size: 0.9em; /* Размер текста */
+}
+
+.offer .price-details, .offerr .price-details {
+  display: flex; /* Горизонтальное выравнивание */
+  align-items: center; /* Выравнивание по центру */
+  justify-content: space-between; /* Распределение элементов */
+}
+
+.price-details p {
+  font-size: 24px; /* Размер текста */
+  color: #ffa500; /* Оранжевый текст */
+  font-weight: bold; /* Жирный текст */
+  margin: 0; /* Без внешних отступов */
+}
+
+.offer button, .offerr button {
+  background-color: #ffa500; /* Оранжевый фон */
+  color: white; /* Белый текст */
+  border: none; /* Без границы */
+  border-radius: 20px; /* Скругленные углы */
+  padding: 10px 20px; /* Внутренние отступы */
+  cursor: pointer; /* Курсор-указатель */
+  text-transform: uppercase; /* Прописные буквы */
+  font-weight: bold; /* Жирный текст */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень */
+  transition: background-color 0.3s; /* Плавный переход */
+}
+
+.offer button:hover, .offerr button:hover {
+  background-color: #cc8400; /* Оранжевый фон при наведении */
+}
+
+/* Контактная информация */
+.contact-section {
+  text-align: center; /* Выравнивание по центру */
+}
+
+.contact-section h2 {
+  font-size: 24px; /* Размер текста */
+  margin-bottom: 20px; /* Внешний отступ снизу */
+}
+
+.contact-section p {
+  font-size: 18px; /* Размер текста */
+  margin: 5px 0; /* Внешние отступы */
+}
+
+.button-container {
+  margin-top: 20px; /* Внешний отступ сверху */
+}
+
+.circle-button {
+  display: inline-block; /* Строчный элемент */
+ 
+  border-radius: 50%; /* Круглая форма */
+  background-size: cover; /* Масштабирование фона */
+  background-position: center; /* Центровка фона */
+  text-decoration: none; /* Без подчеркивания */
+  margin: 5px; /* Внешние отступы */
+}
+
+.telegram {
+  background-image: url('/icon_сontact/telegram.png'); /* Фон Telegram */
+  width: 45px; /* Ширина кнопки */
+  height: 45px; /* Высота кнопки */
+}
+
+.viber {
+  background-image: url('/icon_сontact/viber.png'); /* Фон Viber */
+  width: 60px; /* Ширина кнопки */
+  height: 60px; /* Высота кнопки */
+}
+
+.whatsapp {
+  background-image: url('/icon_сontact/whatsapp.png'); /* Фон WhatsApp */
+  width: 52px; /* Ширина кнопки */
+  height: 52px; /* Высота кнопки */
+}
+
+.circle-button:hover {
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
 }
 
 /* Подвал сайта */
 footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000000;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  font-family:'Montserrat', italic;
-  font-weight: 200; /* Используйте значение веса шрифта, которое вы выбрали */
+  left: 0; /* Прижатие слева */
+  bottom: 0; /* Прижатие к низу */
+  width: 100%; /* На всю ширину */
+  background-color: #000000; /* Черный фон */
+  color: white; /* Белый текст */
+  text-align: center; /* Выравнивание по центру */
+  padding: 10px 0; /* Внутренние отступы */
+  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-weight: 200; /* Толщина шрифта */
 }
 
 /* Стилизация скроллбара */
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 10px; /* Ширина скроллбара */
 }
 
 body::-webkit-scrollbar-track {
-  background-color: #fff;
+  background-color: #fff; /* Белый фон */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #E3730B;
-  border-radius: 15px;
-}
-
-.section-background {
-  background: url('/GoBus/image/photo_2024-04-14_23-33-25.jpg') no-repeat center center;
-    background-size: cover;
-    width: 100vw; /* Ширина на весь видимый экран */
-    min-height: 400px; /* Минимальная высота, чтобы покрыть весь видимый экран по высоте */
-    position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
-    left: 50%; /* Смещаем на 50% ширины влево */
-    right: 50%; /* Смещаем на 50% ширины вправо */
-    transform: translateX(-50%); /* Сдвигаем обратно на 50% влево, чтобы центрировать */
-}
-
-
-@media screen and (min-width: 769px) {
-  .search-bar-container {
-      max-width: 80%; /* Максимальная ширина контейнера */
-      margin: 0 auto; /* Автоматический отступ справа и слева для центрирования */
-      background-color: #fff; /* Белый фоновый цвет */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта возвышения */
-      border-radius: 15px; /* Закругленные углы */
-      overflow: hidden; /* Скрывает любое содержимое, выходящее за пределы границ */
-      display: flex; /* Включает flexbox для дочерних элементов */
-      align-items: center; /* Выравнивание дочерних элементов по центру по вертикали */
-      position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
-    top: 200px;
-    left: center; /* Смещаем на 50% ширины влево */
-    right: center; /* Смещаем на 50% ширины вправо */
-      
-  }
-
-  /* Стили для поля ввода и кнопки внутри .search-bar-container */
-  .search-bar-container input[type="text"], .search-bar-container button {
-      border: none; /* Отсутствие рамки */
-      padding: 10px; /* Внутренний отступ */
-      outline: none; /* Отсутствие контура при фокусе */
-  }
-}
-
-/* Применяется для экранов с максимальной шириной 1000 пикселей */
-@media screen and (max-width: 768px) {
-  .search-bar-container {
-    position: relative; /* Если необходимо, чтобы следующие элементы располагались после фона */
-    top: 160px;
-    left: 50px; /* Смещаем на 50% ширины влево */
-    right: 50px; /* Смещаем на 50% ширины вправо */
-      display: flex; /* Включает flexbox */
-      flex-direction: column; /* Дочерние элементы располагаются вертикально */
-      align-items: flex-start; /* Выравнивание дочерних элементов по началу контейнера */
-      /* padding: 100px; */ /* Внутренний отступ со всех сторон */
-      width: 100%; /* Ширина контейнера равна 100% от родительского элемента */
-  }
-
-  /* Стили для поля ввода и кнопки, когда ширина экрана меньше или равна 1000 пикселей */
-  .search-bar-container input[type="text"], .search-bar-container button {
-      border: 1px solid #ccc; /* Серая рамка толщиной 1 пиксель */
-      padding: 6px; /* Внутренний отступ */
-      margin-bottom: 5px; /* Отступ снизу */
-      border-radius: 4px; /* Закругленные углы */
-      width: 80%; /* Ширина элементов равна 80% от ширины контейнера */
-      box-sizing: border-box; /* Размеры элементов включают padding и border */
-  }
-}
-.details {
-  display: none;
-  text-align: left;
-  border-top: 1px solid #ddd;
-  padding-top: 20px;
-  
-}
-
-.details-btn {
-  background-color: orange;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-.searchResultsBlock{
-
-  background-color: #e2e2e2; /* Серый фон для блока */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для блока */
-   /* Ширина блока равна 100% от ширины вьюпорта */
-  margin-left: calc(-50vw + 50%); /* Центрирование блока */
-  padding: 35px; /* Внутренние отступы для блока */
-  box-sizing: border-box; /* Включение паддинга в общую ширину блока */
-  position: relative; /* Для корректного позиционирования */
-  left: 52%; /* Для корректного позиционирования */
-  right: 50%; /* Для корректного позиционирования */
-  transform: translateX(-50%); /* Для корректного позиционирования */
-  line-height: 1.5; /* Высота строки */
-  /* color: #333; */ /* Цвет текста */
-  font-family: 'Montserrat', italic;
-  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
-  width: 109%;
-  z-index: 11; /* Чем больше число, тем выше будет элемент */
-
-
-}
-.no-route-found {
-  color: rgb(78, 255, 7);
-  display: flex;
-  justify-content:center; /* или space-between */
-  font-family: 'Montserrat', italic;
-  
-   font-size: 40px;
- }
-/* Стили для раздела с предложениями */
-.offer {
-  background-color: #fff; /* Белый фон карточек */
-  border: 1px solid #ccc; /* Серая граница */
-  border-radius: 10px; /* Скруглённые углы */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень карточки */
-  display: flex;
-  flex-direction: column; /* Вертикальное расположение элементов */
-  padding: 20px;
-  margin: 20px auto; /* Отступ сверху и снизу, и автоматические отступы по бокам для центрирования */
-  max-width: 960px; /* Максимальная ширина карточки */
-  width:1000%;
-  /* position:fixed;
-  top: 20%;
-  left: 20%; right: 20%; */
-}
-
-.offer-header {
-  display: flex;
-  align-items: center; /* Выравнивание иконки и заголовка по центру */
-  justify-content: space-between; /* Распределение пространства между элементами */
-  margin-bottom: 20px; /* Отступ под заголовком */
-  
-}
-
-.offer-icon, .dropdown-icon {
-  margin-right: 10px; /* Отступ справа для иконок */
-}
-
-.offer .route-details {
-  display: flex;
-  justify-content: space-between; /* Распределение содержимого по горизонтали */
-  margin-bottom: 20px; /* Отступ между блоками маршрута и ценой */
-}
-
-.route-details .city {
-  display: flex;
-  flex-direction: column;
-}
-
-.city > p:first-child {
-  font-weight: bold; /* Жирный шрифт для названия города */
-}
-
-.city > p:last-child {
-  color: #666; /* Серый цвет для дополнительной информации */
-  font-size: 0.9em; /* Меньший размер шрифта */
-}
-
-.offer .price-details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Распределение цены и кнопки */
-}
-
-
-.price-details p {
-  font-size: 24px; /* Размер шрифта для цены */
-  color: #ffa500; /* Цвет цены */
-  font-weight: bold; /* Жирность шрифта */
-  margin: 0; /* Убрать стандартные отступы */
-}
-
-.offer button {
-  background-color: #ffa500; /* Цвет фона */
-  color: white; /* Цвет текста */
-  border: none;
-  border-radius: 20px; /* Скруглённые края кнопки */
-  padding: 10px 20px;
-  cursor: pointer;
-  text-transform: uppercase; /* Текст в верхнем регистре */
-  font-weight: bold; /* Жирный текст */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень кнопки */
-  transition: background-color 0.3s; /* Плавный переход цвета при наведении */
-}
-
-.offer button:hover {
-  background-color: #cc8400; /* Темнее цвет фона кнопки при наведении */
-}
-
-.offerr {
-  background-color: #fff; /* Белый фон карточек */
-  border: 1px solid #ccc; /* Серая граница */
-  border-radius: 10px; /* Скруглённые углы */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень карточки */
-  display: flex;
-  flex-direction: column; /* Вертикальное расположение элементов */
-  padding: 20px;
-  margin: 0px auto; /* Отступ сверху и снизу, и автоматические отступы по бокам для центрирования */
-  max-width: 960px; /* Максимальная ширина карточки */
-  width:1000%;
-  /* position:fixed;
-  top: 60%;
-  left: 20%; right: 20%; */
-}
-.offerr-header {
-  display: flex;
-  align-items: center; /* Выравнивание иконки и заголовка по центру */
-  justify-content: space-between; /* Распределение пространства между элементами */
-  margin-bottom: 20px; /* Отступ под заголовком */
-  
-}
-
-.offerr-icon, .dropdown-icon {
-  margin-right: 10px; /* Отступ справа для иконок */
-}
-
-.offerr .route-details {
-  display: flex;
-  justify-content: space-between; /* Распределение содержимого по горизонтали */
-  margin-bottom: 20px; /* Отступ между блоками маршрута и ценой */
-}
-
-.route-details .city {
-  display: flex;
-  flex-direction: column;
-}
-
-.city > p:first-child {
-  font-weight: bold; /* Жирный шрифт для названия города */
-}
-
-.city > p:last-child {
-  color: #666; /* Серый цвет для дополнительной информации */
-  font-size: 0.9em; /* Меньший размер шрифта */
-}
-
-.offerr .price-details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* Распределение цены и кнопки */
-}
-
-
-.price-details p {
-  font-size: 24px; /* Размер шрифта для цены */
-  color: #ffa500; /* Цвет цены */
-  font-weight: bold; /* Жирность шрифта */
-  margin: 0; /* Убрать стандартные отступы */
-}
-
-.offerr button {
-  background-color: #ffa500; /* Цвет фона */
-  color: white; /* Цвет текста */
-  border: none;
-  border-radius: 20px; /* Скруглённые края кнопки */
-  padding: 10px 20px;
-  cursor: pointer;
-  text-transform: uppercase; /* Текст в верхнем регистре */
-  font-weight: bold; /* Жирный текст */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень кнопки */
-  transition: background-color 0.3s; /* Плавный переход цвета при наведении */
-}
-
-.offerr button:hover {
-  background-color: #cc8400; /* Темнее цвет фона кнопки при наведении */
-}
-
-
-.autoBlock{
-
-  background-color: #f7f7f7; /* Серый фон для блока */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Тень для блока */
-   /* Ширина блока равна 100% от ширины вьюпорта */
-  margin-left: calc(-50vw + 50%); /* Центрирование блока */
-  padding: 35px; /* Внутренние отступы для блока */
-  box-sizing: border-box; /* Включение паддинга в общую ширину блока */
-  position: relative; /* Для корректного позиционирования */
-  left: 52%; /* Для корректного позиционирования */
-  right: 50%; /* Для корректного позиционирования */
-  transform: translateX(-50%); /* Для корректного позиционирования */
-  line-height: 1.5; /* Высота строки */
-  /* color: #333; */ /* Цвет текста */
-  font-family: 'Montserrat', italic;
-  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
-  width: 109%;
-  z-index: 0; /* Чем больше число, тем выше будет элемент */
-}
-/* Общие стили для слайдера */
-.slider-container {
-  position: relative;
-  width: 45%; /* Задайте ширину по вашему вкусу */
-  margin: auto; /* Центрирование слайдера на странице */
-  overflow: hidden; /* Скрытие неактивных слайдов */
-  top: 10px;
-}
-
-/* Стили для каждого слайда */
-.slide {
-  display: none; /* Сначала скрыть все слайды */
-  width: 100%; /* Ширина каждого слайда должна соответствовать ширине контейнера */
-}
-
-/* Стилизация изображений внутри слайдов */
-.slide img {
-  width: 100%; /* Ширина изображения должна соответствовать ширине слайда */
-  display: block; /* Убираем стандартные отступы для изображений */
-}
-
-/* Стили для кнопок управления */
-.prev, .next {
-  cursor: pointer; /* Изменение курсора при наведении */
-  position: absolute; /* Позиционирование поверх слайдов */
-  top: 50%; /* Выравнивание по вертикали */
-  width: auto; /* Автоматическая ширина кнопок */
-  padding: 16px; /* Паддинг для кнопок */
-  margin-top: -22px; /* Смещение для центрирования кнопок */
-  color: white; /* Цвет стрелок */
-  font-weight: bold; /* Жирность стрелок */
-  font-size: 18px; /* Размер шрифта стрелок */
-  transition: 0.6s ease; /* Плавность перехода */
-  border-radius: 0 3px 3px 0; /* Скругление углов для левой кнопки */
-  user-select: none; /* Запрет выделения текста */
-}
-
-/* Стили для кнопки "Следующий" */
-.next {
-  right: 0; /* Позиционирование с правой стороны */
-  border-radius: 3px 0 0 3px; /* Скругление углов для правой кнопки */
-}
-
-/* Стили для кнопки "Предыдущий" */
-.prev {
-  left: 0; /* Позиционирование с левой стороны */
-}
-
-/* Эффект при наведении на кнопки управления */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8); /* Добавление фона при наведении */
-}
-
-/* Отображение первого слайда */
-.slide:first-child {
-  display: block;
-}
-
-/* Класс .container используется для создания контейнера с flex-расположением. Это позволяет нам располагать элементы в строку и управлять их распределением и выравниванием */
-.container {
-  border-radius: 10px; /* Значение скругления углов для всего слайдера */
-  overflow: hidden; /* Это гарантирует, что все внутренние элементы будут следовать скругленным краям контейнера */
-  display: flex; /* Элементы внутри контейнера будут расположены горизонтально */
-  justify-content: space-between; /* Элементы внутри будут разделены и распределены с равным пространством между ними */
-  align-items: flex-start; /* Элементы будут выровнены по верхнему краю контейнера */
-}
-
-/* Класс .text-column предназначен для колонки с текстом. Свойство flex позволяет элементу заполнить доступное пространство в контейнере flex */
-.text-column {
-  flex: 1; /* Элемент растянется на все доступное пространство, которое осталось в контейнере */
-  padding-right: 20px; 
-  font-family: 'Montserrat', italic;
-  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали *//* Добавляем отступ справа, чтобы создать пространство между текстом и слайдером */
-}
-
-/* Класс .slider-column используется для колонки со слайдером. Здесь мы задаем фиксированную ширину для этого элемента */
-.slider-column {
-  /* position:relative; */
-  top: 23px;
-  left: 60px;
-  flex-basis: 50%; /* Задает начальную ширину колонки со слайдером, которая не будет изменяться */
-  flex-shrink: 0; /* Предотвращает сжатие колонки при уменьшении размера окна браузера */
-}
-.slide {
-  /* ... остальные стили ... */
-  border-radius: 10px; /* Скругление углов каждого отдельного слайда */
-}
-
-.slide img {
-  /* ... остальные стили ... */
-  border-radius: 10px; /* Скругление углов изображений */
-  display: block; /* Это убирает небольшие отступы вокруг изображений */
-}
-.swiper {
-  width: 30%;
-  height: 30%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-
-
-.contact-section {
-  text-align: center;
-}
-.contact-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-.contact-section p {
-  font-size: 18px;
-  margin: 5px 0;
-}
-.button-container {
-  margin-top: 20px;
-}
-.button-container .circle-button {
-  width: 40px;
-  height: 40px;
-  background-color: orange;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 5px;
-  text-decoration: none;
-}
-.circle-button:hover {
-  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.section-background {font-family: 'Montserrat', italic;
-  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
-}
-.concha{font-family: 'Montserrat', italic;
-  font-weight: 500; /* Используйте значение веса шрифта, которое вы выбрали */
-}
-.navi {font-family:'Montserrat', italic;
-  font-weight: 350; /* Используйте значение веса шрифта, которое вы выбрали */
-}
-.section-background-text{
-position: relative;
-top: 80px;
-color: #ccc;
-left: 12%; /* Для корректного позиционирования */
-right: 50%; /* Для корректного позиционирования */
-font-family:'Montserrat', italic;
-  font-weight: 750; /* Используйте значение веса шрифта, которое вы выбрали */
+  background-color: #E3730B; /* Оранжевый скроллбар */
+  border-radius: 15px; /* Скругленные углы */
 }

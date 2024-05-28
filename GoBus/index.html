@@ -16,7 +16,9 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+      </style>
 </head>
 <body>
 
@@ -127,8 +129,8 @@
         <!-- Колонка со слайдером -->
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" ><img src="/GoBus/img/2Q.png"> </div>
-            <div class="swiper-slide"><img src="/GoBus/img/GoBus.png"></div>
+            <div class="swiper-slide" ><img src="/img/2Q.png"> </div>
+            <div class="swiper-slide"><img src="/img/GoBus.png"></div>
             
           </div>
           <div class="swiper-button-next"></div>
@@ -144,9 +146,10 @@
         <p>+48 452 622 852</p>
         <p>+7 949 332 6499</p>
         <div class="button-container">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button"></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button"></a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button"></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button telegram"></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button viber"></a>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button whatsapp"></a>
+          
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -289,7 +292,7 @@
             
         
         } else {
-resultsContainer.textContent = 'Маршрут не найден';
+resultsContainer.textContent = 'Маршрут не найден(((.!.';
 resultsContainer.classList.add('no-route-found');
 }
     }
