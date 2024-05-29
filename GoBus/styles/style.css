@@ -30,7 +30,7 @@ ul {
   padding: 0; /* Без внутренних отступов */
   margin: 0; /* Без внешних отступов */
   list-style: none; /* Убираем маркеры списка */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 350; /* Толщина шрифта */
 }
 
@@ -50,7 +50,8 @@ ul li a {
   z-index: 1; /* Поверх всех элементов */
 }
 
-ul li a:before, ul li a:after {
+ul li a:before,
+ul li a:after {
   content: ""; /* Пустое содержание */
   position: absolute; /* Абсолютное позиционирование */
   left: 0; /* Прижатие к левому краю */
@@ -63,14 +64,14 @@ ul li a:before, ul li a:after {
 
 ul li a:before {
   top: 0; /* Прижатие к верху */
-  border-top: 2px solid #E3730B; /* Верхняя граница */
-  border-bottom: 2px solid #E3730B; /* Нижняя граница */
+  border-top: 2px solid #e3730b; /* Верхняя граница */
+  border-bottom: 2px solid #e3730b; /* Нижняя граница */
   transform: scaleY(2); /* Масштабирование по вертикали */
 }
 
 ul li a:after {
   top: 2px; /* Смещение сверху */
-  background-color: #E3730B; /* Фон */
+  background-color: #e3730b; /* Фон */
   transform: scaleY(0); /* Масштабирование по вертикали */
 }
 
@@ -78,7 +79,8 @@ ul li a:hover {
   color: #ffffff; /* Цвет текста при наведении */
 }
 
-ul li a:hover:before, ul li a:hover:after {
+ul li a:hover:before,
+ul li a:hover:after {
   transform: scaleY(1); /* Масштабирование по вертикали */
   opacity: 1; /* Прозрачность */
 }
@@ -89,14 +91,15 @@ nav {
   align-items: center; /* Выравнивание по центру */
 }
 
-nav a, nav button {
+nav a,
+nav button {
   color: white; /* Белый текст */
   text-decoration: none; /* Без подчеркивания */
   padding: 5px 10px; /* Внутренние отступы */
 }
 
 nav button {
-  background-color: #E3730B; /* Оранжевый фон */
+  background-color: #e3730b; /* Оранжевый фон */
   border: none; /* Без границы */
   padding: 10px 15px; /* Внутренние отступы */
   cursor: pointer; /* Курсор-указатель */
@@ -117,16 +120,16 @@ nav button {
   transform: translateX(-50%); /* Трансформация по горизонтали */
   line-height: 1.5; /* Высота строки */
   color: #333; /* Темно-серый текст */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 350; /* Толщина шрифта */
   z-index: 9; /* Поверх всех элементов */
 }
 
 .important-label {
   position: relative; /* Относительное позиционирование */
-  background: linear-gradient(to right, #E3730B, #E3730B); /* Градиент фона */
+  background: linear-gradient(to right, #e3730b, #e3730b); /* Градиент фона */
   color: white; /* Белый текст */
-  font-family: 'Arial', sans-serif; /* Шрифт Arial */
+  font-family: "Arial", sans-serif; /* Шрифт Arial */
   padding: 10px 20px; /* Внутренние отступы */
   padding-right: 30px; /* Дополнительный отступ справа */
   font-size: 18px; /* Размер шрифта */
@@ -140,13 +143,13 @@ nav button {
 }
 
 .important-label::before {
-  content: ''; /* Пустое содержание */
+  content: ""; /* Пустое содержание */
   position: absolute; /* Абсолютное позиционирование */
   left: -260px; /* Смещение слева */
   top: 0; /* Прижатие к верху */
   width: 200px; /* Ширина элемента */
   height: 100%; /* Высота элемента */
-  background: #E3730B; /* Фон */
+  background: #e3730b; /* Фон */
   padding-left: 40px; /* Внутренний отступ слева */
   padding-right: 40px; /* Внутренний отступ справа */
 }
@@ -176,7 +179,7 @@ nav button {
   right: 50%; /* Смещение справа */
   transform: translateX(-50%); /* Трансформация по горизонтали */
   line-height: 1.5; /* Высота строки */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 350; /* Толщина шрифта */
   width: 109%; /* На 109% ширины */
   z-index: 0; /* Под всеми элементами */
@@ -193,7 +196,7 @@ nav button {
 .text-column {
   flex: 1; /* Заполнение доступного пространства */
   padding-right: 20px; /* Отступ справа */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 350; /* Толщина шрифта */
 }
 
@@ -238,7 +241,8 @@ nav button {
   display: block; /* Блочный элемент */
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer; /* Курсор-указатель */
   position: absolute; /* Абсолютное позиционирование */
   top: 50%; /* Смещение сверху */
@@ -262,8 +266,9 @@ nav button {
   left: 0; /* Смещение слева */
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8); /* Фон при наведении */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Фон при наведении */
 }
 
 .slide:first-child {
@@ -295,7 +300,8 @@ nav button {
 
 /* Поисковая строка */
 .section-background {
-  background: url('/GoBus/image/photo_2024-04-14_23-33-25.jpg') no-repeat center center; /* Фон */
+  background: url("/GoBus/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
+    center; /* Фон */
   background-size: cover; /* Масштабирование фона */
   width: 100vw; /* На всю ширину экрана */
   min-height: 400px; /* Минимальная высота */
@@ -311,7 +317,7 @@ nav button {
   color: #ccc; /* Цвет текста */
   left: 12%; /* Смещение слева */
   right: 50%; /* Смещение справа */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 750; /* Толщина шрифта */
 }
 
@@ -331,7 +337,8 @@ nav button {
 }
 
 @media screen and (max-width: 765px) {
-  input[type="text"], button[type="submit"] {
+  input[type="text"],
+  button[type="submit"] {
     width: 100%; /* На всю ширину */
     padding: 15px; /* Внутренние отступы */
     margin: 0; /* Без отступов */
@@ -342,7 +349,8 @@ nav button {
 }
 
 @media screen and (min-width: 766px) {
-  input[type="text"], button[type="submit"] {
+  input[type="text"],
+  button[type="submit"] {
     width: 100%; /* На всю ширину */
     padding: 15px; /* Внутренние отступы */
     margin: 0; /* Без отступов */
@@ -369,7 +377,8 @@ nav button {
     right: center; /* Смещение справа */
   }
 
-  .search-bar-container input[type="text"], .search-bar-container button {
+  .search-bar-container input[type="text"],
+  .search-bar-container button {
     border: none; /* Без границы */
     padding: 10px; /* Внутренние отступы */
     outline: none; /* Без контура */
@@ -388,7 +397,8 @@ nav button {
     width: 100%; /* На всю ширину */
   }
 
-  .search-bar-container input[type="text"], .search-bar-container button {
+  .search-bar-container input[type="text"],
+  .search-bar-container button {
     border: 1px solid #cccccc; /* Серая граница */
     padding: 6px; /* Внутренние отступы */
     margin-bottom: 5px; /* Отступ снизу */
@@ -398,7 +408,8 @@ nav button {
   }
 }
 
-input[type="text"], button[type="submit"] {
+input[type="text"],
+button[type="submit"] {
   width: 100%; /* На всю ширину */
   padding: 15px; /* Внутренние отступы */
   margin: 0; /* Без отступов */
@@ -407,7 +418,7 @@ input[type="text"], button[type="submit"] {
 }
 
 button[type="submit"] {
-  background-color: #E3730B; /* Оранжевый фон */
+  background-color: #e3730b; /* Оранжевый фон */
   color: white; /* Белый текст */
   border: none; /* Без границы */
   cursor: pointer; /* Курсор-указатель */
@@ -442,7 +453,7 @@ button[type="submit"] {
   right: 50%; /* Смещение справа */
   transform: translateX(-50%); /* Трансформация по горизонтали */
   line-height: 1.5; /* Высота строки */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 350; /* Толщина шрифта */
   width: 109%; /* На 109% ширины */
   z-index: 10; /* Поверх всех элементов */
@@ -453,14 +464,14 @@ button[type="submit"] {
   top: 0; /* Прижатие к верху */
   left: 8%; /* Смещение слева */
   right: 50%; /* Смещение справа */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 750; /* Толщина шрифта */
 }
 
 .button-group {
   display: flex; /* Горизонтальное выравнивание */
   justify-content: flex-end; /* Выравнивание справа */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 900; /* Толщина шрифта */
 }
 
@@ -494,7 +505,8 @@ button[type="submit"] {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
 }
 
-.route, .price {
+.route,
+.price {
   color: #333; /* Цвет текста */
   margin-bottom: 8px; /* Внешний отступ снизу */
 }
@@ -511,22 +523,23 @@ button[type="submit"] {
   right: 50%; /* Смещение справа */
   transform: translateX(-50%); /* Трансформация по горизонтали */
   line-height: 1.5; /* Высота строки */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 500; /* Толщина шрифта */
   width: 109%; /* На 109% ширины */
   z-index: 11; /* Поверх всех элементов */
 }
 
 .no-route-found {
-  color: #E3730B; /* Цвет текста */
+  color: #e3730b; /* Цвет текста */
   display: flex; /* Горизонтальное выравнивание */
   justify-content: center; /* Центрирование */
-  font-family: 'Montserrat', Medium ;/* Шрифт Montserrat*/
+  font-family: "Montserrat", Medium; /* Шрифт Montserrat*/
   font-weight: 500;
   font-size: 24px; /* Размер текста */
 }
 
-.offer, .offerr {
+.offer,
+.offerr {
   background-color: #fff; /* Белый фон */
   border: 1px solid #ccc; /* Серая граница */
   border-radius: 10px; /* Скругленные углы */
@@ -539,18 +552,22 @@ button[type="submit"] {
   width: 1000%; /* Ширина */
 }
 
-.offer-header, .offerr-header {
+.offer-header,
+.offerr-header {
   display: flex; /* Горизонтальное выравнивание */
   align-items: center; /* Выравнивание по центру */
   justify-content: space-between; /* Распределение элементов */
   margin-bottom: 20px; /* Внешний отступ снизу */
 }
 
-.offer-icon, .dropdown-icon, .offerr-icon {
+.offer-icon,
+.dropdown-icon,
+.offerr-icon {
   margin-right: 10px; /* Внешний отступ справа */
 }
 
-.route-details .city, .offerr .route-details .city {
+.route-details .city,
+.offerr .route-details .city {
   display: flex; /* Горизонтальное выравнивание */
   flex-direction: column; /* Вертикальное расположение */
 }
@@ -564,7 +581,8 @@ button[type="submit"] {
   font-size: 0.9em; /* Размер текста */
 }
 
-.offer .price-details, .offerr .price-details {
+.offer .price-details,
+.offerr .price-details {
   display: flex; /* Горизонтальное выравнивание */
   align-items: center; /* Выравнивание по центру */
   justify-content: space-between; /* Распределение элементов */
@@ -577,7 +595,8 @@ button[type="submit"] {
   margin: 0; /* Без внешних отступов */
 }
 
-.offer button, .offerr button {
+.offer button,
+.offerr button {
   background-color: #ffa500; /* Оранжевый фон */
   color: white; /* Белый текст */
   border: none; /* Без границы */
@@ -590,7 +609,8 @@ button[type="submit"] {
   transition: background-color 0.3s; /* Плавный переход */
 }
 
-.offer button:hover, .offerr button:hover {
+.offer button:hover,
+.offerr button:hover {
   background-color: #cc8400; /* Оранжевый фон при наведении */
 }
 
@@ -615,7 +635,7 @@ button[type="submit"] {
 
 .circle-button {
   display: inline-block; /* Строчный элемент */
- 
+
   border-radius: 50%; /* Круглая форма */
   background-size: cover; /* Масштабирование фона */
   background-position: center; /* Центровка фона */
@@ -624,19 +644,19 @@ button[type="submit"] {
 }
 
 .telegram {
-  background-image: url('/icon_сontact/telegram.png'); /* Фон Telegram */
+  background-image: url("/icon_сontact/telegram.png"); /* Фон Telegram */
   width: 45px; /* Ширина кнопки */
   height: 45px; /* Высота кнопки */
 }
 
 .viber {
-  background-image: url('/icon_сontact/viber.png'); /* Фон Viber */
+  background-image: url("/icon_сontact/viber.png"); /* Фон Viber */
   width: 60px; /* Ширина кнопки */
   height: 60px; /* Высота кнопки */
 }
 
 .whatsapp {
-  background-image: url('/icon_сontact/whatsapp.png'); /* Фон WhatsApp */
+  background-image: url("/icon_сontact/whatsapp.png"); /* Фон WhatsApp */
   width: 52px; /* Ширина кнопки */
   height: 52px; /* Высота кнопки */
 }
@@ -654,7 +674,7 @@ footer {
   color: white; /* Белый текст */
   text-align: center; /* Выравнивание по центру */
   padding: 10px 0; /* Внутренние отступы */
-  font-family: 'Montserrat', italic; /* Шрифт Montserrat, курсив */
+  font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
   font-weight: 200; /* Толщина шрифта */
 }
 
@@ -668,6 +688,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #E3730B; /* Оранжевый скроллбар */
+  background-color: #e3730b; /* Оранжевый скроллбар */
   border-radius: 15px; /* Скругленные углы */
 }

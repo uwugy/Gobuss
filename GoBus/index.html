@@ -1,330 +1,384 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>GoBus</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <!-- Link Swiper's CSS -->
-   <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-   
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
-      </style>
-</head>
-<body>
-
-<!-- Шапка сайта -->
-<header>
-    <nav>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <nav>
         <!-- Логотип как ссылка на главную страницу -->
         <a href="index.html">
-            <img src="img/GoBus.png" alt="GoBus">
+          <img src="img/GoBus.png" alt="GoBus" />
         </a>
         <ul>
-            <li><a href="#home" class="link">Главная</a></li>
-            <li><a href="#routes" class="link">Маршруты</a></li>
-            <li><a href="#info" class="link">Информация</a></li>
-            <li><a href="#contacts" class="link">Контакты</a></li>
+          <li><a href="#home" class="link">Главная</a></li>
+          <li><a href="#routes" class="link">Маршруты</a></li>
+          <li><a href="#info" class="link">Информация</a></li>
+          <li><a href="#contacts" class="link">Контакты</a></li>
         </ul>
         <button class="navi">Позвонить</button>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!-- Основной контент -->
-<main>
-    <!-- Раздел поиска путешествий -->
-    <section class="section-background" id="home">
+    <!-- Основной контент -->
+    <main>
+      <!-- Раздел поиска путешествий -->
+      <section class="section-background" id="home">
         <p class="section-background-text">Пассажирские перевозки</p>
         <h1 class="section-background-text">Украина - Луганск / Донецк</h1>
         <p class="section-background-text">Через Польшу/Беларусь</p>
         <div class="search-bar-container">
-            <input type="text" id="inputA" placeholder="Откуда">
-            <input type="text" id="inputB" placeholder="Куда">
-            <button type="submit" onclick="updateSearchResults()">Найти</button>
+          <input type="text" id="inputA" placeholder="Откуда" />
+          <input type="text" id="inputB" placeholder="Куда" />
+          <button type="submit" onclick="updateSearchResults()">Найти</button>
         </div>
-    </section>
-<section class="searchResultsBlock">
+      </section>
+      <section class="searchResultsBlock">
+        <div id="searchResults"></div>
+      </section>
 
-  <div id="searchResults"></div>
-</section>
-    <!-- Популярные направления -->
-    <section class="concha routes-block" id="routes">
+      <!-- Популярные направления -->
+      <section class="concha routes-block" id="routes">
         <h2 class="concha-text">Популярные направления</h2>
         <!-- Список направлений -->
         <div class="button-group">
-            <div class="button-item">
-                <button type="button" class="search-button">
-                    <span class="route">Донецк - Киев</span>
-                    <span class="price">от 300 €</span>
-                </button>
-            </div>
-            <div class="button-item">
-                <button type="button" class="search-button">
-                    <span class="route">Мариуполь - Киев</span>
-                    <span class="price">от 300 €</span>
-                </button>
-            </div>
-            <div class="button-item">
-                <button type="button" class="search-button">
-                    <span class="route">Польша - Донецк</span>
-                    <span class="price">от 250 €</span>
-                </button>
-            </div>
+          <div class="button-item">
+            <button
+              type="button"
+              class="search-button"
+              onclick="displayPredefinedRoute('Донецк', 'Киев')"
+            >
+              <span class="route">Донецк - Киев</span>
+              <span class="price">от 300 €</span>
+            </button>
+          </div>
+          <div class="button-item">
+            <button
+              type="button"
+              class="search-button"
+              onclick="displayPredefinedRoute('Мариуполь', 'Киев')"
+            >
+              <span class="route">Мариуполь - Киев</span>
+              <span class="price">от 300 €</span>
+            </button>
+          </div>
+          <div class="button-item">
+            <button
+              type="button"
+              class="search-button"
+              onclick="displayPredefinedRoute('Польша', 'Донецк')"
+            >
+              <span class="route">Польша - Донецк</span>
+              <span class="price">от 250 €</span>
+            </button>
+          </div>
         </div>
         <div class="button-group">
-            <div class="button-item">
-                <button type="button" class="search-button">
-                    <span class="route">Киев - Бердянск</span>
-                    <span class="price">от 350 €</span>
-                </button>
-            </div>
-            <div class="button-item">
-                <button type="button" class="search-button">
-                    <span class="route">Варшава - Минск</span>
-                    <span class="price">от 150 €</span>
-                </button>
-            </div>
-            <div class="button-item">
-                <button type="button" class="search-button">
-                    <span class="route">Донецк - Германия</span>
-                    <span class="price">от 400 €</span>
-                </button>
-            </div>
+          <div class="button-item">
+            <button
+              type="button"
+              class="search-button"
+              onclick="displayPredefinedRoute('Киев', 'Бердянск')"
+            >
+              <span class="route">Киев - Бердянск</span>
+              <span class="price">от 350 €</span>
+            </button>
+          </div>
+          <div class="button-item">
+            <button
+              type="button"
+              class="search-button"
+              onclick="displayPredefinedRoute('Варшава', 'Минск')"
+            >
+              <span class="route">Варшава - Минск</span>
+              <span class="price">от 150 €</span>
+            </button>
+          </div>
+          <div class="button-item">
+            <button
+              type="button"
+              class="search-button"
+              onclick="displayPredefinedRoute('Донецк', 'Германия')"
+            >
+              <span class="route">Донецк - Германия</span>
+              <span class="price">от 400 €</span>
+            </button>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Важное уведомление -->
-    <section id="info" class="important-block">
+      <!-- Важное уведомление -->
+      <section id="info" class="important-block">
         <h2 class="important-label">Важно!</h2>
         <h2 class="important-label-2">Уважаемые пассажиры</h2>
         <p class="important-label-3">
-            Информируем вас, что перевозки из Украины и Европы в Россию продолжают осуществляться по прежним тарифам. 
-            Однако для граждан Украины без паспорта РФ введена дополнительная плата в размере приблизительно 100 евро за перелёт Минск-Шереметьево.
-            Для минимизации ваших расходов на перелёт мы предлагаем следующую схему транспортировки багажа: основной багаж будет отправлен автомобильным транспортом из Минска, 
-            а в самолёт вы сможете взять необходимые и ценные вещи весом до 10 кг. По прибытии в аэропорт Шереметьево за вами прибудет автомобиль, который доставит вас вместе с вашим багажем до места назначения.
+          Информируем вас, что перевозки из Украины и Европы в Россию продолжают
+          осуществляться по прежним тарифам. Однако для граждан Украины без
+          паспорта РФ введена дополнительная плата в размере приблизительно 100
+          евро за перелёт Минск-Шереметьево. Для минимизации ваших расходов на
+          перелёт мы предлагаем следующую схему транспортировки багажа: основной
+          багаж будет отправлен автомобильным транспортом из Минска, а в самолёт
+          вы сможете взять необходимые и ценные вещи весом до 10 кг. По прибытии
+          в аэропорт Шереметьево за вами прибудет автомобиль, который доставит
+          вас вместе с вашим багажем до места назначения.
         </p>
-    </section>
-<section  class="autoBlock">
-    <!-- Информация о транспорте -->
-    <div class="container">
-        <!-- Колонка для текста -->
-        <div class="text-column">
+      </section>
+
+      <section class="autoBlock">
+        <!-- Информация о транспорте -->
+        <div class="container">
+          <!-- Колонка для текста -->
+          <div class="text-column">
             <h2 class="text-column2">Наш Транспорт</h2>
             <p class="text-column3">
-                Компания предлагает услуги пассажирских перевозок на микроавтобусах марок Mercedes Sprinter, Renault Trafic и Opel Vivaro, 
-                которые оснащены необходимым оборудованием для комфортного перевоза, включая полноценные сидения, внутрисалонный багажник, 
-                системы контроля и кондиционирования климата: отопление, дефлекторы, форточки, и розетки для подзарядки мобильных устройств.
+              Компания предлагает услуги пассажирских перевозок на
+              микроавтобусах марок Mercedes Sprinter, Renault Trafic и Opel
+              Vivaro, которые оснащены необходимым оборудованием для комфортного
+              перевоза, включая полноценные сидения, внутрисалонный багажник,
+              системы контроля и кондиционирования климата: отопление,
+              дефлекторы, форточки, и розетки для подзарядки мобильных
+              устройств.
             </p>
-        </div>
-
-        <!-- Колонка со слайдером -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" ><img src="/img/2Q.png"> </div>
-            <div class="swiper-slide"><img src="/img/GoBus.png"></div>
-            
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+
+          <!-- Колонка со слайдером -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/img/2Q.png" /></div>
+              <div class="swiper-slide"><img src="/img/GoBus.png" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
-    </div>
-</section>
-    <!-- Контактная информация -->
-    <div class="contact-section" id="contacts">
+      </section>
+
+      <!-- Контактная информация -->
+      <div class="contact-section" id="contacts">
         <h2>Записаться на рейс:</h2>
         <p>+38 095 240 40 95</p>
         <p>+48 452 622 852</p>
         <p>+7 949 332 6499</p>
         <div class="button-container">
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button telegram"></a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button viber"></a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="circle-button whatsapp"></a>
-          
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            class="circle-button telegram"
+          ></a>
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            class="circle-button viber"
+          ></a>
+          <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            class="circle-button whatsapp"
+          ></a>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script> 
-    function startSearch() {
-      const inputA = document.getElementById('inputA').value;
-      const inputB = document.getElementById('inputB').value;
-      const searchParams = new URLSearchParams({ a: inputA, b: inputB });
-      window.location.href = `search.html?${searchParams.toString()}`;
-  }</script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        function startSearch() {
+          const inputA = document.getElementById("inputA").value;
+          const inputB = document.getElementById("inputB").value;
+          const searchParams = new URLSearchParams({ a: inputA, b: inputB });
+          window.location.href = `search.html?${searchParams.toString()}`;
+        }
 
-  <!-- Initialize Swiper -->
-  <script>
-   var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-  <script>
-    // Предустановленные маршруты
-    const routes = [
-        { passport:'passport', from: 'Донецк', to: 'Киев', fromDetail: 'Ав Южный, Мотель, Макеевка', toDetail: 'Центральный ж/д вокзал Киева', price: '300 €',
-        information:'Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.',
-        passportNot:'passportNot', fromNot: 'Донецк', toNot: 'Киев', fromDetailNot: 'Ав Южный, Мотель, Макеевка', toDetailNot: 'Центральный ж/д вокзал Киева', priceNot: '300 €',
-        informationNot:'Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.'
-         },
-        { from: 'Донецк', to: 'Львов', fromDetail: 'Ав Центральный', toDetail: 'Центральный автовокзал Львова', price: '350 €' },
-        { from: 'Харьков', to: 'Киев', fromDetail: 'Ав Южный', toDetail: 'Центральный ж/д вокзал Киева', price: '250 €' },
-        { from: 'Харьков', to: 'Львов', fromDetail: 'Ав Центральный', toDetail: 'Центральный автовокзал Львова', price: '400 €' },
-    ];
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
 
-    // Функция для получения параметров поиска из URL
-    function getSearchParams() {
-        const params = new URLSearchParams(window.location.search);
-        return {
-            a: params.get('a') ? decodeURIComponent(params.get('a')) : '',
-            b: params.get('b') ? decodeURIComponent(params.get('b')) : ''
+        const routes = [
+          {
+            passport: "passport",
+            from: "Донецк",
+            to: "Киев",
+            fromDetail: "Ав Южный, Мотель, Макеевка",
+            toDetail: "Центральный ж/д вокзал Киева",
+            price: "300 €",
+            information:
+              "Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.",
+            passportNot: "passportNot",
+            fromNot: "Донецк",
+            toNot: "Киев",
+            fromDetailNot: "Ав Южный, Мотель, Макеевка",
+            toDetailNot: "Центральный ж/д вокзал Киева",
+            priceNot: "300 €",
+            informationNot:
+              "Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.",
+          },
+          {
+            from: "Донецк",
+            to: "Львов",
+            fromDetail: "Ав Центральный",
+            toDetail: "Центральный автовокзал Львова",
+            price: "350 €",
+          },
+          {
+            from: "Харьков",
+            to: "Киев",
+            fromDetail: "Ав Южный",
+            toDetail: "Центральный ж/д вокзал Киева",
+            price: "250 €",
+          },
+          {
+            from: "Харьков",
+            to: "Львов",
+            fromDetail: "Ав Центральный",
+            toDetail: "Центральный автовокзал Львова",
+            price: "400 €",
+          },
+        ];
+
+        function getSearchParams() {
+          const params = new URLSearchParams(window.location.search);
+          return {
+            a: params.get("a") ? decodeURIComponent(params.get("a")) : "",
+            b: params.get("b") ? decodeURIComponent(params.get("b")) : "",
+          };
+        }
+
+        function displaySearchResults(searchParams) {
+          const resultsContainer = document.getElementById("searchResults");
+          resultsContainer.innerHTML = ""; // Очищаем контейнер перед обновлением
+          const matchingRoutes = routes.filter(
+            (route) =>
+              route.from.toLowerCase() === searchParams.a.toLowerCase() &&
+              route.to.toLowerCase() === searchParams.b.toLowerCase()
+          );
+
+          if (matchingRoutes.length > 0) {
+            matchingRoutes.forEach((route) => {
+              const offerElement = document.createElement("div");
+              offerElement.className = "";
+
+              const routeDetails = `
+                    <div class="offer">
+                        <div class="passport">${route.passport}</div>
+                        <div class="offer-header">Маршрут: ${route.from} - ${route.to}</div>
+                        <div class="route">
+                            <div class="route-details">
+                                <div class="city from-city">
+                                    <p>${route.from}</p>
+                                    <p>${route.fromDetail}</p>
+                                </div>
+                                <div class="city to-city">
+                                    <p>${route.to}</p>
+                                    <p>${route.toDetail}</p>
+                                </div>
+                            </div>
+                            <div class="price-details">
+                                <p>${route.price}</p>
+                                <button class="details-btn">Подробности</button>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <p>${route.information}</p>
+                        </div>
+                    </div>
+                    <div class="offerr">
+                        <div class="passport">${route.passportNot}</div>
+                        <div class="offer-header">Маршрут: ${route.fromNot} - ${route.toNot}</div>
+                        <div class="route">
+                            <div class="route-details">
+                                <div class="city from-city">
+                                    <p>${route.fromNot}</p>
+                                    <p>${route.fromDetailNot}</p>
+                                </div>
+                                <div class="city to-city">
+                                    <p>${route.toNot}</p>
+                                    <p>${route.toDetailNot}</p>
+                                </div>
+                            </div>
+                            <div class="price-details">
+                                <p>${route.priceNot}</p>
+                                <button class="details-btn">Подробности</button>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <p>${route.informationNot}</p>
+                        </div>
+                    </div>
+                `;
+              resultsContainer.classList.remove("no-route-found");
+              offerElement.innerHTML = routeDetails;
+              resultsContainer.appendChild(offerElement);
+            });
+
+            // Назначаем обработчики событий для всех кнопок "Подробности"
+            document.querySelectorAll(".details-btn").forEach((button) => {
+              button.addEventListener("click", function () {
+                const details =
+                  this.parentElement.parentElement.nextElementSibling;
+                if (
+                  details.style.display === "none" ||
+                  details.style.display === ""
+                ) {
+                  details.style.display = "block";
+                  this.textContent = "Скрыть";
+                } else {
+                  details.style.display = "none";
+                  this.textContent = "Подробности";
+                }
+              });
+            });
+          } else {
+            resultsContainer.textContent = "Маршрут не найден(((.!.";
+            resultsContainer.classList.add("no-route-found");
+          }
+        }
+
+        function updateSearchResults() {
+          const inputA = document.getElementById("inputA").value.trim();
+          const inputB = document.getElementById("inputB").value.trim();
+          const searchParams = { a: inputA, b: inputB };
+          displaySearchResults(searchParams);
+        }
+
+        function displayPredefinedRoute(from, to) {
+          const searchParams = { a: from, b: to };
+          displaySearchResults(searchParams);
+        }
+
+        window.onload = function () {
+          const searchParams = getSearchParams();
+          document.getElementById("inputA").value = searchParams.a;
+          document.getElementById("inputB").value = searchParams.b;
+          displaySearchResults(searchParams);
         };
-    }
+      </script>
+    </main>
 
-    // Функция для отображения результатов поиска
-    function displaySearchResults(searchParams) {
-        const resultsContainer = document.getElementById('searchResults');
-        resultsContainer.innerHTML = ''; // Очищаем контейнер перед обновлением
-        const matchingRoutes = routes.filter(route => route.from.toLowerCase() === searchParams.a.toLowerCase() && route.to.toLowerCase() === searchParams.b.toLowerCase());
-
-        if (matchingRoutes.length > 0) {
-            matchingRoutes.forEach(route => {
-                const offerElement = document.createElement('div');
-                offerElement.className = '';
-
-                const routeDetails = `
-                
-<div class="offer">
-    <div class="passport"> ${route.passport} </div>
-    <div class="offer-header">Маршрут: ${route.from} - ${route.to}</div>
-    <div class="route">
-        <div class="route-details">
-            <div class="city from-city">
-                <p>${route.from}</p>
-                <p>${route.fromDetail}</p>
-            </div>
-            <div class="city to-city">
-                <p>${route.to}</p>
-                <p>${route.toDetail}</p>
-            </div>
-        </div>
-        <div class="price-details">
-            <p>${route.price}</p>
-            <button class="details-btn">Подробности</button>
-        </div>
-    </div>
-    <div class="details">
-        <p>${route.information}</p>
-    </div>
-    </div>
-    
-    
-    
-    <div class="offerr">
-        <div class="passport"> ${route.passportNot} </div>
-    <div class="offer-header">Маршрут: ${route.fromNot} - ${route.toNot}</div>
-    <div class="route">
-        <div class="route-details">
-            <div class="city from-city">
-                <p>${route.fromNot}</p>
-                <p>${route.fromDetailNot}</p>
-            </div>
-            <div class="city to-city">
-                <p>${route.toNot}</p>
-                <p>${route.toDetailNot}</p>
-            </div>
-        </div>
-        <div class="price-details">
-            <p>${route.priceNot}</p>
-            <button class="details-btn">Подробности</button>
-        </div>
-    </div>
-    <div class="details">
-        <p>${route.informationNot}</p>
-    </div>
-    </div>
- 
-                `
-                ;
-                resultsContainer.classList.remove('no-route-found');
-                
-                
-
-                
-                
-                offerElement.innerHTML = routeDetails;
-                resultsContainer.appendChild(offerElement);
-            });
-
-
-             // Назначаем обработчики событий для всех кнопок "Подробности"
-            document.querySelectorAll('.details-btn').forEach(button => {
-                button.addEventListener('click', function() {
-                    const details = this.parentElement.parentElement.nextElementSibling;
-                    if (details.style.display === 'none' || details.style.display === '') {
-                        details.style.display = 'block';
-                        this.textContent = 'Скрыть';
-                    } else {
-                        details.style.display = 'none';
-                        this.textContent = 'Подробности';
-                    }
-                });
-            });
-            
-        
-        } else {
-resultsContainer.textContent = 'Маршрут не найден(((.!.';
-resultsContainer.classList.add('no-route-found');
-}
-    }
-
-    // Функция для обновления результатов поиска на текущей странице
-    function updateSearchResults() {
-        const inputA = document.getElementById('inputA').value.trim();
-        const inputB = document.getElementById('inputB').value.trim();
-        const searchParams = { a: inputA, b: inputB };
-        displaySearchResults(searchParams);
-    }
-
-    // Вызов функции отображения результатов при загрузке страницы
-    window.onload = function() {
-        const searchParams = getSearchParams();
-        // Устанавливаем значения в поля поиска
-        document.getElementById('inputA').value = searchParams.a;
-        document.getElementById('inputB').value = searchParams.b;
-        displaySearchResults(searchParams);
-    };
-
-
-
-    
-</script>
-
-</main>
-
-<!-- Подвал сайта -->
-<footer>
-    <p class="footer">&copy; 2024 GoBus. Все права защищены.</p>
-</footer>
-
-</body>
+    <!-- Подвал сайта -->
+    <footer>
+      <p class="footer">&copy; 2024 GoBus. Все права защищены.</p>
+    </footer>
+  </body>
 </html>
