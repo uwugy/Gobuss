@@ -50,7 +50,7 @@
           <button type="submit" onclick="updateSearchResults()">Найти</button>
         </div>
       </section>
-      <section class="searchResultsBlock">
+      <section class="searchResultsBlock" id="searchResultsBlock">
         <div id="searchResults"></div>
       </section>
 
@@ -161,8 +161,8 @@
           <!-- Колонка со слайдером -->
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="/img/2Q.png" /></div>
-              <div class="swiper-slide"><img src="/img/GoBus.png" /></div>
+              <div class="swiper-slide"><img src="img/2Q.png" /></div>
+              <div class="swiper-slide"><img src="img/GoBus.png" /></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -267,6 +267,8 @@
 
         function displaySearchResults(searchParams) {
           const resultsContainer = document.getElementById("searchResults");
+          const searchResultsBlock =
+            document.getElementById("searchResultsBlock");
           resultsContainer.innerHTML = ""; // Очищаем контейнер перед обновлением
           const matchingRoutes = routes.filter(
             (route) =>
@@ -327,9 +329,10 @@
                         </div>
                     </div>
                 `;
-              resultsContainer.classList.remove("no-route-found");
+
               offerElement.innerHTML = routeDetails;
               resultsContainer.appendChild(offerElement);
+              resultsContainer.classList.remove("no-route-found");
             });
 
             // Назначаем обработчики событий для всех кнопок "Подробности"
@@ -350,9 +353,10 @@
               });
             });
           } else {
-            resultsContainer.textContent = "Маршрут не найден(((.!.";
+            resultsContainer.textContent = "Маршрут не найден.";
             resultsContainer.classList.add("no-route-found");
           }
+          searchResultsBlock.style.display = "block";
         }
 
         function updateSearchResults() {
@@ -369,9 +373,11 @@
 
         window.onload = function () {
           const searchParams = getSearchParams();
-          document.getElementById("inputA").value = searchParams.a;
-          document.getElementById("inputB").value = searchParams.b;
-          displaySearchResults(searchParams);
+          if (searchParams.a && searchParams.b) {
+            document.getElementById("inputA").value = searchParams.a;
+            document.getElementById("inputB").value = searchParams.b;
+            displaySearchResults(searchParams);
+          }
         };
       </script>
     </main>
