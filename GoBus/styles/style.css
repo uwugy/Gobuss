@@ -320,6 +320,8 @@ nav button {
 .section-background {
   background: url("/GoBus/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
     center; /* Фон */
+    background: url("/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
+    center; /* Фон */
   background-size: cover; /* Масштабирование фона */
   width: 100vw; /* На всю ширину экрана */
   min-height: 385px; /* Минимальная высота */
@@ -372,6 +374,12 @@ nav button {
   right: 50px; /* Смещение справа */
 }
 
+.logoimg {
+  
+  max-width: 70%; /* Логотип не будет превышать 10% ширины контейнера */
+  height: auto; /* Высота будет изменяться пропорционально ширине */
+}
+
 @media screen and (max-width: 765px) {
   input[type="text"],
   button[type="submit"] {
@@ -384,9 +392,11 @@ nav button {
   }
 
   .logoimg {
-    max-width: 50%; /* Логотип не будет превышать размеры контейнера */
-    height: 20%;
+    position: relative;
+    max-width: 50%; /* Логотип не будет превышать 10% ширины контейнера */
+    height: auto; /* Высота будет изменяться пропорционально ширине */
   }
+  
 
   .offer,
   .offerr {
@@ -601,6 +611,9 @@ nav button {
     border-top-right-radius: 8px; /* Скругление сверху справа */
     border-bottom-right-radius: 8px; /* Скругление снизу справа */
     box-sizing: border-box; /* Включение паддинга */
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
   }
 }
 
@@ -655,7 +668,7 @@ input[type="text"],
 button[type="submit"] {
   width: 100%; /* На всю ширину */
   padding: 15px; /* Внутренние отступы */
-  margin: 0; /* Без отступов */
+  margin: 0 auto; /* Без отступов */
   border: 1px solid #ffffff; /* Белая граница */
   box-sizing: border-box; /* Включение паддинга */
 }
