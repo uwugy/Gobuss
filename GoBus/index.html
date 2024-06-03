@@ -30,8 +30,8 @@
     <header>
       <nav>
         <!-- Логотип как ссылка на главную страницу -->
-        <a href="index.html">
-          <img src="img/GoBus.png" alt="GoBus" />
+        <a href="index.html" class="logo">
+          <img src="img/GoBus.png" class="logoimg alt="GoBus" />
         </a>
         <ul>
           <li><a href="#home" class="link">Главная</a></li>
@@ -229,6 +229,7 @@
             fromDetail: "Ав Южный, Мотель, Макеевка",
             toDetail: "Центральный ж/д вокзал Киева",
             price: "300 €",
+            Traveltime: "69",
             information:
               "Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.",
             passportNot: "passportNot",
@@ -237,6 +238,7 @@
             fromDetailNot: "Ав Южный, Мотель, Макеевка",
             toDetailNot: "Центральный ж/д вокзал Киева",
             priceNot: "300 €",
+            TraveltimeNot: "69",
             informationNot:
               "Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.",
           },
@@ -288,8 +290,9 @@
               offerElement.className = "";
 
               const routeDetails = `
+              <div class="passport">${route.passport}</div>
                     <div class="offer">
-                        <div class="passport">${route.passport}</div>
+                      <!-- <div class="passport">${route.passport}</div>-->
                         <div class="offer-header">Маршрут: ${route.from} - ${route.to}</div>
                         <div class="route">
                             <div class="route-details">
@@ -301,18 +304,26 @@
                                     <p>${route.to}</p>
                                     <p>${route.toDetail}</p>
                                 </div>
+                                <div class= "price-price">
+                                <p >${route.price}</p></div>
                             </div>
                             <div class="price-details">
-                                <p>${route.price}</p>
+                              <p>автобус</p>
+                              <p>${route.Traveltime}</p>
                                 <button class="details-btn">Подробности</button>
                             </div>
                         </div>
+
+
+
+
                         <div class="details">
                             <p>${route.information}</p>
                         </div>
                     </div>
+                    <div class="passport">${route.passportNot}</div>
                     <div class="offerr">
-                        <div class="passport">${route.passportNot}</div>
+                      <!-- <div class="passport">${route.passportNot}</div>-->
                         <div class="offer-header">Маршрут: ${route.fromNot} - ${route.toNot}</div>
                         <div class="route">
                             <div class="route-details">
@@ -324,9 +335,12 @@
                                     <p>${route.toNot}</p>
                                     <p>${route.toDetailNot}</p>
                                 </div>
+                                <div class="price-price">
+                                <p >${route.priceNot}</p></div>
                             </div>
                             <div class="price-details">
-                                <p>${route.priceNot}</p>
+                              <p>автобус</p>
+                                <p>${route.TraveltimeNot}</p>
                                 <button class="details-btn">Подробности</button>
                             </div>
                         </div>

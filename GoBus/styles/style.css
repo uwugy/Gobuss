@@ -388,6 +388,212 @@ nav button {
     border-radius: 8px; /* Скругленные углы */
     box-sizing: border-box; /* Включение паддинга */
   }
+
+  .logoimg {
+    max-width: 50%; /* Логотип не будет превышать размеры контейнера */
+    height: 20%;
+  }
+
+  .offer,
+  .offerr {
+    width: 80%; /* Ширина 80% */
+    margin: 10px auto; /* Внешние отступы */
+  }
+
+  .offer-header,
+  .offerr-header {
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: flex-start; /* Выравнивание по началу */
+  }
+
+  .price-details {
+    flex-direction: column; /* Вертикальное расположение */
+    align-items: flex-start; /* Выравнивание по началу */
+  }
+
+  .offer button,
+  .offerr button {
+    width: 100%; /* Ширина 100% */
+    margin-top: 10px; /* Внешний отступ сверху */
+  }
+
+  .offer-header,
+  .offerr-header {
+    display: flex; /* Горизонтальное выравнивание */
+    align-items: center; /* Выравнивание по центру */
+    justify-content: space-between; /* Распределение элементов */
+    margin-bottom: 20px; /* Внешний отступ снизу */
+  }
+
+  .offer-icon,
+  .dropdown-icon,
+  .offerr-icon {
+    margin-right: 10px; /* Внешний отступ справа */
+  }
+
+  .route-details .city,
+  .offerr .route-details .city {
+    display: flex; /* Горизонтальное выравнивание */
+    flex-direction: column; /* Вертикальное расположение */
+  }
+
+  .city > p:first-child {
+    font-weight: bold; /* Жирный текст */
+  }
+
+  .city > p:last-child {
+    color: #666; /* Серый текст */
+    font-size: 0.9em; /* Размер текста */
+  }
+
+  .offer .price-details,
+  .offerr .price-details {
+    display: flex; /* Горизонтальное выравнивание */
+    align-items: center; /* Выравнивание по центру */
+    justify-content: space-between; /* Распределение элементов */
+  }
+
+  .price-details p {
+    font-size: 24px; /* Размер текста */
+    color: #ffa500; /* Оранжевый текст */
+    font-weight: bold; /* Жирный текст */
+    margin: 0; /* Без внешних отступов */
+  }
+
+  .offer button,
+  .offerr button {
+    background-color: #ffa500; /* Оранжевый фон */
+    color: white; /* Белый текст */
+    border: none; /* Без границы */
+    border-radius: 20px; /* Скругленные углы */
+    padding: 10px 20px; /* Внутренние отступы */
+    cursor: pointer; /* Курсор-указатель */
+    text-transform: uppercase; /* Прописные буквы */
+    font-weight: bold; /* Жирный текст */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: background-color 0.3s; /* Плавный переход */
+  }
+
+  .offer button:hover,
+  .offerr button:hover {
+    background-color: #cc8400; /* Оранжевый фон при наведении */
+  }
+  ul {
+    display: flex; /* Горизонтальное выравнивание */
+    justify-content: space-around; /* Распределение элементов */
+    align-items: center; /* Выравнивание по центру */
+    position: static; /* Статичное позиционирование */
+    top: auto; /* Без смещения сверху */
+    left: auto; /* Без смещения слева */
+    transform: none; /* Без трансформации */
+    padding: 0; /* Без внутренних отступов */
+    margin: 0; /* Без внешних отступов */
+    list-style: none; /* Убираем маркеры списка */
+    font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
+    font-weight: 350; /* Толщина шрифта */
+  }
+
+  ul li a {
+    display: block; /* Блочный элемент */
+    position: relative; /* Относительное позиционирование */
+    align-items: center; /* Выравнивание по центру */
+    text-transform: none; /* Без изменения регистра */
+    margin: -10px 0; /* Отступы сверху и снизу */
+    padding: 2px 10px; /* Внутренние отступы */
+    text-decoration: none; /* Без подчеркивания */
+    color: white; /* Белый текст */
+    font-family: sans-serif; /* Шрифт Sans-serif */
+    font-size: 12px; /* Размер текста */
+    font-weight: 300; /* Толщина шрифта */
+    transition: 0.1s; /* Переход 0.1с */
+    z-index: 1; /* Поверх всех элементов */
+  }
+
+  ul li a:before,
+  ul li a:after {
+    content: ""; /* Пустое содержание */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; /* Прижатие к левому краю */
+    width: 100%; /* На всю ширину */
+    height: 100%; /* На всю высоту */
+    opacity: 0; /* Прозрачность */
+    transition: 0.3s; /* Переход 0.3с */
+    z-index: -1; /* Под всеми элементами */
+  }
+
+  ul li a:before {
+    top: 0; /* Прижатие к верху */
+    border-top: 2px solid #e3730b; /* Верхняя граница */
+    border-bottom: 2px solid #e3730b; /* Нижняя граница */
+    transform: scaleY(2); /* Масштабирование по вертикали */
+  }
+
+  ul li a:after {
+    top: 2px; /* Смещение сверху */
+    background-color: #e3730b; /* Фон */
+    transform: scaleY(0); /* Масштабирование по вертикали */
+  }
+
+  ul li a:hover {
+    color: #ffffff; /* Цвет текста при наведении */
+  }
+
+  ul li a:hover:before,
+  ul li a:hover:after {
+    transform: scaleY(1); /* Масштабирование по вертикали */
+    opacity: 1; /* Прозрачность */
+  }
+
+  nav {
+    display: flex; /* Горизонтальное выравнивание */
+    justify-content: space-around; /* Распределение элементов */
+    align-items: center; /* Выравнивание по центру */
+  }
+
+  nav a,
+  nav button {
+    font-size: 10px;
+    color: white; /* Белый текст */
+    text-decoration: none; /* Без подчеркивания */
+    padding: 5px 10px; /* Внутренние отступы */
+  }
+
+  nav button {
+    background-color: #e3730b; /* Оранжевый фон */
+    border: none; /* Без границы */
+    padding: 5px 3px; /* Внутренние отступы */
+    cursor: pointer; /* Курсор-указатель */
+    border-radius: 15px 15px 15px 0; /* Скругленные углы */
+  }
+  header {
+    position: fixed; /* Фиксированное положение */
+    top: 0; /* Прижатие к верху */
+    width: 100%; /* На всю ширину */
+    background-color: #000000; /* Черный фон */
+    color: white; /* Белый текст */
+    padding: 5px 0; /* Внутренние отступы сверху и снизу */
+    z-index: 1000; /* Поверх всех элементов */
+  }
+  .swiper {
+    width: 60%;
+    aspect-ratio: 16/9;
+    position: relative; /* Относительное позиционирование */
+    /* Смещение сверху */
+    left: 10px; /* Смещение слева */
+    right: center; /* Смещение справа */
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: center;
+    position: relative;
+    text-align: center;
+  }
+  .text-column3 {
+    position: relative;
+    left: 18%;
+  }
 }
 
 @media screen and (min-width: 766px) {
@@ -597,7 +803,10 @@ button[type="submit"] {
   font-weight: 500;
   font-size: 24px; /* Размер текста */
 }
-
+.passport {
+  position: relative;
+  left: 20%;
+}
 .offer,
 .offerr {
   background-color: #fff; /* Белый фон */
@@ -609,7 +818,7 @@ button[type="submit"] {
   padding: 20px; /* Внутренние отступы */
   margin: 20px auto; /* Внешние отступы */
   max-width: 960px; /* Максимальная ширина */
-  width: 1000%; /* Ширина */
+  width: 80%; /* Ширина */
 }
 
 .offer-header,
@@ -625,7 +834,14 @@ button[type="submit"] {
 .offerr-icon {
   margin-right: 10px; /* Внешний отступ справа */
 }
-
+.route-details {
+  display: flex;
+  flex-direction: row;
+}
+.to-city {
+  position: relative;
+  left: 20%;
+}
 .route-details .city,
 .offerr .route-details .city {
   display: flex; /* Горизонтальное выравнивание */
@@ -639,6 +855,10 @@ button[type="submit"] {
 .city > p:last-child {
   color: #666; /* Серый текст */
   font-size: 0.9em; /* Размер текста */
+}
+.price-price {
+  position: relative;
+  left: 40%;
 }
 
 .offer .price-details,
