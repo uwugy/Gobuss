@@ -225,7 +225,7 @@ button[type="submit"] {
   /* Стили для поля ввода и кнопки, когда ширина экрана меньше или равна 1000 пикселей */
   .search-bar-container input[type="text"],
   .search-bar-container button {
-    border: 1px solid #ccc; /* Серая рамка толщиной 1 пиксель */
+    border: 1px solid #010101; /* Серая рамка толщиной 1 пиксель */
     padding: 6px; /* Внутренний отступ */
     margin-bottom: 5px; /* Отступ снизу */
     border-radius: 4px; /* Закругленные углы */
