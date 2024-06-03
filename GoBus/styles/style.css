@@ -17,7 +17,7 @@ header {
   width: 100%; /* На всю ширину */
   background-color: #000000; /* Черный фон */
   color: white; /* Белый текст */
-  padding: 10px 0; /* Внутренние отступы сверху и снизу */
+  padding: 12px 0; /* Внутренние отступы сверху и снизу */
   z-index: 1000; /* Поверх всех элементов */
 }
 
@@ -34,7 +34,7 @@ ul {
   margin: 0; /* Без внешних отступов */
   list-style: none; /* Убираем маркеры списка */
   font-family: "Montserrat", italic; /* Шрифт Montserrat, курсив */
-  font-weight: 350; /* Толщина шрифта */
+  font-weight: 250; /* Толщина шрифта */
 }
 
 ul li a {
@@ -46,9 +46,9 @@ ul li a {
   padding: 5px 30px; /* Внутренние отступы */
   text-decoration: none; /* Без подчеркивания */
   color: white; /* Белый текст */
-  font-family: sans-serif; /* Шрифт Sans-serif */
-  font-size: 18px; /* Размер текста */
-  font-weight: 600; /* Толщина шрифта */
+  font-family:"Montserrat", Medium;/* Шрифт Sans-serif */
+  font-size: 16px; /* Размер текста */
+  font-weight: 400; /* Толщина шрифта */
   transition: 0.1s; /* Переход 0.1с */
   z-index: 1; /* Поверх всех элементов */
 }
@@ -699,13 +699,13 @@ button[type="submit"] {
   background-color: #efeeee; /* Серый фон */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень */
   margin-left: calc(-50vw + 50%); /* Центрирование */
-  padding: 35px; /* Внутренние отступы */
+  padding: 25px; /* Внутренние отступы */
   box-sizing: border-box; /* Включение паддинга */
   position: relative; /* Относительное позиционирование */
   left: 52%; /* Смещение слева */
   right: 50%; /* Смещение справа */
   transform: translateX(-50%); /* Трансформация по горизонтали */
-  line-height: 1.5; /* Высота строки */
+  line-height: 0; /* Высота строки */
   font-family: "Montserrat", Medium; /* Шрифт Montserrat*/
   font-weight: 80; /* Толщина шрифта */
   width: 109%; /* На 109% ширины */
@@ -733,7 +733,7 @@ button[type="submit"] {
 
 .button-item {
   flex-basis: calc(33.333% - 10px); /* Начальная ширина */
-  margin: 5px 2px; /* Внешние отступы */
+  margin: 12px 2px; /* Внешние отступы */
 }
 
 .search-button {
@@ -747,22 +747,34 @@ button[type="submit"] {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
   cursor: pointer; /* Курсор-указатель */
   transition: box-shadow 0.3s ease; /* Плавный переход */
-  height: 65px; /* Высота кнопки */
+  height: 55px; /* Высота кнопки */
   position: relative; /* Относительное позиционирование */
   left: 17%; /* Смещение слева */
   right: 20%; /* Смещение справа */
   align-items: flex-start; /* Выравнивание по центру */
-  width: 50%; /* Ширина кнопки */
+  width: 70%; /* Ширина кнопки */
 }
 
 .search-button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
 }
 
+.search_icon {
+  
+  left: 245px;
+  width: 60%;
+  max-width: 50px;
+  height: auto;
+  position: relative;
+  top: -25px; /* Поднимет картинку на 10 пикселей вверх */
+}
+
+
 .route,
 .price {
   color: #333; /* Цвет текста */
   margin-bottom: 8px; /* Внешний отступ снизу */
+  
 }
 .route{
   font-family: 'Montserrat';
