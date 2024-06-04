@@ -60,8 +60,18 @@
           Через Польшу/Беларусь
         </p>
         <div class="search-bar-container" data-aos="zoom-in">
-          <input type="text" id="inputA" placeholder="Откуда" />
-          <input type="text" id="inputB" placeholder="Куда" />
+          <input
+            class="search-bar-containerA"
+            type="text"
+            id="inputA"
+            placeholder="Откуда"
+          />
+          <input
+            class="search-bar-containerB"
+            type="text"
+            id="inputB"
+            placeholder="Куда"
+          />
           <button
             class="fucking-button"
             type="submit"
@@ -287,7 +297,7 @@
             price: "300 €",
             Traveltime: "69",
             information:
-              "Отправление- 07.00 В пути: до Варшавы 34 часа (без учёта таможни) до Киева 48 часов (без учета таможни) Место отправления: Ав Южный, Мотель, Макеевка Пункт пропуска: Успенка/Терехово/Шегени(могут изм.) Место прибытия в Варшаву: Авто/жд вокзал Варшава Заходня Расстояние: 2700 км. Место прибытия в Киев: Центральный ж.д вокзал Расстояние: 3500 км.",
+              "Отправление- 07.00<br>В пути: до Варшавы 34 часа (без учёта таможни)<br>до Киева 48 часов (без учета таможни)<br>Место отправления: Ав Южный, Мотель, Макеевка<br>Пункт пропуска: Успенка/Терехово/Шегени(могут изм.)<br>Место прибытия в Варшаву: Авто/жд вокзал Варшава Заходня<br>Расстояние: 2700 км.<br>Место прибытия в Киев: Центральный ж.д вокзал<br>Расстояние: 3500 км.",
             passportNot: "passportNot",
             fromNot: "Донецк",
             toNot: "Киев",
@@ -346,26 +356,28 @@
               offerElement.className = "";
 
               const routeDetails = `
-              <div class="passport" >${route.passport}</div>
+              <div class="passport" ><img class="imgpassport" src="/GoBus/img/free-icon-passport-3125661 2.svg"/>При наличии паспорта РФ</div>
                     <div class="offer" >
                       <!-- <div class="passport">${route.passport}</div>-->
-                        <div class="offer-header">Маршрут: ${route.from} - ${route.to}</div>
+                        
                         <div class="route">
                             <div class="route-details">
                                 <div class="city from-city">
                                     <p>${route.from}</p>
-                                    <p>${route.fromDetail}</p>
+                                    <p class="from-to-det">${route.fromDetail}</p>
                                 </div>
+                                <div class ="line"><img class="imgline" src="/GoBus/img/Line 9.svg"/></div>
                                 <div class="city to-city">
                                     <p>${route.to}</p>
-                                    <p>${route.toDetail}</p>
+                                    <p class="from-to-det">${route.toDetail}</p>
                                 </div>
                                 <div class= "price-price">
                                 <p >${route.price}</p></div>
                             </div>
                             <div class="price-details">
-                              <p>автобус</p>
-                              <p>${route.Traveltime}</p>
+                              <p class= "Bus" ><img class="imgBos" src="/GoBus/img/микроавтобус.svg"/><a class= "aBus">Автобус: Без остоновок </a></p>
+                              <img class="img2Bos" src="/GoBus/img/вай фай.svg"/><img class="img3Bos" src="/GoBus/img/розетка.svg"/><p class="Traveltime">
+                                ${route.Traveltime} часов в пути без таможни</p>
                                 <button class="details-btn">Подробности</button>
                             </div>
                         </div>
@@ -375,27 +387,29 @@
                         </div>
                     </div>
 
-                    
-                    <div class="passport">${route.passportNot}</div>
+
+                    <div class="passport offerrpassport"><img class="imgpassport" src="/GoBus/img/free-icon-passport-3125661 2.svg"/>При наличии паспорта Украины</div>
                     <div class="offerr">
                       <!-- <div class="passport">${route.passportNot}</div>-->
-                        <div class="offer-header">Маршрут: ${route.fromNot} - ${route.toNot}</div>
+                        
                         <div class="route">
                             <div class="route-details">
                                 <div class="city from-city">
                                     <p>${route.fromNot}</p>
-                                    <p>${route.fromDetailNot}</p>
+                                    <p class="from-to-det">${route.fromDetailNot}</p>
                                 </div>
+                                <div class ="line2"><img class="imgline2" src="/GoBus/img/Line 9.svg"/></div>
                                 <div class="city to-city">
                                     <p>${route.toNot}</p>
-                                    <p>${route.toDetailNot}</p>
+                                    <p class="from-to-det">${route.toDetailNot}</p>
                                 </div>
                                 <div class="price-price">
                                 <p >${route.priceNot}</p></div>
                             </div>
                             <div class="price-details">
-                              <p>автобус</p>
-                                <p>${route.TraveltimeNot}</p>
+                              <p class= "Bus" ><img class="imgBos" src="/GoBus/img/микроавтобус.svg"/><a class= "aBus">Автобус: Без остоновок </a></p>
+                              <img class="img2Bos" src="/GoBus/img/вай фай.svg"/><img class="img3Bos" src="/GoBus/img/розетка.svg"/><p class="Traveltime">
+                                ${route.TraveltimeNot} часов в пути без таможни</p>
                                 <button class="details-btn">Подробности</button>
                             </div>
                         </div>

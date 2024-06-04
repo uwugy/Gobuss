@@ -360,7 +360,7 @@ nav button {
 }
 
 .search-bar-container {
-  max-width: 1000px; /* Максимальная ширина */
+  max-width: 80%; /* Максимальная ширина */
   margin: 0 auto; /* Центрирование */
   background-color: #fff; /* Белый фон */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
@@ -373,6 +373,14 @@ nav button {
   left: 20px; /* Смещение слева */
   right: 50px; /* Смещение справа */
 }
+.search-bar-containerA {
+  width: 800%;
+  height: auto;
+}
+.search-bar-containerB {
+  max-width: 1000px;
+}
+
 .logoimg {
   max-width: 70%; /* Логотип не будет превышать 10% ширины контейнера */
   height: auto; /* Высота будет изменяться пропорционально ширине */
@@ -655,7 +663,7 @@ nav button {
     padding: 6px; /* Внутренние отступы */
     margin-bottom: 5px; /* Отступ снизу */
     border-radius: 4px; /* Скругленные углы */
-    width: 80%; /* На 80% ширины */
+    width: 100%; /* На 80% ширины */
     box-sizing: border-box; /* Включение паддинга */
   }
 }
@@ -675,14 +683,70 @@ button[type="submit"] {
   border: none; /* Без границы */
   cursor: pointer; /* Курсор-указатель */
 }
-
+.line {
+  position: relative;
+  top: 14px;
+  right: 16%;
+}
+.imgline {
+  width: auto;
+  height: 3.3px;
+}
+.line2 {
+  position: relative;
+  top: 14px;
+  right: 16%;
+}
+.imgline2 {
+  width: auto;
+  height: 3.3px;
+}
 .details {
   display: none; /* Скрытие элемента */
   text-align: left; /* Выравнивание текста слева */
   border-top: 1px solid #ddd; /* Верхняя граница */
   padding-top: 20px; /* Внутренний отступ сверху */
+  position: relative;
+  top: 20px;
+}
+.Bus {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  background-color: #ffffff; /* Белый фон */
+
+  border: 2px solid rgba(0, 0, 0, 0.3); /* Серая обводка */
+  padding: 1px 14px; /* Внутренние отступы */
+  border-radius: 40px; /* Скругленные углы */
+  margin-top: 20px; /* Внешний отступ сверху */
+}
+.aBus {
+  position: relative;
+  right: 5px;
+  top: 1px;
 }
 
+.imgBos {
+  position: relative;
+  top: 4px;
+  right: 5%;
+  width: auto;
+  height: 15px;
+}
+.img2Bos {
+  position: relative;
+  top: 31px;
+  right: 8%;
+  width: auto;
+  height: 15px;
+}
+.img3Bos {
+  position: relative;
+  top: 31px;
+  right: 16%;
+  width: auto;
+  height: 15px;
+}
 .details-btn {
   background-color: #e3730b; /* Оранжевый фон */
   color: white; /* Белый текст */
@@ -691,6 +755,8 @@ button[type="submit"] {
   cursor: pointer; /* Курсор-указатель */
   border-radius: 5px; /* Скругленные углы */
   margin-top: 20px; /* Внешний отступ сверху */
+  position: relative;
+  top: 15px;
 }
 
 /* Популярные направления */
@@ -823,6 +889,12 @@ button[type="submit"] {
   font-weight: 500;
   font-size: 24px; /* Размер текста */
 }
+.imgpassport {
+  width: auto;
+  height: 25px;
+  position: relative;
+  top: 4px;
+}
 .passport {
   position: relative;
   left: 20%;
@@ -860,7 +932,7 @@ button[type="submit"] {
 }
 .to-city {
   position: relative;
-  left: 20%;
+  left: -14%;
 }
 .route-details .city,
 .offerr .route-details .city {
@@ -878,9 +950,20 @@ button[type="submit"] {
 }
 .price-price {
   position: relative;
-  left: 40%;
+  left: 6%;
 }
-
+.from-to-det {
+  position: relative;
+  top: -20px;
+}
+.Traveltime {
+  position: relative;
+  left: -10%;
+}
+.offerr .offerrpassport {
+  position: relative;
+  top: 500px;
+}
 .offer .price-details,
 .offerr .price-details {
   display: flex; /* Горизонтальное выравнивание */
@@ -889,12 +972,13 @@ button[type="submit"] {
 }
 
 .price-details p {
-  font-size: 24px; /* Размер текста */
-  color: #e3730b; /* Оранжевый текст */
+  font-size: 14px; /* Размер текста */
+  color: #585858; /* Оранжевый текст */
   font-weight: bold; /* Жирный текст */
   margin: 0; /* Без внешних отступов */
+  position: relative;
+  top: 30px;
 }
-
 .offer button,
 .offerr button {
   background-color: #e3730b; /* Оранжевый фон */
