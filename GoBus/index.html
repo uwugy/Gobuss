@@ -39,6 +39,7 @@
           <!-- <img src="/Gobus/image/logo.svg" class="logoimg alt="GoBus" /> -->
           <img src="image/logo.svg" class="logoimg alt="GoBus" />
         </a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <ul>
           <li><a href="#home" class="link">Главная</a></li>
           <li><a href="#routes" class="link">Маршруты</a></li>
@@ -373,7 +374,7 @@
               offerElement.className = "";
 
               const routeDetails = `
-              <div class="passport" ><img class="imgpassport" src="/GoBus/img/free-icon-passport-3125661 2.svg"/>При наличии паспорта РФ</div>
+              <div class="passport" ><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/>При наличии паспорта РФ</div>
                     <div class="offer" >
                       <!-- <div class="passport">${route.passport}</div>-->
                         
@@ -383,7 +384,8 @@
                                     <p>${route.from}</p>
                                     <p class="from-to-det">${route.fromDetail}</p>
                                 </div>
-                                <div class ="line"><img class="imgline" src="/GoBus/img/Line 9.svg"/></div>
+                                <div class ="line"><img class="imgline" src="/img/Line 9.svg"/></div> 
+                                
                                 <div class="city to-city">
                                     <p>${route.to}</p>
                                     <p class="from-to-det">${route.toDetail}</p>
@@ -392,8 +394,8 @@
                                 <p >${route.price}</p></div>
                             </div>
                             <div class="price-details">
-                              <p class= "Bus" ><img class="imgBos" src="/GoBus/img/микроавтобус.svg"/><a class= "aBus">Автобус: Без остоновок </a></p>
-                              <img class="img2Bos" src="/GoBus/img/вай фай.svg"/><img class="img3Bos" src="/GoBus/img/розетка.svg"/><p class="Traveltime">
+                              <p class= "Bus" ><img class="imgBos" src="/img/микроавтобус.svg"/><a class= "aBus">Автобус: Без остоновок </a></p>
+                              <img class="img2Bos" src="/img/вай фай.svg"/><img class="img3Bos" src="/img/розетка.svg"/><p class="Traveltime">
                                 ${route.Traveltime} часов в пути без таможни</p>
                                 <button class="details-btn">Подробности</button>
                             </div>
@@ -405,7 +407,7 @@
                     </div>
 
 
-                    <div class="passport offerrpassport"><img class="imgpassport" src="/GoBus/img/free-icon-passport-3125661 2.svg"/>При наличии паспорта Украины</div>
+                    <div class="passport offerrpassport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/>При наличии паспорта Украины</div>
                     <div class="offerr">
                       <!-- <div class="passport">${route.passportNot}</div>-->
                         
@@ -415,7 +417,7 @@
                                     <p>${route.fromNot}</p>
                                     <p class="from-to-det">${route.fromDetailNot}</p>
                                 </div>
-                                <div class ="line2"><img class="imgline2" src="/GoBus/img/Line 9.svg"/></div>
+                                <div class ="line2"><img class="imgline2" src="/img/Line 9.svg"/></div>
                                 <div class="city to-city">
                                     <p>${route.toNot}</p>
                                     <p class="from-to-det">${route.toDetailNot}</p>
@@ -424,8 +426,8 @@
                                 <p >${route.priceNot}</p></div>
                             </div>
                             <div class="price-details">
-                              <p class= "Bus" ><img class="imgBos" src="/GoBus/img/микроавтобус.svg"/><a class= "aBus">Автобус: Без остоновок </a></p>
-                              <img class="img2Bos" src="/GoBus/img/вай фай.svg"/><img class="img3Bos" src="/GoBus/img/розетка.svg"/><p class="Traveltime">
+                              <p class= "Bus" ><img class="imgBos" src="/img/микроавтобус.svg"/><a class= "aBus">Автобус: Без остоновок </a></p>
+                              <img class="img2Bos" src="/img/вай фай.svg"/><img class="img3Bos" src="/img/розетка.svg"/><p class="Traveltime">
                                 ${route.TraveltimeNot} часов в пути без таможни</p>
                                 <button class="details-btn">Подробности</button>
                             </div>
@@ -486,6 +488,10 @@
           }
         };
       </script>
+      <script>function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }</script>
     </main>
 
     <!-- Подвал сайта -->
