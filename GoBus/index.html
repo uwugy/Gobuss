@@ -20,6 +20,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="/GoBus/AOS/aos.css" />
+    <link rel="stylesheet" href="/AOS/aos.css" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +35,9 @@
       <nav>
         <!-- Логотип как ссылка на главную страницу -->
         <a href="index.html" class="logo">
-          <img src="img/GoBus.png" class="logoimg alt="GoBus" />
+          <!-- ОДНУ ИЗ НИХ УДАЛИТЬ!!! -->
+          <!-- <img src="/Gobus/image/logo.svg" class="logoimg alt="GoBus" /> -->
+          <img src="image/logo.svg" class="logoimg alt="GoBus" />
         </a>
         <ul>
           <li><a href="#home" class="link">Главная</a></li>
@@ -42,7 +45,12 @@
           <li><a href="#info" class="link">Информация</a></li>
           <li><a href="#contacts" class="link">Контакты</a></li>
         </ul>
-        <button class="navi">Позвонить</button>
+        <button class="navi" onclick="makeCall()">Позвонить</button>
+        <script>
+          function makeCall() {
+            window.location.href = 'tel:+380952404095';
+          }
+        </script>
       </nav>
     </header>
 
@@ -88,11 +96,14 @@
               class="search-button"
               onclick="displayPredefinedRoute('Донецк', 'Киев')"
             >
+            <!-- src="/GoBus/icon_сontact/search_icon.png"
+            src="/icon_сontact/search_icon.png" -->
               <span class="route">Донецк - Киев</span>
               <span class="price"
                 >от 300 €<img
                   class="search_icon"
-                  src="/GoBus/icon_сontact/search_icon.png"
+                  
+                  src="/icon_сontact/search_icon.png"
                   alt="search_icon"
               /></span>
             </button>
@@ -107,7 +118,8 @@
               <span class="price"
                 >от 300 €<img
                   class="search_icon"
-                  src="/GoBus/icon_сontact/search_icon.png"
+                  
+                  src="/icon_сontact/search_icon.png"
                   alt="search_icon"
               /></span>
             </button>
@@ -123,7 +135,8 @@
                 >от 250 €
                 <img
                   class="search_icon"
-                  src="/GoBus/icon_сontact/search_icon.png"
+                  
+                  src="/icon_сontact/search_icon.png"
                   alt="search_icon"
               /></span>
 
@@ -142,7 +155,8 @@
               <span class="price"
                 >от 350 €<img
                   class="search_icon"
-                  src="/GoBus/icon_сontact/search_icon.png"
+                  
+                  src="/icon_сontact/search_icon.png"
                   alt="search_icon"
               /></span>
             </button>
@@ -157,7 +171,8 @@
               <span class="price"
                 >от 150 €<img
                   class="search_icon"
-                  src="/GoBus/icon_сontact/search_icon.png"
+                  
+                  src="/icon_сontact/search_icon.png"
                   alt="search_icon"
               /></span>
             </button>
@@ -172,7 +187,8 @@
               <span class="price"
                 >от 400 €<img
                   class="search_icon"
-                  src="/GoBus/icon_сontact/search_icon.png"
+                  
+                  src="/icon_сontact/search_icon.png"
                   alt="search_icon"
               /></span>
             </button>
@@ -232,26 +248,27 @@
       <!-- Контактная информация -->
       <div class="contact-section" id="contacts" data-aos="zoom-in">
         <h2>Записаться на рейс:</h2>
-        <p>+38 095 240 40 95</p>
-        <p>+48 452 622 852</p>
-        <p>+7 949 332 6499</p>
-        <div class="button-container">
-          <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-            class="circle-button telegram"
-          ></a>
-          <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-            class="circle-button viber"
-          ></a>
-          <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
-            class="circle-button whatsapp"
-          ></a>
+        <div class="telefons">
+        <a href="tel:+380952404095" class="tel-contact">+38 095 240 40 95</a>
+        <a href="tel:+380952404095" class="tel-contact">+48 452 622 852</a>
+        <a href="tel:+380952404095" class="tel-contact">+7 949 332 6499</a>
+      </div>
+        <div class="social-links">
+          <a href="https://www.facebook.com/yourprofile" target="_blank">
+            <img src="/icon_сontact/teleDark.jpg" alt="Telegrtam">
+          </a>
+          
+          <a href="https://www.instagram.com/yourprofile" target="_blank">
+            <img src="/icon_сontact/viberDark.png" alt="Viber">
+          </a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
+            <img src="/icon_сontact/whatsDArk.webp" alt="WhatsApp">
+          </a>
         </div>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="/GoBus/AOS/aos.js"></script>
+      <script src="/AOS/aos.js"></script>
       <script>
         AOS.init();
       </script>

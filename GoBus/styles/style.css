@@ -16,7 +16,7 @@ header {
   width: 100%; /* На всю ширину */
   background-color: #000000; /* Черный фон */
   color: white; /* Белый текст */
-  padding: 12px 0; /* Внутренние отступы сверху и снизу */
+  padding: 8px 0; /* Внутренние отступы сверху и снизу */
   z-index: 1000; /* Поверх всех элементов */
 }
 
@@ -97,14 +97,23 @@ nav button {
   color: white; /* Белый текст */
   text-decoration: none; /* Без подчеркивания */
   padding: 5px 10px; /* Внутренние отступы */
+
 }
 
 nav button {
   background-color: #e3730b; /* Оранжевый фон */
   border: none; /* Без границы */
-  padding: 10px 15px; /* Внутренние отступы */
+  padding: 0.95% 20px; /* Внутренние отступы */
   cursor: pointer; /* Курсор-указатель */
   border-radius: 8px 8px 8px 0; /* Скругленные углы */
+}
+
+.navi{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 650;
+
+
 }
 
 .searchResultsBlock {
@@ -220,7 +229,7 @@ nav button {
 .text-column3 {
   position: relative; /* Относительное позиционирование */
   left: 10%; /* Смещение слева */
-  max-width: 70%; /* Максимальная ширина */
+  max-width: 60%; /* Максимальная ширина */
   align-items: center; /* Выравнивание по центру */
 }
 
@@ -318,7 +327,10 @@ nav button {
 
 /* Поисковая строка */
 .section-background {
+  /*ОДНО ИЗ НИХ УДАЛИТЬ!!!*/
   background: url("/GoBus/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
+    center; /* Фон */
+    background: url("/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
     center; /* Фон */
   background-size: cover; /* Масштабирование фона */
   width: 100vw; /* На всю ширину экрана */
@@ -593,6 +605,8 @@ nav button {
   .text-column3 {
     position: relative;
     left: 18%;
+    
+   
   }
 }
 
@@ -715,7 +729,7 @@ button[type="submit"] {
   color: #000000;
   position: relative; /* Относительное позиционирование */
   top: 0; /* Прижатие к верху */
-  left: 6.9%; /* Смещение слева */
+  left: 170px; /* Смещение слева */
   right: 50%; /* Смещение справа */
   font-family: "Montserrat";
   font-style: normal;
@@ -917,6 +931,11 @@ button[type="submit"] {
 /* Контактная информация */
 .contact-section {
   text-align: center; /* Выравнивание по центру */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  height: 45vh; /* Высота страницы */
+  margin-top: -4%; /* Поднятие блока на 20 пикселей выше */
+
 }
 
 .contact-section h2 {
@@ -929,41 +948,48 @@ button[type="submit"] {
   margin: 5px 0; /* Внешние отступы */
 }
 
-.button-container {
-  margin-top: 20px; /* Внешний отступ сверху */
+
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  font-style: normal;
+
+    
+
+}
+.social-links {
+  display: flex;
+  gap: 15px; /* Расстояние между логотипами */
+  margin-top: 20px; /* Отступ сверху для опускания логотипов */
 }
 
-.circle-button {
-  display: inline-block; /* Строчный элемент */
-
-  border-radius: 50%; /* Круглая форма */
-  background-size: cover; /* Масштабирование фона */
-  background-position: center; /* Центровка фона */
-  text-decoration: none; /* Без подчеркивания */
-  margin: 5px; /* Внешние отступы */
+.social-links a {
+  display: inline-block;
+  width: 45px; /* Ширина логотипа */
+  height: 45px; /* Высота логотипа */
+  
 }
 
-.telegram {
-  background-image: url("/GoBus/icon_сontact/telegram.png"); /* Фон Telegram */
-  width: 45px; /* Ширина кнопки */
-  height: 45px; /* Высота кнопки */
+.social-links img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
 
-.viber {
-  background-image: url("/GoBus/icon_сontact/viber.png"); /* Фон Viber */
-  width: 60px; /* Ширина кнопки */
-  height: 60px; /* Высота кнопки */
+
+.tel-contact{
+  color: #000000;
+
 }
 
-.whatsapp {
-  background-image: url("/GoBus/icon_сontact/whatsapp.png"); /* Фон WhatsApp */
-  width: 52px; /* Ширина кнопки */
-  height: 52px; /* Высота кнопки */
+.telefons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
 }
 
-.circle-button:hover {
-  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
-}
 
 /* Подвал сайта */
 footer {
