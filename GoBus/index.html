@@ -39,6 +39,7 @@
           <!-- <img src="/Gobus/image/logo.svg" class="logoimg alt="GoBus" /> -->
           <img src="image/logo.svg" class="logoimg alt="GoBus" />
         </a>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <ul>
           <li><a href="#home" class="link">Главная</a></li>
           <li><a href="#routes" class="link">Маршруты</a></li>
@@ -400,7 +401,8 @@
                                     <p>${route.from}</p>
                                     <p class="from-to-det">${route.fromDetail}</p>
                                 </div>
-                                <div class ="line"><img class="imgline" src="/GoBus/img/Line 9.svg"/></div>
+                                <div class ="line"><img class="imgline" src="/img/Line 9.svg"/></div> 
+                                
                                 <div class="city to-city">
                                     <p>${route.to}</p>
                                     <p class="from-to-det">${route.toDetail}</p>
@@ -436,7 +438,7 @@
                                     <p>${route.fromNot}</p>
                                     <p class="from-to-det">${route.fromDetailNot}</p>
                                 </div>
-                                <div class ="line2"><img class="imgline2" src="/GoBus/img/Line 9.svg"/></div>
+                                <div class ="line2"><img class="imgline2" src="/img/Line 9.svg"/></div>
                                 <div class="city to-city">
                                     <p>${route.toNot}</p>
                                     <p class="from-to-det">${route.toDetailNot}</p>
@@ -509,6 +511,12 @@
             displaySearchResults(searchParams);
           }
         };
+      </script>
+      <script>
+        function toggleMenu() {
+          const menu = document.querySelector(".menu");
+          menu.classList.toggle("active");
+        }
       </script>
     </main>
 
