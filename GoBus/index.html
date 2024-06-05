@@ -82,6 +82,7 @@
             placeholder="Куда"
           />
           <button
+            id="xyu"
             class="fucking-button"
             type="submit"
             onclick="updateSearchResults()"
@@ -102,6 +103,7 @@
         <!-- Список направлений -->
         <div class="button-group">
           <div
+            onclick="window.location.href='#xyu'"
             class="button-item butitem2"
             data-aos="flip-down"
             data-aos-duration="1000"
@@ -123,6 +125,7 @@
             </button>
           </div>
           <div
+            onclick="window.location.href='#xyu'"
             class="button-item"
             data-aos="flip-down"
             data-aos-duration="1000"
@@ -142,6 +145,7 @@
             </button>
           </div>
           <div
+            onclick="window.location.href='#xyu'"
             class="button-item butitem3"
             data-aos="flip-down"
             data-aos-duration="1000"
@@ -166,6 +170,7 @@
         </div>
         <div class="button-group">
           <div
+            onclick="window.location.href='#xyu'"
             class="button-item butitem2"
             data-aos="flip-up"
             data-aos-duration="1000"
@@ -184,7 +189,12 @@
               /></span>
             </button>
           </div>
-          <div class="button-item" data-aos="flip-up" data-aos-duration="1000">
+          <div
+            onclick="window.location.href='#xyu'"
+            class="button-item"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
             <button
               type="button"
               class="search-button"
@@ -200,6 +210,7 @@
             </button>
           </div>
           <div
+            onclick="window.location.href='#xyu'"
             class="button-item butitem3"
             data-aos="flip-up"
             data-aos-duration="1000"
@@ -391,8 +402,8 @@
               offerElement.className = "";
 
               const routeDetails = `
-              <div class="passport" ><img class="imgpassport" src="/GoBus/img/free-icon-passport-3125661 2.svg"/><a>При наличии паспорта РФ</a></div>
-                    <div class="offer" >
+              <div class="passport"  ><img class="imgpassport" src="/GoBus/img/free-icon-passport-3125661 2.svg"/><a>При наличии паспорта РФ</a></div>
+                    <div class="offer"  >
                       <!-- <div class="passport">${route.passport}</div>-->
                         
                         <div class="route">
@@ -401,7 +412,7 @@
                                     <p>${route.from}</p>
                                     <p class="from-to-det">${route.fromDetail}</p>
                                 </div>
-                                <div class ="line"><img class="imgline" src="/img/Line 9.svg"/></div> 
+                                <div class ="line"><img class="imgline" src="/GoBus/img/Line 9.svg"/></div> 
                                 
                                 <div class="city to-city">
                                     <p>${route.to}</p>
@@ -418,7 +429,7 @@
                               <img class="img3Bos" src="/GoBus/img/розетка.svg"/>
                               <p class="Traveltime Buuus">
                               <a>${route.Traveltime} часов в пути без таможни</a></p>
-                                <button class="details-btn">Подробности</button>
+                                <button class="details-btn"><a>Подробности</a></button>
                             </div>
                         </div>
 
@@ -438,10 +449,10 @@
                                     <p>${route.fromNot}</p>
                                     <p class="from-to-det">${route.fromDetailNot}</p>
                                 </div>
-                                <div class ="line2"><img class="imgline2" src="/img/Line 9.svg"/></div>
+                                <div class ="line2"><img class="imgline2" src="/GoBus/img/Line 9.svg"/></div>
                                 <div class="city to-city">
                                     <p>${route.toNot}</p>
-                                    <p class="from-to-det">${route.toDetailNot}</p>
+                                    <p class="from-to-det"><a>${route.toDetailNot}</a></p>
                                 </div>
                                 <div class="price-price">
                                 <p >${route.priceNot}</p></div>
@@ -453,7 +464,7 @@
                               <img class="img3Bos" src="/GoBus/img/розетка.svg"/>
                               <p class="Traveltime">
                                 <a>${route.TraveltimeNot} часов в пути без таможни</a></p>
-                                <button class="details-btn">Подробности</button>
+                                <button class="details-btn"><a>Подробности</a></button>
                             </div>
                         </div>
                         <div class="details">

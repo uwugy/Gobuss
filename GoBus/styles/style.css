@@ -1119,3 +1119,78 @@ body::-webkit-scrollbar-thumb {
     border-left: none; /* Убираем левую границу у кнопки */
   }
 }
+@media screen and (max-width: 480px) {
+  .Bus {
+    position: relative;
+
+    right: 8%;
+    left: -2%;
+    width: auto;
+    height: 19px;
+    font-size: 12px;
+  }
+  .aBus {
+    font-size: 12px;
+  }
+  .price-details > .Traveltime a {
+    position: relative;
+    top: -8px;
+    right: 110%;
+    font-size: 12px;
+  }
+  .details-btn {
+    position: relative;
+    top: 5px;
+    right: 8%;
+    left: -45%;
+    width: 100px;
+    height: 30px;
+  }
+  .details-btn a {
+    font-size: 10px;
+    position: relative;
+    right: 14%;
+    top: -20%;
+  }
+  .imgBos {
+    position: relative;
+    top: 3px;
+    right: -90%;
+  }
+
+  .img2Bos {
+    position: relative;
+    top: 22px;
+    right: 5%;
+    width: auto;
+    height: 13px;
+  }
+
+  .img3Bos {
+    position: relative;
+    top: 22px;
+    right: 4%;
+    width: auto;
+    height: 13px;
+  }
+}
+.city p {
+  font-size: 16px;
+}
+.city > .from-to-det {
+  font-size: 1px;
+}
+.concha-text {
+  font-size: 18px;
+  position: relative;
+  left: 95px;
+}
+.section-background-text-1 {
+  font-size: 12px;
+}
+.section-background-text-2 {
+  font-size: 16px;
+}
+.section-background-text-3 {
+  font-size: 12px;
+}
