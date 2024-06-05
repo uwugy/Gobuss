@@ -340,7 +340,7 @@ nav button {
 /* Поисковая строка */
 .section-background {
   /*ОДНО ИЗ НИХ УДАЛИТЬ!!!*/
-  background: url("/GoBus/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
+  background: url("/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
     center; /* Фон */
   /* background: url("/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
     center; */ /* Фон */
@@ -940,21 +940,11 @@ body::-webkit-scrollbar-thumb {
   }
 
   ul li a {
-    display: block; /* Блочный элемент */
-    position: relative; /* Относительное позиционирование */
-    align-items: center; /* Выравнивание по центру */
-    text-transform: none; /* Без изменения регистра */
-    margin: -10px 0; /* Отступы сверху и снизу */
-    padding: 2px 10px; /* Внутренние отступы */
-    text-decoration: none; /* Без подчеркивания */
-    color: white; /* Белый текст */
-    font-family: sans-serif; /* Шрифт Sans-serif */
-    font-size: 12px; /* Размер текста */
-    font-weight: 300; /* Толщина шрифта */
-    transition: 0.1s; /* Переход 0.1с */
-    z-index: 1; /* Поверх всех элементов */
+    display: none; /* Блочный элемент */
+    
   }
 
+  
   ul li a:before,
   ul li a:after {
     content: ""; /* Пустое содержание */
@@ -1082,6 +1072,40 @@ body::-webkit-scrollbar-thumb {
     align-items: flex-start; /* Выравнивание по началу */
     width: 90%; /* На всю ширину */
   }
+  
+  .menu {
+
+    display: none;
+    flex-direction: column;
+    width: 480px;
+    height: 10000px;
+    background-color: #000000;
+    z-index: 10000;
+}
+
+  .menu li {
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+  .menu.active {
+    display: flex;
+    position: relative; /* Относительное позиционирование */
+    align-items: center; /* Выравнивание по центру */
+    text-transform: none; /* Без изменения регистра */
+    margin: -10px 0; /* Отступы сверху и снизу */
+    padding: 2px 10px; /* Внутренние отступы */
+    text-decoration: none; /* Без подчеркивания */
+    color: white; /* Белый текст */
+    font-family: sans-serif; /* Шрифт Sans-serif */
+    font-size: 12px; /* Размер текста */
+    font-weight: 300; /* Толщина шрифта */
+    transition: 0.1s; /* Переход 0.1с */
+    z-index: 1; /* Поверх всех элементов */
+}
+
+
 }
 
 @media screen and (min-width: 766px) {
