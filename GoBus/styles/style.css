@@ -501,6 +501,20 @@ button[type="submit"] {
   position: relative;
   top: 15px;
 }
+.details-btn2 {
+  background-color: #e3730b; /* Оранжевый фон */
+  color: white; /* Белый текст */
+  border: none; /* Без границы */
+  padding: 10px 20px; /* Внутренние отступы */
+  cursor: pointer; /* Курсор-указатель */
+  border-radius: 5px; /* Скругленные углы */
+  text-decoration: none; /* Убираем подчеркивание */
+  display: inline-block; /* Ставим inline-block для padding */
+
+  position: relative;
+  top: -15px;
+  left: 815px;
+}
 
 /* Популярные направления */
 .routes-block {
