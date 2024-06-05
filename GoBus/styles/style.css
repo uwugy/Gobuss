@@ -340,7 +340,7 @@ nav button {
 /* Поисковая строка */
 .section-background {
   /*ОДНО ИЗ НИХ УДАЛИТЬ!!!*/
-  background: url("/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
+  background: url("/GoBus/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
     center; /* Фон */
   /* background: url("/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
     center; */ /* Фон */
@@ -372,6 +372,7 @@ nav button {
   font-style: normal;
   font-weight: 600;
   font-display: swap;
+
   /* top: 105px; */
 }
 
@@ -941,10 +942,8 @@ body::-webkit-scrollbar-thumb {
 
   ul li a {
     display: none; /* Блочный элемент */
-    
   }
 
-  
   ul li a:before,
   ul li a:after {
     content: ""; /* Пустое содержание */
@@ -1072,22 +1071,20 @@ body::-webkit-scrollbar-thumb {
     align-items: flex-start; /* Выравнивание по началу */
     width: 90%; /* На всю ширину */
   }
-  
-  .menu {
 
+  .menu {
     display: none;
     flex-direction: column;
     width: 480px;
     height: 10000px;
     background-color: #000000;
     z-index: 10000;
-}
+  }
 
   .menu li {
     text-align: center;
     margin: 10px 0;
-
-}
+  }
 
   .menu.active {
     display: flex;
@@ -1103,9 +1100,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 300; /* Толщина шрифта */
     transition: 0.1s; /* Переход 0.1с */
     z-index: 1; /* Поверх всех элементов */
-}
-
-
+  }
 }
 
 @media screen and (min-width: 766px) {
@@ -1197,24 +1192,25 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     height: 13px;
   }
-}
-.city p {
-  font-size: 16px;
-}
-.city > .from-to-det {
-  font-size: 1px;
-}
-.concha-text {
-  font-size: 18px;
-  position: relative;
-  left: 95px;
-}
-.section-background-text-1 {
-  font-size: 12px;
-}
-.section-background-text-2 {
-  font-size: 16px;
-}
-.section-background-text-3 {
-  font-size: 12px;
+
+  .city p {
+    font-size: 16px;
+  }
+  .city > .from-to-det {
+    font-size: 1px;
+  }
+  .concha-text {
+    font-size: 18px;
+    position: relative;
+    left: 95px;
+  }
+  .section-background-text-1 {
+    font-size: 12px;
+  }
+  .section-background-text-2 {
+    font-size: 16px;
+  }
+  .section-background-text-3 {
+    font-size: 12px;
+  }
 }
