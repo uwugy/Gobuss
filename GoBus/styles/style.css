@@ -126,6 +126,8 @@ nav button {
   font-style: normal;
   font-weight: 650;
   max-width: 70%;
+  position: relative;
+  right: 4%;
 }
 
 .searchResultsBlock {
@@ -185,16 +187,16 @@ nav button {
 
 .important-label-2 {
   position: relative; /* Относительное позиционирование */
-  left: 5%; /* Смещение слева */
+  left: 8.25%; /* Смещение слева */
   align-items: center; /* Выравнивание по центру */
 }
 
 .important-label-3 {
   position: relative; /* Относительное позиционирование */
-  left: 5%; /* Смещение слева */
+  left: 11%; /* Смещение слева */
   font-family: "Montserrat", Medium; /* Шрифт Montserrat*/
   font-weight: 350; /* Толщина шрифта */
-  max-width: 80%; /* Максимальная ширина */
+  max-width: 73%; /* Максимальная ширина */
   align-items: center; /* Выравнивание по центру */
 }
 
@@ -233,14 +235,14 @@ nav button {
 
 .text-column2 {
   position: relative; /* Относительное позиционирование */
-  left: 10%; /* Смещение слева */
+  left: 14.5%; /* Смещение слева */
   max-width: 92%; /* Максимальная ширина */
   align-items: center; /* Выравнивание по центру */
 }
 
 .text-column3 {
   position: relative; /* Относительное позиционирование */
-  left: 10%; /* Смещение слева */
+  left: 18.8%; /* Смещение слева */
   max-width: 60%; /* Максимальная ширина */
   align-items: center; /* Выравнивание по центру */
 }
@@ -314,7 +316,7 @@ nav button {
   position: relative;
   border-radius: 8px;
   top: 0%;
-  right: 10%;
+  right: 14.5%;
   width: 30%; /* Ширина слайдера */
   height: 30%; /* Высота слайдера */
   margin-left: auto; /* Смещение слева */
@@ -409,6 +411,8 @@ nav button {
 .logoimg {
   max-width: 70%; /* Логотип не будет превышать 10% ширины контейнера */
   height: auto; /* Высота будет изменяться пропорционально ширине */
+  position: relative;
+  left: 49%;
 }
 
 input[type="text"],
@@ -1119,7 +1123,7 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 766px) {
   .search-bar-container {
-    max-width: 75%; /* Максимальная ширина */
+    max-width: 74.5%; /* Максимальная ширина */
     margin: 0 auto; /* Центрирование */
     background-color: #ffffff; /* Белый фон */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
@@ -1129,6 +1133,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center; /* Выравнивание по центру */
     position: relative; /* Относительное позиционирование */
     top: 180px; /* Смещение сверху */
+    left: 0.5%;
   }
 
   .search-bar-container input[type="text"],
