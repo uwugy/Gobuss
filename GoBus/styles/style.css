@@ -187,7 +187,7 @@ nav button {
 
 .important-label-2 {
   position: relative; /* Относительное позиционирование */
-  left: 8.25%; /* Смещение слева */
+  left: 11%; /* Смещение слева */
   align-items: center; /* Выравнивание по центру */
 }
 
@@ -235,7 +235,7 @@ nav button {
 
 .text-column2 {
   position: relative; /* Относительное позиционирование */
-  left: 14.5%; /* Смещение слева */
+  left: 18.5%; /* Смещение слева */
   max-width: 92%; /* Максимальная ширина */
   align-items: center; /* Выравнивание по центру */
 }
@@ -342,7 +342,7 @@ nav button {
 /* Поисковая строка */
 .section-background {
   /*ОДНО ИЗ НИХ УДАЛИТЬ!!!*/
-  background: url("/GoBus/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
+  background: url("/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
     center; /* Фон */
   /* background: url("/image/photo_2024-04-14_23-33-25.jpg") no-repeat center
     center; */ /* Фон */
@@ -542,12 +542,13 @@ button[type="submit"] {
   color: #000000;
   position: relative; /* Относительное позиционирование */
   top: 0; /* Прижатие к верху */
-  left: 170px; /* Смещение слева */
-  right: 50%; /* Смещение справа */
+  /* left: ; */ /* Смещение слева */
+  right: -13.5%; /* Смещение справа */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
+  margin-bottom: 30px;
 }
 
 .button-group {
