@@ -353,6 +353,7 @@ nav button {
   left: 50%; /* Смещение слева */
   right: 50%; /* Смещение справа */
   transform: translateX(-50%); /* Трансформация по горизонтали */
+  z-index: 100;
 }
 
 .section-background-text-1,
@@ -517,7 +518,7 @@ button[type="submit"] {
 
   position: relative;
   top: -15px;
-  left: 815px;
+  left: 84%;
 }
 
 /* Популярные направления */
@@ -1232,5 +1233,136 @@ body::-webkit-scrollbar-thumb {
   }
   .section-background-text-3 {
     font-size: 12px;
+  }
+}
+
+.suggestionsA {
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  width: 24.6%;
+  left: 13.4%;
+  top: 87.8%;
+  z-index: 1000;
+  background-color: white;
+}
+.suggestionsB {
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  width: 24.6%;
+  left: 38.2%;
+  top: 87.8%;
+  z-index: 1000;
+  background-color: white;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+@media screen and (max-width: 769px) {
+  .suggestionsA {
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 74%;
+    left: 13.3%;
+    top: 87%;
+    z-index: 1000;
+    background-color: white;
+  }
+  .suggestionsB {
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 74%;
+    left: 13.3%;
+    top: 96%;
+    z-index: 1000;
+    background-color: white;
+  }
+
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+}
+@media screen and (max-width: 766px) {
+  .suggestionsA {
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 79%;
+    left: 11%;
+    top: 75.8%;
+    z-index: 1000;
+    background-color: white;
+  }
+  .suggestionsB {
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 79%;
+    left: 11%;
+    top: 84.8%;
+    z-index: 1000;
+    background-color: white;
+  }
+
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+}
+@media screen and (max-width: 481px) {
+  .suggestionsA {
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 79%;
+    left: 11.4%;
+    top: 66%;
+    z-index: 1000;
+    background-color: white;
+  }
+  .suggestionsB {
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    width: 79%;
+    left: 11.4%;
+    top: 75.8%;
+    z-index: 1000;
+    background-color: white;
+  }
+
+  .suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
   }
 }

@@ -1043,7 +1043,7 @@ function displaySearchResults(searchParams) {
               </div>
 
 
-              <div class="passport offerrpassport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>При наличии паспорта Украины</a></div>
+              <div class="passport offerrpassport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>Без наличия паспорта Украины</a></div>
               <div class="offerr">
                 <!-- <div class="passport">${route.passportNot}</div>-->
 
