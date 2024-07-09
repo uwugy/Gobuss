@@ -39,13 +39,21 @@
           <!-- <img src="/Gobus/image/logo.svg" class="logoimg alt="GoBus" /> -->
           <img src="image/logo.svg" class="logoimg alt="GoBus" />
         </a>
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-        <ul>
-          <li><a href="#home" class="link">Главная</a></li>
-          <li><a href="#routes" class="link">Маршруты</a></li>
-          <li><a href="#info" class="link">Информация</a></li>
-          <li><a href="#contacts" class="link">Контакты</a></li>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="overlay" onclick="toggleMenu()"></div>
+        <ul class="menu">
+          <li><a href="#home" class="link" onclick="closeMenu()">Главная</a></li>
+          <li><a href="#routes" class="link" onclick="closeMenu()">Маршруты</a></li>
+          <li><a href="#info" class="link" onclick="closeMenu()">Информация</a></li>
+          <li><a href="#contacts" class="link" onclick="closeMenu()">Контакты</a></li>
         </ul>
+        
+        
+        
         <button class="navi" onclick="makeCall()">Позвонить</button>
         <script>
           function makeCall() {
@@ -524,10 +532,24 @@
         };
       </script>
       <script>
-        function toggleMenu() {
-          const menu = document.querySelector(".menu");
-          menu.classList.toggle("active");
-        }
+function toggleMenu() {
+  const menu = document.querySelector(".menu");
+  const overlay = document.querySelector(".overlay");
+  const menuIcon = document.querySelector(".menu-icon");
+  menu.classList.toggle("active");
+  overlay.classList.toggle("active");
+  menuIcon.classList.toggle("active");
+}
+
+function closeMenu() {
+  const menu = document.querySelector(".menu");
+  const overlay = document.querySelector(".overlay");
+  const menuIcon = document.querySelector(".menu-icon");
+  menu.classList.remove("active");
+  overlay.classList.remove("active");
+  menuIcon.classList.remove("active");
+}
+
       </script>
     </main>
 
