@@ -1006,7 +1006,7 @@ function displaySearchResults(searchParams) {
       offerElement.className = "";
 
       const routeDetails = `
-          <div class="passport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>При наличии паспорта Украины</a></div>
+          <div class="passport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>При наличии паспорта РФ</a></div>
           <div class="offer">
             <div class="route">
               <div class="route-details">
@@ -1042,7 +1042,7 @@ function displaySearchResults(searchParams) {
             </div>
           </div>
   
-          <div class="passport offerrpassport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>Без наличия паспорта Украины</a></div>
+          <div class="passport offerrpassport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>Без наличия паспорта РФ</a></div>
           <div class="offerr">
             <div class="route">
               <div class="route-details">
