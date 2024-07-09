@@ -1006,76 +1006,79 @@ function displaySearchResults(searchParams) {
       offerElement.className = "";
 
       const routeDetails = `
-        <div class="passport"  ><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>При наличии паспорта Украины</a></div>
-                  <div class="offer"  >
-                <!-- <div class="passport">${route.passport}</div>-->
-
-                  <div class="route">
-                      <div class="route-details">
-                          <div class="city from-city">
-                              <p>${route.from}</p>
-                              <p class="from-to-det">${route.fromDetail}</p>
-                          </div>
-                          <div class ="line"><img class="imgline" src="/img/Line 9.svg"/></div>
-
-                          <div class="city to-city">
-                              <p>${route.to}</p>
-                              <p class="from-to-det">${route.toDetail}</p>
-                          </div>
-                          <div class= "price-price">
-                          <p >${route.price}</p></div>
-                      </div>
-                      <div class="price-details">
-                        <p class= "Bus" >
-                          <img class="imgBos Buuus" src="/img/микроавтобус.svg"/>
-                          <a class= "aBus Buuus">Автобус: Без остоновок </a></p>
-                        <img class="img2Bos" src="/img/вай фай.svg"/>
-                        <img class="img3Bos" src="/img/розетка.svg"/>
-                        <p class="Traveltime Buuus">
-                        <a>${route.Traveltime} часов в пути без таможни</a></p>
-                          <button class="details-btn"><a>Подробности</a></button>
-                      </div>
-                  </div>
-
-                  <div class="details">
-                      <p>${route.information}</p><a class="details-btn2" href="https://youtu.be/x5HqcwD4Sxs?t=15">Подробности</a>
-                  </div>
+          <div class="passport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>При наличии паспорта Украины</a></div>
+          <div class="offer">
+            <div class="route">
+              <div class="route-details">
+                <div class="city from-city">
+                  <p>${route.from}</p>
+                  <p class="from-to-det">${route.fromDetail}</p>
+                </div>
+                <div class="line"><img class="imgline" src="/img/Line 9.svg"/></div>
+                <div class="city to-city">
+                  <p>${route.to}</p>
+                  <p class="from-to-det">${route.toDetail}</p>
+                </div>
+                <div class="price-price">
+                  <p>${route.price}</p>
+                </div>
               </div>
-
-
-              <div class="passport offerrpassport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>Без наличия паспорта Украины</a></div>
-              <div class="offerr">
-                <!-- <div class="passport">${route.passportNot}</div>-->
-
-                  <div class="route">
-                      <div class="route-details">
-                          <div class="city from-city">
-                              <p>${route.fromNot}</p>
-                              <p class="from-to-det">${route.fromDetailNot}</p>
-                          </div>
-                          <div class ="line2"><img class="imgline2" src="/img/Line 9.svg"/></div>
-                          <div class="city to-city">
-                              <p>${route.toNot}</p>
-                              <p class="from-to-det"><a>${route.toDetailNot}</a></p>
-                          </div>
-                          <div class="price-price">
-                          <p >от ${route.priceNot}</p></div>
-                      </div>
-                      <div class="price-details">
-                        <p class= "Bus" ><img class="imgBos" src="/img/микроавтобус.svg"/>
-                          <a class= "aBus">Автобус: Без остоновок </a></p>
-                        <img class="img2Bos" src="/img/вай фай.svg"/>
-                        <img class="img3Bos" src="/img/розетка.svg"/>
-                        <p class="Traveltime">
-                          <a>${route.TraveltimeNot} часов в пути без таможни</a></p>
-                          <button class="details-btn"><a>Подробности</a></button>
-                      </div>
-                  </div>
-                  <div class="details">
-                      <p>${route.informationNot}</p><a class="details-btn2" href="https://youtu.be/x5HqcwD4Sxs?t=15">Подробности</a>
-                  </div>
+              <div class="price-details">
+                <p class="Bus">
+                  <img class="imgBos Buuus" src="/img/микроавтобус.svg"/>
+                  <a class="aBus Buuus">Автобус: Без остоновок </a>
+                </p>
+                <img class="img2Bos" src="/img/вай фай.svg"/>
+                <img class="img3Bos" src="/img/розетка.svg"/>
+                <p class="Traveltime Buuus">
+                  <a>${route.Traveltime} часов в пути без таможни</a>
+                </p>
+                <button class="details-btn"><a>Подробности</a></button>
               </div>
-          `;
+            </div>
+            <div class="details" style="display:none;">
+              <p>${route.information}</p>
+              <a class="details-btn2" href="https://youtu.be/x5HqcwD4Sxs?t=15">Подробности</a>
+            </div>
+          </div>
+  
+          <div class="passport offerrpassport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>Без наличия паспорта Украины</a></div>
+          <div class="offerr">
+            <div class="route">
+              <div class="route-details">
+                <div class="city from-city">
+                  <p>${route.fromNot}</p>
+                  <p class="from-to-det">${route.fromDetailNot}</p>
+                </div>
+                <div class="line2"><img class="imgline2" src="/img/Line 9.svg"/></div>
+                <div class="city to-city">
+                  <p>${route.toNot}</p>
+                  <p class="from-to-det"><a>${route.toDetailNot}</a></p>
+                </div>
+                <div class="price-price">
+                  <p>от ${route.priceNot}</p>
+                </div>
+              </div>
+              <div class="price-details">
+                <p class="Bus">
+                  <img class="imgBos" src="/img/микроавтобус.svg"/>
+                  <a class="aBus">Автобус: Без остоновок </a>
+                </p>
+                <img class="img2Bos" src="/img/вай фай.svg"/>
+                <img class="img3Bos" src="/img/розетка.svg"/>
+                <p class="Traveltime">
+                  <a>${route.TraveltimeNot} часов в пути без таможни</a>
+                </p>
+                <button class="details-btn"><a>Подробности</a></button>
+              </div>
+            </div>
+            <div class="details" style="display:none;">
+              <p>${route.informationNot}</p>
+              <a class="details-btn2" href="https://youtu.be/x5HqcwD4Sxs?t=15">Подробности</a>
+            </div>
+          </div>
+        `;
+      AOS.init();
 
       offerElement.innerHTML = routeDetails;
       resultsContainer.appendChild(offerElement);
@@ -1089,9 +1092,12 @@ function displaySearchResults(searchParams) {
         if (details.style.display === "none" || details.style.display === "") {
           details.style.display = "block";
           this.textContent = "Скрыть";
+          details.scrollIntoView({ behavior: "smooth" });
+          AOS.init();
         } else {
           details.style.display = "none";
           this.textContent = "Подробности";
+          AOS.init();
         }
       });
     });
@@ -1100,6 +1106,7 @@ function displaySearchResults(searchParams) {
     resultsContainer.classList.add("no-route-found");
   }
   searchResultsBlock.style.display = "block";
+  searchResultsBlock.scrollIntoView({ behavior: "smooth" }); // Прокручиваем к блоку с результатами
 }
 
 function updateSearchResults() {
@@ -1122,3 +1129,1143 @@ window.onload = function () {
     displaySearchResults(searchParams);
   }
 };
+document.getElementById("toggleButton").addEventListener("click", function () {
+  const animatedBlock = document.getElementById("animatedBlock");
+  animatedBlock.classList.toggle("visible");
+
+  if (animatedBlock.classList.contains("visible")) {
+    console.log("Adding content to animatedBlock");
+    this.textContent = "Свернуть";
+    animatedBlock.innerHTML = `
+    <div class="divider"></div>
+    <div class="top-toggle-13">
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Мелитополь', 'Варшава')"
+            >
+              <span class="route-13">Мелитополь - Варшава</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Мелитополь', 'Киев')"
+            >
+              <span class="route-13">Мелитополь - Киев</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Мелитополь', 'Берлин')"
+            >
+              <span class="route-13">Мелитополь - Берлин</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Бердянск', 'Варшава')"
+            >
+              <span class="route-13">Бердянск - Варшава</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Бердянск', 'Киев')"
+            >
+              <span class="route-13">Бердянск - Киев</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Бердянск', 'Берлин')"
+            >
+              <span class="route-13">Бердянск - Берлин</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Мариуполь', 'Варшава')"
+            >
+              <span class="route-13">Мариуполь - Варшава</span>
+              <span class="price-13"
+                >от 250 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Мариуполь', 'Киев')"
+            >
+              <span class="route-13">Мариуполь - Киев</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Мариуполь', 'Берлин')"
+            >
+              <span class="route-13">Мариуполь - Берлин</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Минск')"
+            >
+              <span class="route-13">Донецк - Минск</span>
+              <span class="price-13"
+                >от 150 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Германия')"
+            >
+              <span class="route-13">Донецк - Германия</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Польша')"
+            >
+              <span class="route-13">Донецк - Польша</span>
+              <span class="price-13"
+                >от 250 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Литва')"
+            >
+              <span class="route-13">Донецк - Литва</span>
+              <span class="price-13"
+                >от 250 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Латвия')"
+            >
+              <span class="route-13">Донецк - Латвия</span>
+              <span class="price-13"
+                >от 250 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Эстония')"
+            >
+              <span class="route-13">Донецк - Эстония</span>
+              <span class="price-13"
+                >от 250 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Львов')"
+            >
+              <span class="route-13">Донецк - Львов</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Житомир')"
+            >
+              <span class="route-13">Донецк - Житомир</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Киев')"
+            >
+              <span class="route-13">Донецк - Киев</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Полтава')"
+            >
+              <span class="route-13">Донецк - Полтава</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Донецк', 'Харьков')"
+            >
+              <span class="route-13">Донецк - Харьков</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Днепр', 'Донецк')"
+            >
+              <span class="route-13">Днепр - Донецк</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Полтава', 'Донецк')"
+            >
+              <span class="route-13">Полтава - Донецк</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Харьков', 'Донецк')"
+            >
+              <span class="route-13">Харьков - Донецк</span>
+              <span class="price-13"
+                >от 370 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Львов', 'Донецк')"
+            >
+              <span class="route-13">Львов - Донецк</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Житомир', 'Донецк')"
+            >
+              <span class="route-13">Житомир - Донецк</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+            
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Польша', 'Донецк')"
+              
+            >
+              <span class="route-13">Польша - Донецк</span>
+              <span class="price-13"
+                >от 250 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Польша', 'Луганск')"
+            >
+              <span class="route-13">Польша - Луганск</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Варшава', 'Минск')"
+            >
+              <span class="route-13">Варшава - Минск</span>
+              <span class="price-13"
+                >от 150 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Варшава', 'Мелитополь')"
+            >
+              <span class="route-13">Варшава - Мелитополь</span>
+              <span class="price-13"
+                >от 330 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Варшава', 'Бердянск')"
+            >
+              <span class="route-13">Варшава - Бердянск</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Германия', 'Донецк')"
+            >
+              <span class="route-13">Германия - Донецк</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Берлин', 'Луганск')"
+            >
+              <span class="route-13">Берлин - Луганск</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Берлин', 'Мелитополь')"
+            >
+              <span class="route-13">Берлин - Мелитополь</span>
+              <span class="price-13"
+                >от 450 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Берлин', 'Бердянск')"
+            >
+              <span class="route-13">Берлин - Бердянск</span>
+              <span class="price-13"
+                >от 450 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Чехия', 'Донецк')"
+            >
+              <span class="route-13">Чехия - Донецк</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Чехия', 'Мариуполь')"
+            >
+              <span class="route-13">Чехия - Мариуполь</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Литва', 'Донецк')"
+            >
+              <span class="route-13">Литва - Донецк</span>
+              <span class="price-13"
+                >от 250 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Латвия', 'Донецк')"
+            >
+              <span class="route-13">Латвия - Донецк</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Киев', 'Минск')"
+            >
+              <span class="route-13">Киев - Минск</span>
+              <span class="price-13"
+                >от 200 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Киев', 'Луганск')"
+            >
+              <span class="route-13">Киев - Луганск</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Киев', 'Донецк')"
+            >
+              <span class="route-13">Киев - Донецк</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Киев', 'Мелитополь')"
+            >
+              <span class="route-13">Киев - Мелитополь</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Киев', 'Бердянск')"
+            >
+              <span class="route-13">Киев - Бердянск</span>
+              <span class="price-13"
+                >от 350 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Варшава', 'Минск')"
+            >
+              <span class="route-13">Варшава - Минск</span>
+              <span class="price-13"
+                >от 150 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Варшава', 'Мелитополь')"
+            >
+              <span class="route-13">Варшава - Мелитополь</span>
+              <span class="price-13"
+                >от 330 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Варшава', 'Бердянск')"
+            >
+              <span class="route-13">Варшава - Бердянск</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Германия', 'Донецк')"
+            >
+              <span class="route-13">Германия - Донецк</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Берлин', 'Луганск')"
+            >
+              <span class="route-13">Берлин - Луганск</span>
+              <span class="price-13"
+                >от 400 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Берлин', 'Мелитополь')"
+            >
+              <span class="route-13">Берлин - Мелитополь</span>
+              <span class="price-13"
+                >от 450 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Берлин', 'Бердянск')"
+            >
+              <span class="route-13">Берлин - Бердянск</span>
+              <span class="price-13"
+                >от 450 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem3-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Латвия', 'Донецк')"
+            >
+              <span class="route-13">Латвия - Донецк</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Эстония', 'Донецк')"
+            >
+              <span class="route-13">Эстония - Донецк</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div
+            class="button-item-13 butitem2-13"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
+            <button
+              type="button"
+              class="search-button-13"
+              onclick="displayPredefinedRoute('Эстония', 'Донецк')"
+            >
+              <span class="route-13">Эстония - Донецк</span>
+              <span class="price-13"
+                >от 300 €
+                <img
+                  class="search_icon-13"
+                  src="/icon_сontact/search_icon.png"
+                  alt="search_icon"
+                />
+              </span>
+            </button>
+          </div>
+          <div>
+            <h1 class="target-h1">
+              Если вы не нашли нужный маршрут, это не значит, что мы его не
+              предоставляем. Просто свяжитесь с нами, и мы постараемся помочь!
+            </h1>
+          </div>
+        </div>`;
+    AOS.init();
+  } else {
+    console.log("Removing content from animatedBlock");
+    this.textContent = "Все маршруты";
+    animatedBlock.innerHTML = "";
+    AOS.init();
+  }
+});

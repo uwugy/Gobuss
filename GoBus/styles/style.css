@@ -128,6 +128,12 @@ nav button {
   max-width: 70%;
   position: relative;
   right: 4%;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.navi:hover {
+  transform: scale(1.05);
 }
 
 .searchResultsBlock {
@@ -414,8 +420,20 @@ nav button {
   height: auto; /* Высота будет изменяться пропорционально ширине */
   position: relative;
   left: 49%;
+
+  transition: transform 0.3s ease-in-out;
 }
 
+.logoimg:hover {
+  transform: scale(1.05);
+}
+.icon-tr {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-tr:hover {
+  transform: scale(1.05);
+}
 input[type="text"],
 button[type="submit"] {
   width: 100%; /* На всю ширину */
@@ -505,21 +523,76 @@ button[type="submit"] {
   margin-top: 20px; /* Внешний отступ сверху */
   position: relative;
   top: 15px;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out,
+    color 0.5s ease-in-out;
 }
+
+.details-btn:hover {
+  transform: scale(1.05);
+  background-color: #d6620a; /* Новый цвет фона при наведении */
+  color: #f0f0f0; /* Новый цвет текста при наведении */
+}
+
 .details-btn2 {
   background-color: #e3730b; /* Оранжевый фон */
+  border-radius: 5px; /* Скругленные углы */
   color: white; /* Белый текст */
   border: none; /* Без границы */
   padding: 10px 20px; /* Внутренние отступы */
   cursor: pointer; /* Курсор-указатель */
-  border-radius: 5px; /* Скругленные углы */
+
   text-decoration: none; /* Убираем подчеркивание */
   display: inline-block; /* Ставим inline-block для padding */
 
   position: relative;
   top: -15px;
   left: 84%;
+  transition: transform 0.3s ease-in-out;
 }
+
+.details-btn2:hover {
+  transform: scale(1.05);
+}
+#toggleButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  background-color: #e3730b; /* Оранжевый фон */
+  border-radius: 5px; /* Скругленные углы */
+  border: 2px solid #e3730b;
+  color: white;
+  font-family: "Montserrat", Medium;
+}
+.divider {
+  height: 2px; /* Толщина линии */
+  background-color: rgba(0, 0, 0, 0.1); /* Цвет линии с прозрачностью */
+  margin: 20px 0; /* Отступы сверху и снизу */
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 5px;
+}
+/* 
+#animatedBlock {
+  width: 100%;
+  padding: 20px;
+  background-color: lightblue;
+  text-align: center;
+  margin-top: 20px;
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+#animatedBlock.visible {
+  max-height: 100%;
+  opacity: 1;
+} */
 
 /* Популярные направления */
 .routes-block {
@@ -591,8 +664,12 @@ button[type="submit"] {
   right: 20%; /* Смещение справа */
   align-items: flex-start; /* Выравнивание по центру */
   width: 70%; /* Ширина кнопки */
+  transition: transform 0.3s ease-in-out;
 }
 
+.search-button:hover {
+  transform: scale(1.05);
+}
 .search-button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
 }
@@ -943,6 +1020,11 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     right: 8%;
     left: -4%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .details-btn:hover {
+    transform: scale(1.05);
   }
 
   ul {
@@ -1047,6 +1129,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     left: 0%;
   }
+
   .butitem3 {
     position: relative;
     left: 0%;
@@ -1364,5 +1447,103 @@ body::-webkit-scrollbar-thumb {
 
   .suggestion-item:hover {
     background-color: #f0f0f0;
+  }
+}
+.top-toggle-13 {
+  display: flex;
+  flex-wrap: wrap; /* Перенос на новую строку */
+  justify-content: space-between; /* Пространство между элементами */
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.target-h1 {
+  text-align: center;
+  line-height: 1.5; /* Увеличивает расстояние между строками */
+  margin: 20px 0; /* Добавляет отступы сверху и снизу */
+  padding: 0; /* Убирает любые внутренние отступы */
+  font-size: 1em; /* Увеличивает размер шрифта */
+  width: 60%;
+  position: relative;
+  left: 55%;
+  transform: translate(-50%);
+}
+.button-item-13 {
+  flex-basis: calc(25% - 10px); /* Ширина для 5 кнопок в ряду */
+  margin: 12px 5px; /* Внешние отступы */
+}
+
+.search-button-13 {
+  display: flex; /* Горизонтальное выравнивание */
+  justify-content: space-between; /* Распределение элементов */
+  align-items: flex-start; /* Выравнивание по верхнему краю */
+  flex-direction: column; /* Вертикальное расположение */
+  padding: 12px; /* Внутренние отступы */
+  border: 1px solid #ddd; /* Серая граница */
+  background-color: #fff; /* Белый фон */
+  border-radius: 8px; /* Скругленные углы */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+  cursor: pointer; /* Курсор-указатель */
+  transition: box-shadow 0.3s ease; /* Плавный переход */
+  height: 65px; /* Высота кнопки */
+  position: relative; /* Относительное позиционирование */
+  width: 100%; /* Ширина кнопки */
+  transition: transform 0.3s ease-in-out;
+}
+
+.search-button-13:hover {
+  transform: scale(1.05);
+}
+
+.search-button-13:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+.route-13,
+.price-13 {
+  color: #333; /* Цвет текста */
+  margin-bottom: 8px; /* Внешний отступ снизу */
+}
+
+.route-13 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 450;
+  font-display: swap;
+}
+
+.price-13 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 650;
+  font-display: swap;
+}
+
+.search_icon-13 {
+  position: absolute;
+  width: auto;
+  height: 40px;
+  top: 18%;
+  left: 85%; /* Позиционирование изображения */
+  z-index: 99;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1200px) {
+  .button-item-13 {
+    flex-basis: calc(33.333% - 10px); /* Ширина для 3 кнопок в ряду */
+  }
+}
+
+@media (max-width: 800px) {
+  .button-item-13 {
+    flex-basis: calc(50% - 10px); /* Ширина для 2 кнопок в ряду */
+  }
+}
+
+@media (max-width: 500px) {
+  .button-item-13 {
+    flex-basis: calc(100% - 10px); /* Ширина для 1 кнопки в ряду */
   }
 }
