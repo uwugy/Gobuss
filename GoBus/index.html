@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>GoBus</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="img/icon-top.ico" />
 
     <meta
       name="viewport"
@@ -46,14 +46,20 @@
         </div>
         <div class="overlay" onclick="toggleMenu()"></div>
         <ul class="menu">
-          <li><a href="#home" class="link" onclick="closeMenu()">Главная</a></li>
-          <li><a href="#routes" class="link" onclick="closeMenu()">Маршруты</a></li>
-          <li><a href="#info" class="link" onclick="closeMenu()">Информация</a></li>
-          <li><a href="#contacts" class="link" onclick="closeMenu()">Контакты</a></li>
+          <li>
+            <a href="#home" class="link" onclick="closeMenu()">Главная</a>
+          </li>
+          <li>
+            <a href="#routes" class="link" onclick="closeMenu()">Маршруты</a>
+          </li>
+          <li>
+            <a href="#info" class="link" onclick="closeMenu()">Информация</a>
+          </li>
+          <li>
+            <a href="#contacts" class="link" onclick="closeMenu()">Контакты</a>
+          </li>
         </ul>
-        
-        
-        
+
         <button class="navi" onclick="makeCall()">Позвонить</button>
         <script>
           function makeCall() {
@@ -342,24 +348,23 @@
       <script src="/script/gg.js"></script>
       <script src="/script/input.js"></script>
       <script>
-function toggleMenu() {
-  const menu = document.querySelector(".menu");
-  const overlay = document.querySelector(".overlay");
-  const menuIcon = document.querySelector(".menu-icon");
-  menu.classList.toggle("active");
-  overlay.classList.toggle("active");
-  menuIcon.classList.toggle("active");
-}
+        function toggleMenu() {
+          const menu = document.querySelector(".menu");
+          const overlay = document.querySelector(".overlay");
+          const menuIcon = document.querySelector(".menu-icon");
+          menu.classList.toggle("active");
+          overlay.classList.toggle("active");
+          menuIcon.classList.toggle("active");
+        }
 
-function closeMenu() {
-  const menu = document.querySelector(".menu");
-  const overlay = document.querySelector(".overlay");
-  const menuIcon = document.querySelector(".menu-icon");
-  menu.classList.remove("active");
-  overlay.classList.remove("active");
-  menuIcon.classList.remove("active");
-}
-
+        function closeMenu() {
+          const menu = document.querySelector(".menu");
+          const overlay = document.querySelector(".overlay");
+          const menuIcon = document.querySelector(".menu-icon");
+          menu.classList.remove("active");
+          overlay.classList.remove("active");
+          menuIcon.classList.remove("active");
+        }
       </script>
     </main>
 
