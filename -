@@ -1,0 +1,960 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+			<meta name="google-play-app" content="app-id=com.chatium.app">
+		
+		
+	
+	
+			<link rel="shortcut icon" href="https://fs17.getcourse.ru/fileservice/file/download/a/64973/sc/379/h/e1b8a5a9cacd84fb1a8d459ea0cd2481.jpg">
+	
+		<title>Урок 2. Лопатки в депрессии, а ты нет</title>
+			
+<script>
+	
+	window.accountUserId = 389500015;
+	window.requestIp = "185.119.151.133";
+	window.isSublogined = false;
+	window.accountId = 64973;
+	window.gcSessionId = 6118198715;
+	window.controllerId = "control/lesson";
+	window.actionId = "view";
+    window.nowTime = new Date(2024, 6, 11, 15, 17, 16);
+    window.dateOffset = 3;
+	window.userInfo = {"isAdmin":false,"isInAccount":true,"isTeacher":false};
+	window.currencyLabels = {"RUB":"RUB","USD":"USD","EUR":"EUR","GBP":"GBP","BYR":"BYR","BYN":"BYN","KZT":"KZT","UAH":"UAH","AUD":"AUD","DKK":"DKK","CHF":"CHF","SEK":"SEK","ZAR":"ZAR","AMD":"AMD","RON":"RON","BRL":"BRL","ILS":"ILS","MYR":"MYR","SGD":"SGD","KGS":"KGS","CAD":"CAD","MXN":"MXN","JPY":"JPY","UZS":"UZS","PLN":"PLN","AZN":"AZN","AED":"AED","TRY":"TRY","INR":"INR","RSD":"RSD","CZK":"CZK","MNT":"MNT","NZD":"NZD","BGN":"BGN","IDR":"IDR","CNY":"CNY","GEL":"GEL","COP":"COP","ARS":"ARS","PEN":"PEN","CLP":"CLP","VND":"VND","PHP":"PHP","DOP":"DOP","KRW":"KRW","TWD":"TWD","MDL":"MDL","TJS":"TJS","NOK":"NOK","POINTS":""};
+window.accountSafeUserName = "\u041c\u0430\u0440\u0438\u044f \u041c\u0435\u043b\u044c\u043d\u0438\u043a\u043e\u0432\u0430";
+window.accountUserThumbnail = "<img loading='lazy' width='50' class='user-profile-image ' src='\/\/fs-thb03.getcourse.ru\/fileservice\/file\/thumbnail\/h\/e34dc9eb412a68b9eb8c743765d2c1af.jpg\/s\/50x50\/a\/64973\/sc\/295'>";
+window.language = "ru";
+window.csrfToken = "BnyGaYkvypd-TIWj-mQk8ONWyyijopwaP2MNr3l16sVVL88R03z6-T0cwceDNG-I2yehYsva03hYUT7GKRaCnw==";
+window.requestTime = 1720700236;
+window.requestSimpleSign = "50138ffe8122d066ecb1cdfb80459e70";
+window.gcUniqId = "1850169670668fcd4cdc43c2.43869046.1720700236.9022";
+window.mailingVisibility = 0;
+window.isSupportChatEnabled = false;
+window.disableCaptchaForConfirmPhone = true;
+window.globalCheckboxEnabled = false;
+window.globalCheckboxText = "\u042f \u0441\u043e\u0433\u043b\u0430\u0441\u0435\u043d \u043d\u0430&nbsp;\u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0443 \u043c\u043e\u0438\u0445 \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0445 \u0434\u0430\u043d\u043d\u044b\u0445 \u0432&nbsp;\u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0438&nbsp;\u0441&nbsp;<a href=\"\/cms\/system\/legal\" target=\"_blank\">\u0423\u0441\u043b\u043e\u0432\u0438\u044f\u043c\u0438<\/a>";
+window.persodataConfirm = false;
+window.checkboxMailingEnabled = false;
+window.checkboxMailingChecked = false;
+window.checkboxMailingText = "\u0414\u0430\u044e \u0441\u043e\u0433\u043b\u0430\u0441\u0438\u0435 \u043d\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u0435 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u043e\u043d\u043d\u044b\u0445 \u0438 \u043c\u0430\u0440\u043a\u0435\u0442\u0438\u043d\u0433\u043e\u0432\u044b\u0445 \u0440\u0430\u0441\u0441\u044b\u043b\u043e\u043a (\u0432\u044b \u0432 \u043b\u044e\u0431\u043e\u0439 \u043c\u043e\u043c\u0435\u043d\u0442 \u043c\u043e\u0436\u0435\u0442\u0435 \u043e\u0442\u043a\u0430\u0437\u0430\u0442\u044c\u0441\u044f \u043e\u0442 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f \u043f\u0438\u0441\u0435\u043c \u0432 \u043b\u0438\u0447\u043d\u043e\u043c \u043a\u0430\u0431\u0438\u043d\u0435\u0442\u0435)";
+window.params_52 = 0;
+window.isSessionLocalStorageEnabled = true;
+window.isWhatsappIconEnabled = false;
+window.file_upload_blocking = false;
+window.storage_usage_percent = null;
+window.used_storage_size = null;
+window.max_storage_size = null;
+window.fileserviceThumbnailHost = "fs-thb01.getcourse.ru";
+window.fileserviceMainHost = "fs22.getcourse.ru";
+window.fileserviceUploadHost = "fs23.getcourse.ru";
+window.fileserviceTusFeatureEnabled = true;
+window.iCanSelectGridOffset = true;
+window.isEnabledSecureUpload = 1;
+window.webinarWebsocketHosts = ["stream01.gcfiles.net","ws02.getcourse.ru"];
+window.webSocketHost = "ws04.getcourse.ru";
+window.fdsrevEnabled12 = true;
+window.isDisabledFacebook = true;
+window.metaIsAnExtremismOrganizationText = "\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f Meta \u043f\u0440\u0438\u0437\u043d\u0430\u043d\u0430 \u044d\u043a\u0441\u0442\u0440\u0435\u043c\u0438\u0441\u0442\u043a\u043e\u0439 \u0432 \u0420\u0424.";
+window.isTestingV2 = false;
+window.testingV2VersionCheck = false;
+window.isDisabledVK = false;
+window.isEnabledChatiumActionInXdget = true;
+window.autoGenerateSubtitlesSectionEnabled = true;
+window.internalDomains = ["school.khodan.by","khodanproduct.getcourse.ru"];
+window.vhApiHost = "player02.getcourse.ru";
+window.vhsRegion = "ru";
+window.videoLinkFeatureUsed = 0;
+window.helpdeskEnabledFeature = false;
+window.helpdeskTalksEnabledFeature = false;
+window.enabledTariffsPage = true;
+window.relatedUsersOnActiveBlock = false;
+</script>
+
+<script type="text/javascript">
+
+		
+	window.userInfo = {"isAdmin":false,"isManager":false,"isInAccount":true,"isTeacher":false,"canCms":false,"canEditHelp":false,"isHumanDesign":"0"};
+
+</script>
+
+	<link href="/pl/fileservice/video-hosting/player-style" rel="stylesheet">
+<link href="/public/css/filelist.css" rel="stylesheet">
+<link href="/pl/nassets/b6f806c8/css/bootstrap.min.css?v=1685613221" rel="stylesheet">
+<link href="/pl/nassets/2882bf02/select2.min.css?v=1685613221" rel="stylesheet">
+<link href="/pl/nassets/2882bf02/select2-kv.min.css?v=1685613221" rel="stylesheet">
+<link href="/pl/nassets/8b8206a6/css/videoplayer.css?v=1720001293" rel="stylesheet">
+<link href="/pl/nassets/a8a5ddb1/uploadifive.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/8ad1d3a9/css/video-js.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/8ad1d3a9/css/plugins/videojs-seek-buttons.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/css/superlite-block-026792da2c795041ff90371b7460a134.css?v=1720699100" rel="stylesheet" async="async">
+<link href="/public/fonts/gfonts/open-sans/open-sans-cyr-swap.css" rel="stylesheet" async="async">
+<link href="/public/fonts/gfonts/roboto/roboto-cyr-swap.css" rel="stylesheet" async="async">
+<link href="/pl/nassets/ca672aa0/themes/smoothness/jquery-ui.css?v=1685613221" rel="stylesheet">
+<link href="/pl/nassets/8dec9c6a/toast/css/jquery.toast.min.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/47050a10/jquery.emojiarea.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/47050a10/emoji.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/89bfd734/css/blueimp-gallery.min.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/89bfd734/css/blueimp-gallery-indicator.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/add7304b/editor/css/editor.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/6d11e62/answers.css?v=1695712897" rel="stylesheet">
+<link href="/pl/nassets/4d29095f/css/bootstrap-datepicker3.min.css?v=1717407225" rel="stylesheet">
+<link href="/pl/nassets/4d29095f/css/datepicker-kv.min.css?v=1717407225" rel="stylesheet">
+<link href="/pl/nassets/1daf73ae/css/bootstrap-datetimepicker3.min.css?v=1717407225" rel="stylesheet">
+<link href="/pl/nassets/1daf73ae/css/datetimepicker-kv.min.css?v=1717407225" rel="stylesheet">
+<link href="/pl/nassets/css/tags-a4ffab408734cc692f9c956be7634162.css?v=1720699100" rel="stylesheet">
+<link href="/pl/nassets/d1d6a1a3/widget.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/css/custom-form-dd508755e58e719cfee0f4aa4a2cc48f.css?v=1720699100" rel="stylesheet" async="async">
+<link href="/pl/nassets/a9f792d5/css/all.css?v=1695712897" rel="stylesheet">
+<link href="/pl/nassets/a9f792d5/css/v5-font-face.css?v=1695712897" rel="stylesheet">
+<link href="/pl/nassets/a9f792d5/css/v4-font-face.css?v=1695712897" rel="stylesheet">
+<link href="/pl/nassets/a9f792d5/css/v4-shims.css?v=1695712897" rel="stylesheet">
+<link href="/pl/nassets/a9f792d5/css/old.css?v=1695712897" rel="stylesheet">
+<link href="/pl/nassets/c090ddc1/css/modal.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/811906ac/css/jquery.Jcrop.min.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/b52047c6/css/jquery.dataTables.min.css?v=1685613219" rel="stylesheet">
+<link href="/pl/nassets/24d4d8eb/css/file-dialog.css?v=1685613219" rel="stylesheet">
+<link href="/pl/nassets/24d4d8eb/css/file-widget-with-dialog.css?v=1685613219" rel="stylesheet">
+<link href="/pl/nassets/24d4d8eb/css/video-grid.css?v=1685613219" rel="stylesheet">
+<link href="/pl/nassets/6ee3a003/redactor.min.css?v=1717407224" rel="stylesheet">
+<link href="/pl/nassets/2c350652/css/questions-editor.css?v=1685613221" rel="stylesheet">
+<link href="/pl/nassets/2c350652/css/testing-widget.css?v=1687247235" rel="stylesheet">
+<link href="/pl/nassets/a4dd4ed9/mission-addfields.css?v=1685613221" rel="stylesheet">
+<link href="/pl/nassets/49385fab/colpick.css?v=1717407224" rel="stylesheet">
+<link href="/pl/nassets/644c2834/css/menu.css?v=1702380426" rel="stylesheet">
+<link href="/pl/nassets/1d5beb9d/statuses.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/b251e56e/standard.css?v=1687247235" rel="stylesheet">
+<link href="/pl/nassets/b251e56e/fonts.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/de51398c/notice.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/aa8d5662/css/user-form.css?v=1685613221" rel="stylesheet">
+<link href="/pl/nassets/59757da8/css/global.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/292bedf0/manrope.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/910e3fa5/proxima.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/644c2834/css/main.css?v=1720001293" rel="stylesheet">
+<link href="/pl/nassets/644c2834/css/jquery.toast.min.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/644c2834/css/fonts.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/252bb789/tasks-block.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/2f04615/css/audio-comments.css?v=1685613219" rel="stylesheet">
+<link href="/pl/nassets/70959707/css/like.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/99edc76a/css/subscribe.css?v=1685613220" rel="stylesheet">
+<link href="/pl/nassets/50b87dd7/css/flex-audio-js.css?v=1702380426" rel="stylesheet">
+<link href="/pl/nassets/50b87dd7/css/comments.css?v=1720001293" rel="stylesheet">
+<link href="/pl/nassets/50b87dd7/css/comment_reply_open.css?v=1685613219" rel="stylesheet">
+<link href="/pl/nassets/50b87dd7/css/comment_rating_widget.css?v=1685613219" rel="stylesheet">
+<link href="/pl/nassets/50b87dd7/css/conversation_widget.css?v=1685613219" rel="stylesheet">
+<link href="/pl/nassets/50b87dd7/css/talks_widget.css?v=1695712897" rel="stylesheet">
+<script src="/pl/nassets/13c3170f/jquery.min.js?v=1685613221"></script>
+<script src="/pl/nassets/a75f6419/yii.js?v=1717407225"></script>
+<script src="/pl/nassets/a8a5ddb1/jquery.uploadifive.min.js?v=1685613220"></script>
+<script src="/pl/nassets/a8a5ddb1/uploadifive-rewrite.js?v=1720001293"></script>
+<script src="/pl/nassets/59757da8/js/global-function.js?v=1717407224"></script>
+<script src="/pl/nassets/ca672aa0/jquery-ui.min.js?v=1685613221"></script>
+<script src="/pl/nassets/b6f806c8/js/bootstrap.min.js?v=1685613221"></script>
+<script src="/pl/nassets/8d6e85f6/jquery.autosize.min.js?v=1685613220"></script>
+<script src="/pl/nassets/8dec9c6a/js/jquery.toast.min.js?v=1685613220"></script>
+<script src="/pl/nassets/8d6e85f6/jquery.form.min.js?v=1685613220"></script>
+<script src="/pl/nassets/47050a10/jquery.emojiarea.js?v=1685613220"></script>
+<script src="/pl/nassets/47050a10/emoji.js?v=1685613220"></script>
+<script src="/pl/nassets/33313f15/js/JsTrans.min.js?v=1685613220"></script>
+<script src="/pl/nassets/e9e6a94f/dictionary-gen-c37ff514ee1f145992b1e0a3e97d65b21c9d87bd.js?v=1720695600"></script>
+<script src="/pl/nassets/4d29095f/js/bootstrap-datepicker.min.js?v=1717407225"></script>
+<script src="/pl/nassets/4d29095f/js/datepicker-kv.min.js?v=1717407225"></script>
+<script src="/pl/nassets/b01f7d7e/js/datepicker-reset.js?v=1717407224"></script>
+<script src="/pl/nassets/1daf73ae/js/bootstrap-datetimepicker.min.js?v=1717407225"></script>
+<script src="/pl/nassets/b01f7d7e/js/datetimepicker-reset.js?v=1717407224"></script>
+<script src="/pl/nassets/c090ddc1/js/modal.js?v=1685613220"></script>
+<script src="/pl/nassets/644c2834/js/react/react.min.js?v=1685613220"></script>
+<script src="/pl/nassets/644c2834/js/socket.io.slim.js?v=1685613220"></script>
+<script src="/pl/nassets/644c2834/js/socket.js?v=1685613220"></script>
+<script src="/pl/nassets/644c2834/js/websocket.global.js?v=1685613220"></script>
+<script src="/pl/nassets/aa8d5662/js/user-form-def.js?v=1685613221"></script>
+<script src="/pl/nassets/aa8d5662/js/build/user-form.js?v=1685613221"></script>
+<script src="/pl/nassets/8d6e85f6/jquery.sticky.js?v=1685613220"></script>
+<script src="/pl/nassets/59757da8/js/main.js?v=1717407224"></script>
+<script src="/pl/nassets/cab91df6/jquery.inputmask.bundle.js?v=1695712897"></script>
+<script src="/pl/nassets/2f04615/js/audio-comments.js?v=1717407224"></script>
+<script src="/pl/nassets/2f04615/js/RecordRTC.min.js?v=1685613219"></script>
+<script src="/pl/nassets/70959707/js/like.js?v=1685613220"></script>
+<script src="/pl/nassets/99edc76a/js/subscribe.js?v=1685613220"></script>
+<script src="/pl/nassets/50b87dd7/js/comments.js?v=1717595724"></script>
+<script src="/pl/nassets/50b87dd7/js/comment_reply_open.js?v=1685613219"></script>
+<script src="/pl/nassets/50b87dd7/js/comment_template_dialog.js?v=1685613219"></script>
+<script src="/pl/nassets/e9e6a94f/dictionary-gen-b0a9779d5238dbd3cdc1419db6e60f7dfae2bfc5.js?v=1720695600"></script>	
+			</head>
+<body class="gc-user-logined ">
+	<div id="gcAccountUserMenu"></div>
+
+			<script>
+						window.gcAccountUserMenu = {"customClass":null,"items":[{"id":"profile","label":"\u041f\u0440\u043e\u0444\u0438\u043b\u044c","hideLabel":true,"iconUrl":"\/\/fs-thb03.getcourse.ru\/fileservice\/file\/thumbnail\/h\/e34dc9eb412a68b9eb8c743765d2c1af.jpg\/s\/70x70\/a\/64973\/sc\/295","subIconHtml":null,"activeIconUrl":"\/\/fs-thb03.getcourse.ru\/fileservice\/file\/thumbnail\/h\/e34dc9eb412a68b9eb8c743765d2c1af.jpg\/s\/70x70\/a\/64973\/sc\/295","subitems":[{"id":"profile","label":"\u041f\u0440\u043e\u0444\u0438\u043b\u044c","hideLabel":true,"iconUrl":"\/public\/img\/service\/profile.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/profile_active.png","subitems":[],"url":"\/user\/my\/profile","params":{},"target":null},{"id":"notifications","label":"\u0423\u0432\u0435\u0434\u043e\u043c\u043b\u0435\u043d\u0438\u044f","hideLabel":true,"iconUrl":"\/public\/img\/service\/notifications.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/notifications_active.png","subitems":[],"url":"\/pl\/notifications\/settings\/my","params":{},"target":null},{"id":"change_password","label":"\u0421\u043c\u0435\u043d\u0438\u0442\u044c \u043f\u0430\u0440\u043e\u043b\u044c","hideLabel":true,"iconUrl":"\/public\/img\/service\/change_password.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/change_password_active.png","subitems":[],"url":"\/user\/my\/changePassword","params":{},"target":null},{"id":"logout","label":"\u0412\u044b\u0439\u0442\u0438","hideLabel":true,"iconUrl":"\/public\/img\/service\/logout.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/logout_active.png","subitems":[],"url":"\/user\/my\/logout","params":{},"target":null},{"id":"myAccounts","label":"\u041c\u043e\u0438 \u0430\u043a\u043a\u0430\u0443\u043d\u0442\u044b","hideLabel":true,"iconUrl":"\/public\/img\/service\/myAccounts.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/myAccounts_active.png","subitems":[],"url":"\/pl\/help\/launcher","params":{},"target":null}],"url":null,"params":{"worksheetClass":null},"target":null},{"id":"notifications_button_small","label":"","hideLabel":true,"iconUrl":"\/public\/img\/service\/notifications_button_small.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/notifications_button_small_active.png","subitems":[],"url":null,"params":{},"target":null},{"id":"teach","label":"\u041e\u0431\u0443\u0447\u0435\u043d\u0438\u0435","hideLabel":true,"iconUrl":"\/public\/img\/service\/teach.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/teach_active.png","subitems":[{"id":"trainings","label":"\u0422\u0440\u0435\u043d\u0438\u043d\u0433\u0438","hideLabel":true,"iconUrl":"\/public\/img\/service\/trainings.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/trainings_active.png","subitems":[],"url":"\/teach\/control\/stream","params":{},"target":null},{"id":"schedule","label":"\u0420\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u0435","hideLabel":true,"iconUrl":"\/public\/img\/service\/schedule.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/schedule_active.png","subitems":[],"url":"\/pl\/teach\/control\/schedule","params":{},"target":null},{"id":"answers","label":"\u041b\u0435\u043d\u0442\u0430 \u043e\u0442\u0432\u0435\u0442\u043e\u0432","hideLabel":true,"iconUrl":"\/public\/img\/service\/answers.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/answers_active.png","subitems":[],"url":"\/teach\/control\/answers\/my","params":{},"target":null},{"id":"questionary","label":"\u0422\u0435\u0441\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f","hideLabel":true,"iconUrl":"\/public\/img\/service\/questionary.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/questionary_active.png","subitems":[],"url":"\/user\/control\/user\/questionary","params":{},"target":null},{"id":"search","label":"\u041f\u043e\u0438\u0441\u043a","hideLabel":true,"iconUrl":"\/public\/img\/service\/search.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/search_active.png","subitems":[],"url":"\/c\/s\/search","params":{},"target":null}],"url":null,"params":{},"target":null},{"id":"notifications","label":"\u0421\u043b\u0443\u0436\u0431\u0430 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0438","hideLabel":true,"iconUrl":"\/public\/img\/service\/notifications.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/notifications_active.png","subitems":[{"id":"my","label":"\u041c\u043e\u0438 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f","hideLabel":true,"iconUrl":"\/public\/img\/service\/my.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/my_active.png","subitems":[],"url":"\/pl\/talks\/conversation","params":{},"target":null}],"url":null,"params":{},"target":null},{"id":"sales","label":"\u041f\u043e\u043a\u0443\u043f\u043a\u0438","hideLabel":true,"iconUrl":"\/public\/img\/service\/sales.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/sales_active.png","subitems":[{"id":"my_deals","label":"\u041c\u043e\u0438 \u043f\u043e\u043a\u0443\u043f\u043a\u0438","hideLabel":true,"iconUrl":"\/public\/img\/service\/my_deals.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/my_deals_active.png","subitems":[],"url":"\/sales\/control\/userProduct\/my","params":{},"target":null}],"url":null,"params":{},"target":null},{"id":"chatium","label":"Mobile","hideLabel":true,"iconUrl":"\/public\/img\/service\/chatium.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/chatium_active.png","subitems":[{"id":"chatium_app","label":"\u041f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0435","hideLabel":true,"iconUrl":"\/public\/img\/service\/chatium_app.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/chatium_app_active.png","subitems":[],"url":"\/pl\/chatium\/school\/enter","params":{},"target":null},{"id":"chatium_qr","label":"\u042d\u0442\u043e\u0442 \u044d\u043a\u0440\u0430\u043d \u043c\u043e\u0436\u043d\u043e \u043e\u0442\u043a\u0440\u044b\u0442\u044c \u0432 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0438","hideLabel":true,"iconUrl":"\/public\/img\/service\/chatium_qr.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/chatium_qr_active.png","subitems":[],"url":"\/pl\/chatium\/school\/enter?path=https:\/\/school.khodan.by\/c\/s\/lesson\/249463800","params":{},"target":null,"imageUrl":"\/pl\/chatium\/control\/app-link?qr=1&url=https%3A%2F%2Fschool.khodan.by%2Fc%2Fs%2Flesson%2F249463800&hash=cad3209e1ba283fdefedcbe88994790e&withoutAuth=true"}],"url":null,"params":{},"target":null}],"activeItem":"teach","navMenuItems":{"id":"navmenu","label":"\u0421\u0438\u0441\u0442\u0435\u043c\u043d\u043e\u0435 \u043c\u0435\u043d\u044e","hideLabel":true,"iconUrl":"\/public\/img\/service\/navmenu.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/navmenu_active.png","subitems":[{"id":"openinapp","label":"\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u0432 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0438","hideLabel":true,"iconUrl":"\/public\/img\/service\/openinapp.png","subIconHtml":null,"activeIconUrl":"\/public\/img\/service\/openinapp_active.png","subitems":[],"url":"\/pl\/chatium\/control\/app-link?url=https%3A%2F%2Fschool.khodan.by%2Fc%2Fs%2Flesson%2F249463800","params":{},"target":null}],"url":null,"params":{},"target":null}};
+					</script>
+	
+
+	<div class="gc-main-content gc-both-main-content no-menu  account-page-content with-left-menu gc-user-logined gc-user-user">
+		
+
+<script>
+	$(document).ready(function () {
+		$('.banner-close-top').on('click', function () {
+			self = this;
+			$.post('/pl/user/profile/close-top-notification-banner', {type: $(this).data('type')}, function () {
+				$(self).closest('.top-notification').remove();
+			});
+		});
+	});
+</script>
+
+<style>
+	.banner-close-top {
+		float: right;
+		margin-right: 10px;
+		text-decoration: none!important;
+		font-size: 28px;
+	}
+</style>
+
+<div class="container">
+
+	<div class="standard-logo">
+		<a href="/" class="logo-link">
+							<img src='//fs-thb02.getcourse.ru/fileservice/file/thumbnail/h/a793e4a49d9033733d98c574d46827e7.png/s/x50/a/64973/sc/30'>					</a>
+	</div>
+
+	
+
+	<div class="standard-page-content">
+					<ul class="breadcrumb"><li><a href="/teach/control/stream/index">Список тренингов</a></li>
+<li><a href="/teach/control/stream/view/id/607555089">ОСАНКА</a></li>
+<li><a href="/teach/control/stream/view/id/607555092">Тренировки</a></li>
+</ul>				
+<link rel='stylesheet' type='text/css' href='/public/css/common.css'>
+
+<script>
+    window.defenceEnabled = 'true';
+    window.totalAllowedSize = '2,45 ТБ';
+    window.usedSize = '2,428 ТБ';
+    window.usedSizePercent = '99 %';
+</script>
+<style>
+
+	
+    /*
+	.block-set .container  {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	*/
+
+	.block-set {
+		font-size: 14px;
+        font-weight: normal;
+		font-family: "proxima-nova", "Lato", Helvetica, Arial, sans-serif;
+	}
+    .block-set .f-text {
+        font-family: inherit;
+        font-weight: inherit;
+    }
+    .questionary-title-wrapper {
+        display: none;
+    }
+    .question-number {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .testing-widget  .question .question-title-big {
+        font-size: 24px;
+
+    }
+    .testing-widget .before-start-block h3 {
+        display: none;
+    }
+    .lesson-mission-text {
+        border-bottom: 1px solid #eee;
+    }
+
+	.gc-main-content.with-left-menu .container .container {
+				width: 100% !important;
+				margin-left: 0px;
+	}
+</style>
+<div>
+	<div class="page-header">
+					<div class="page-actions" style="float: right">
+				
+			</div>
+				<h1>
+										<a href="/teach/control/stream/view/id/607555096">4 неделя</a>						
+		</h1>
+	</div>
+	<div class="center-block " style="max-width: 870px;margin-left: 0; margin-bottom: 60px;width: auto;">
+		
+		<div class="lesson-header-block row-section"
+			 style="background: #FAFAFA;border-bottom: 1px solid #ddd;padding: 0 15px;">
+
+			<div class="row header-view">
+				<div class="col-md-12 text-center" style="padding-top: 20px;">
+					<h2 class="lesson-title-value">Урок 2. Лопатки в депрессии, а ты нет</h2>
+					<span class="lesson-description-value">Инвентарь: коврик, ролл, мяч для МФР, 2 длинных носка, плед
+<br> Продолжительность урока - 37 минут</span>
+									</div>
+			</div>
+
+
+			
+
+				<div class="row lesson-navigation"
+					 style="padding-top: 20px; padding-bottom: 10px; overflow: hidden; ">
+					<table cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td width="25%" class="" style="padding-left: 19px;">
+																																																					<a target="_self" href='/pl/teach/control/lesson/view?id=247893948'><span
+													class="fui fui-arrow-left"></span> Предыдущий урок</a>
+										<div class="hidden-xs"
+											 style="font-weight: normal; font-size: 1em; line-height: 16px "> Урок 1. Свобода грудной клетки и дыхания</div>
+																											</td>
+							<td width="50%" class="text-center hidden-xs">
+								<span>
+									2 из 7 уроков								</span>
+								<div class="user-state-has_mission">
+									<div style="font-weight: normal; font-size: 1.2em"
+										 class="user-state-label"
+									>
+										Дата и время начала Вт 18 Июн 05:00									</div>
+								</div>
+							</td>
+							<td width="25%" class="text-right" style="padding-right:17px;">
+																																																						<a target="_self" href='/pl/teach/control/lesson/view?id=247893949'>Следующий урок <span
+														class="fui fui-arrow-right"></span> </a>
+											<div class="hidden-xs"
+												 style="font-size: 1em; line-height: 16px; font-weight: normal">Урок 3. Сильная спина и Кор</div>
+																											</td>
+						</tr>
+					</table>
+				</div>
+					</div>
+
+
+					
+<div class="lite-page block-set">
+				<div data-updated="1661965244" id="lite-block-live-wrapper-1720700236-7687" class="lite-block-live-wrapper o-lt-raw o-lt-raw-css o-lt-system-block o-lt-invisible-block" data-block-id="1499052463">
+
+<style>
+	#ltBlock1499052463 .lt-block-wrapper {
+		padding-top: 0px; padding-bottom: 0px	}
+
+			
+			</style>
+
+
+<div id="ltBlock1499052463" data-block-id="1499052463"
+               class="lt-block lt-view raw-css lt-raw lt-raw-css lt-system-block lt-invisible-block"
+     data-code="b-02912"
+          >
+	<div class="lt-block-wrapper">
+	<style id="rawCss3807590">.addfield-type-goal-form {
+    background: #e0e0e000;
+    width: 100%;
+}</style>
+
+</div></div>
+
+
+
+</div><script>
+	$(function() {
+		var updateBlock = function (content, updated) {
+			// console.log(json);
+			var $el = $('#lite-block-live-wrapper-1720700236-7687');
+			$el.html(content);
+			$el.data('updated', updated);
+		};
+		if (window.accountUserWebSocketConnection) {
+			var handler = function(message, json) {
+				updateBlock(json.content, json.updated);
+			};
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1499052463', handler);
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1499052463-user-389500015', handler);
+		}
+			});
+</script>
+			<div data-updated="1707141621" id="lite-block-live-wrapper-1720700236-773" class="lite-block-live-wrapper o-lt-video o-lt-video-hosting-with-defence" data-block-id="1453268713"></div><script>
+	$(function() {
+		var updateBlock = function (content, updated) {
+			// console.log(json);
+			var $el = $('#lite-block-live-wrapper-1720700236-773');
+			$el.html(content);
+			$el.data('updated', updated);
+		};
+		if (window.accountUserWebSocketConnection) {
+			var handler = function(message, json) {
+				updateBlock(json.content, json.updated);
+			};
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1453268713', handler);
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1453268713-user-389500015', handler);
+		}
+			});
+</script>
+			<div data-updated="1707141611" id="lite-block-live-wrapper-1720700236-7854" class="lite-block-live-wrapper o-lt-video o-lt-video-hosting-with-defence" data-block-id="1975226274">
+
+<style>
+	#ltBlock1975226274 .lt-block-wrapper {
+		padding-top: 0px; padding-bottom: 0px	}
+
+			
+			</style>
+
+
+<div id="ltBlock1975226274" data-block-id="1975226274"
+               class="lt-block lt-view vid03 lt-video lt-video-hosting-with-defence"
+     data-code="b-e531e"
+          >
+	<div class="lt-block-wrapper">
+	<div class="container">
+	<div class="row">
+		<div class="modal-block-content block-box col-md-12" style="">
+			
+	<div>
+<div id="vhi-root-e28e6834f7d847738679e7bae855e152"
+	 data-file-id="533517091"
+	 data-user-id="389500015"
+	 data-video-hash="e28e6834f7d847738679e7bae855e152"
+	 data-lesson-id="249463800"
+	 data-iframe-src="https://player02.getcourse.ru/sign-player/?json=eyJ2aWRlb19oYXNoIjoiZTI4ZTY4MzRmN2Q4NDc3Mzg2NzllN2JhZTg1NWUxNTIiLCJ1c2VyX2lkIjozODk1MDAwMTUsInN1Yl9sb2dpbl91c2VyX2lkIjpudWxsLCJsZXNzb25faWQiOjI0OTQ2MzgwMCwiaXAiOiIxODUuMTE5LjE1MS4xMzMiLCJnY19ob3N0Ijoic2Nob29sLmtob2Rhbi5ieSIsInRpbWUiOjE3MjA3MDAyMzYsInBheWxvYWQiOiJ1XzM4OTUwMDAxNSIsInVpX2xhbmd1YWdlIjoicnUiLCJpc19oYXZlX2N1c3RvbV9zdHlsZSI6dHJ1ZX0=&s=edd366776014bcfc95d36eb49395fbe8&vh-static-feature=zigzag"
+	 data-master-play-list-url=""
+	 class="vhi-root js--vhi-root"
+	 data-place="new-player">
+			<iframe id="vhplayeriframe-e28e6834f7d847738679e7bae855e152"
+				src="https://player02.getcourse.ru/sign-player/?json=eyJ2aWRlb19oYXNoIjoiZTI4ZTY4MzRmN2Q4NDc3Mzg2NzllN2JhZTg1NWUxNTIiLCJ1c2VyX2lkIjozODk1MDAwMTUsInN1Yl9sb2dpbl91c2VyX2lkIjpudWxsLCJsZXNzb25faWQiOjI0OTQ2MzgwMCwiaXAiOiIxODUuMTE5LjE1MS4xMzMiLCJnY19ob3N0Ijoic2Nob29sLmtob2Rhbi5ieSIsInRpbWUiOjE3MjA3MDAyMzYsInBheWxvYWQiOiJ1XzM4OTUwMDAxNSIsInVpX2xhbmd1YWdlIjoicnUiLCJpc19oYXZlX2N1c3RvbV9zdHlsZSI6dHJ1ZX0=&s=edd366776014bcfc95d36eb49395fbe8&vh-static-feature=zigzag"
+				class="vhi-iframe js--vhi-iframe"
+				allow="autoplay; encrypted-media; clipboard-read; clipboard-write;"
+				sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-downloads"
+				allowfullscreen
+				frameborder="0"
+				scrolling="no"
+		></iframe>
+	</div>
+	</div>
+			</div>
+	</div>
+</div>
+
+</div></div>
+
+
+
+</div><script>
+	$(function() {
+		var updateBlock = function (content, updated) {
+			// console.log(json);
+			var $el = $('#lite-block-live-wrapper-1720700236-7854');
+			$el.html(content);
+			$el.data('updated', updated);
+		};
+		if (window.accountUserWebSocketConnection) {
+			var handler = function(message, json) {
+				updateBlock(json.content, json.updated);
+			};
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1975226274', handler);
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1975226274-user-389500015', handler);
+		}
+			});
+</script>
+			<div data-updated="1661965244" id="lite-block-live-wrapper-1720700236-7978" class="lite-block-live-wrapper o-lt-lesson o-lt-lesson-feedback-block" data-block-id="1453268711">
+
+<style>
+	#ltBlock1453268711 .lt-block-wrapper {
+		padding-top: 0px; padding-bottom: 0px	}
+
+			
+			</style>
+
+
+<div id="ltBlock1453268711" data-block-id="1453268711"
+               class="lt-block lt-view lesson-feedback-block-1 lt-lesson lt-lesson-feedback-block"
+     data-code="ltBlock1453268711"
+          >
+	<div class="lt-block-wrapper">
+		<script type="text/javascript">
+		$(function () {
+			setTimeout(function() {
+				$('.lt-lesson-feedback-block').parents('.lite-block').hide();
+			}, 100);
+		});
+	</script>
+
+</div></div>
+
+
+
+</div><script>
+	$(function() {
+		var updateBlock = function (content, updated) {
+			// console.log(json);
+			var $el = $('#lite-block-live-wrapper-1720700236-7978');
+			$el.html(content);
+			$el.data('updated', updated);
+		};
+		if (window.accountUserWebSocketConnection) {
+			var handler = function(message, json) {
+				updateBlock(json.content, json.updated);
+			};
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1453268711', handler);
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1453268711-user-389500015', handler);
+		}
+			});
+</script>
+			<div data-updated="1707136869" id="lite-block-live-wrapper-1720700236-8511" class="lite-block-live-wrapper o-lt-lesson o-lt-lesson-mission-block" data-block-id="1453268712">
+
+<style>
+	#ltBlock1453268712 .lt-block-wrapper {
+		padding-top: 0px; padding-bottom: 0px	}
+
+			
+			</style>
+
+
+<div id="ltBlock1453268712" data-block-id="1453268712"
+          data-has-limited-visibility="true"     class="lt-block lt-view lmb1 lt-lesson lt-lesson-mission-block"
+     data-code="ltBlock1453268712"
+          >
+	<div class="lt-block-wrapper">
+	
+
+
+
+
+	<div class="container">
+		<div class="row row-section">
+			<div class="col-md-12">
+
+
+				
+
+
+<div class="mission-deadline-removable-block-249463800-389500015"
+	>
+	<h3>
+		Задание			</h3>
+		<div class="lesson-mission-wrapper">
+		
+		<div class="self-answers">
+											</div>
+
+																		<div class="lesson-send-answer-block">
+						<form id="lessonAnswerForm" action="#lessonAnswerForm" method="post">
+<div class="answer-form">
+    <div style="float: left; margin-right: 10px"><img loading='lazy' width='50' class='user-profile-image ' src='//fs-thb03.getcourse.ru/fileservice/file/thumbnail/h/e34dc9eb412a68b9eb8c743765d2c1af.jpg/s/50x50/a/64973/sc/295'></div>
+    <div class="answer-form-inner">
+		<div style="margin-left: 0; overflow: hidden">
+			
+						
+											<div class="addfield addfield-type-goal_15212">
+					
+					<label for='LessonAnswer_addfields_80645'>
+																			<i>- * обязательное поле</i>
+											</label>
+
+											<div>
+							<div class="addfield-type-goal-form">
+<div class="custom-form" id="widget244">
+		<div class="text-right">
+		<a
+				href="javascript:void(0)"
+				class="hidden showAllCustomFields"
+				data-alt-text="Скрыть поля"
+		>
+			Показать все поля		</a>
+	</div>
+	<input type="hidden" name="LessonAnswer[addfields][80645]" id='widgetValue8552'>
+	<div class="fields"></div>
+</div>
+<script>
+		let checkHidden2162933520 = '';
+	let formElements2162933520 = {"fields":[{"id":1299013,"label":"1. \u041f\u043e\u0434\u043d\u0438\u043c\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0443\u044e \u0438 \u043b\u0435\u0432\u0443\u044e \u0440\u0443\u043a\u0443 \u0432\u0432\u0435\u0440\u0445 \u043f\u043e \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0440\u0430\u0437, \u0441\u0442\u0430\u043b\u043e \u043b\u0438 \u0434\u0432\u0438\u0436\u0435\u043d\u0438\u0435 \u0432\u0432\u0435\u0440\u0445 \u043b\u0435\u0433\u0447\u0435? \u041c\u0435\u043d\u044c\u0448\u0435 \u043d\u0430\u043f\u0440\u044f\u0436\u0435\u043d\u0438\u044f \u0432 \u0448\u0435\u0435 \u0438 \u0442\u0434.","type":"select","required":true,"settings":{"valueList":"\u0414\u0430\n\u041d\u0435\u0442","showAllValues":true,"emptyValueText":""},"description":"","html_block":"","html_block_position":"","show_in_table":false,"hide_filled":false,"hide":"0"},{"id":10104562,"label":"2. \u041e\u0449\u0443\u0449\u0430\u0435\u0442\u0435 \u043b\u0438 \u043f\u043e\u0441\u043b\u0435 \u0442\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043a\u0438 \u0442\u043e\u043d\u0443\u0441 \u043c\u044b\u0448\u0446 \u0432\u043e\u043a\u0440\u0443\u0433 \u043b\u043e\u043f\u0430\u0442\u043e\u043a?","type":"select","required":true,"settings":{"valueList":"\u0414\u0430\n\u041d\u0435\u0442","showAllValues":true,"emptyValueText":""},"description":"","html_block":"","html_block_position":"","show_in_table":false,"hide_filled":false,"hide":"0"},{"id":1299014,"label":"3. \u0418\u0437\u043c\u0435\u043d\u0438\u043b\u043e\u0441\u044c \u043b\u0438 \u043a\u0430\u043a-\u0442\u043e \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0432\u0430\u0448\u0435 \u0441\u0430\u043c\u043e\u0447\u0443\u0432\u0441\u0442\u0432\u0438\u0435?","type":"text","required":true,"settings":{"placeholder":"","rows":"3"},"description":"","html_block":"","html_block_position":"","show_in_table":false,"hide_filled":false,"hide":"0"}]};
+	let values2162933520 = [];
+
+	$( function() {
+		$('#widget244').customForm({
+			form: formElements2162933520,
+			valueSet: values2162933520,
+			valueEl: $('#widgetValue8552'),
+			checkHidden: checkHidden2162933520					});
+		$('#widget244 .showAllCustomFields').click(function () {
+			$('.custom-field-hidden').toggleClass('hidden');
+			var altText = $(this).data('alt-text');
+			$(this).data('alt-text', $(this).text());
+			$(this).text(altText);
+		});
+	});
+</script>
+
+	<style>
+		.fields .field-label {
+			font-weight: 700;
+		}
+		.showAllCustomFields {
+			text-decoration: underline;
+		}
+	</style>
+</div>						</div>
+					
+				</div>
+			
+			<input type="hidden" name="abc" value="true" class="send-answer-value">
+
+			
+			
+							<button name="send-answer" class="btn btn-send-answer btn-primary btn-lg">
+					Отправить ответ				</button>
+				<button name="send-answer"
+						class="btn btn-link btn-save-draft ">
+					Сохранить черновик				</button>
+			
+						<br><br>
+		</div>
+	</div>
+
+	</form></div>
+<script>
+	$(function () {
+		$('.answer-form textarea').autosize();
+		$('#lessonAnswerForm').submit(function () {
+			$('.send-answer-value').attr('name', 'send-answer');
+			$('.btn-send-answer, .btn-save-draft').attr('disabled', 'disabled');
+			return true;
+		});
+		$('.btn-save-draft').click(function () {
+			let isBeforeTestingStage = $('.before-start-block').first().length > 0;
+			if (isBeforeTestingStage) {
+				return false;
+			}
+			$('#lessonAnswerForm').append('<input type="hidden" name="is-draft" value="1" />');
+			return true;
+		});
+	})
+</script>
+
+<style>
+	.answer-form .answer-textarea-container {
+		padding-bottom: 0;
+	}
+
+	.addfield-type-goal-form .error-summary {
+		display: none;
+	}
+</style>
+					</div>
+							
+					
+			</div>
+</div>
+
+
+
+<div class="mission-deadline-block mission-deadline-block-249463800-389500015">
+	<div class="mission-deadline-execution" style="display: none">
+		<p><span class="mission-deadline-timer"></span>.</p>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+
+</div></div>
+
+
+
+</div><script>
+	$(function() {
+		var updateBlock = function (content, updated) {
+			// console.log(json);
+			var $el = $('#lite-block-live-wrapper-1720700236-8511');
+			$el.html(content);
+			$el.data('updated', updated);
+		};
+		if (window.accountUserWebSocketConnection) {
+			var handler = function(message, json) {
+				updateBlock(json.content, json.updated);
+			};
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1453268712', handler);
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1453268712-user-389500015', handler);
+		}
+			});
+</script>
+			<div data-updated="1707136869" id="lite-block-live-wrapper-1720700236-8798" class="lite-block-live-wrapper o-lt-lesson o-lt-lesson-comment-block" data-block-id="1453268714">
+
+<style>
+	#ltBlock1453268714 .lt-block-wrapper {
+		padding-top: 0px; padding-bottom: 15px	}
+
+			
+			</style>
+
+
+<div id="ltBlock1453268714" data-block-id="1453268714"
+               class="lt-block lt-view lesson-comment-block-1 lt-lesson lt-lesson-comment-block"
+     data-code="ltBlock1453268714"
+          >
+	<div class="lt-block-wrapper">
+	
+
+
+<div class="container">
+	<div class="row row-section">
+		<div class="col-md-12">
+
+			
+			
+								<div class="simple-answer user-answer" data-answers-list-selector=".other-answers" data-lesson-id="249463800">
+		<div class="new-comment new-answer">
+            <div class="user-image"><img loading='lazy' width='50' class='user-profile-image ' src='//fs-thb03.getcourse.ru/fileservice/file/thumbnail/h/e34dc9eb412a68b9eb8c743765d2c1af.jpg/s/50x50/a/64973/sc/295'></div>
+            <div class="answer-comment textarea-block">
+				<textarea
+						placeholder="добавить комментарий к уроку (ответ на задание здесь давать не нужно)"
+						class="new-comment-textarea emoji-textarea"></textarea>
+				<button class="btn btn-primary btn-send">Отправить</button>
+			</div>
+		</div>
+	</div>
+
+																
+
+
+
+
+<div class="other-answers answers-list">
+
+		</div>
+
+
+
+<script>
+    window.startAnswers = 10;
+    window.answersCount = 0;
+    window.lessonId = 249463800;
+    window.answersPerPage = 10;
+</script>
+		</div>
+	</div>
+</div>
+</div></div>
+
+
+
+</div><script>
+	$(function() {
+		var updateBlock = function (content, updated) {
+			// console.log(json);
+			var $el = $('#lite-block-live-wrapper-1720700236-8798');
+			$el.html(content);
+			$el.data('updated', updated);
+		};
+		if (window.accountUserWebSocketConnection) {
+			var handler = function(message, json) {
+				updateBlock(json.content, json.updated);
+			};
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1453268714', handler);
+			window.accountUserWebSocketConnection.subscribeChannel('update-lite-block-1453268714-user-389500015', handler);
+		}
+			});
+</script>
+	</div>
+
+<style>
+
+	.content-row > div {
+		padding: 0;
+	}
+
+	.content-row > div {
+		padding-top: 20px;
+	}
+
+	.content-row > div p, .content-row > div ol, .content-row > div ul, .content-row > div h1, .content-row > div h2, .content-row > div h3, .content-row > div h4 {
+		margin-left: 20px;
+	}
+
+	.files-row > div {
+		padding-top: 20px;
+	}
+
+</style>
+			</div>
+
+</div>
+	</div>
+</div>
+
+<div class="notice-widget" id="noticeWidget"></div>
+<script>
+	$( function() {
+		$('#noticeWidget').noticeWidget()
+
+			} );
+</script>	</div>
+
+	<script src="/public/js/gccounter-new.js?1"></script>
+
+<link rel="stylesheet" href="https://fs.getcourse.ru/fileservice/file/download/a/64973/sc/391/h/caf2ed82d86ef660a273fa8cb80cb85d.css">
+<!--  <link rel="stylesheet" href="https://fs.getcourse.ru/fileservice/file/download/a/64973/sc/57/h/3e26355848c703dfba5883e44f725a13.css"> -->
+<!-- УЛУЧШЕНИЕ ФУНКЦИОНАЛА ХРАНИЛИЩА -->
+<script src="/pl/cms/layout/js?id=17839&hash=486d783c9ce3486dc39b96ad1201cf72&bundle=1"></script>
+
+<link rel="stylesheet" href="/pl/cms/layout/css?id=39705&hash=d17b65260f811d0e65ea61d889e1c5a2&bundle=1"> 
+
+<link rel="stylesheet" href="/pl/cms/layout/css?id=39598&hash=b8c1a4cb5a772916da55dc4b2928c0f9&bundle=1">
+
+
+<!--  Google Tag Manager (noscript)  -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TJGVH8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!--  Google Tag Manager (noscript)  -->
+
+<!-- УЛУЧШЕНИЕ ФУНКЦИОНАЛА ХРАНИЛИЩА превью -->
+<script type="text/javascript">
+if(window.location.href.indexOf('/fileservice/control/account/') > -1) {
+  $(function(){
+    $('#w5-container table tr').each(function(i, row){
+      let filetype = $(row).find("td:nth-child(4)").text().trim();
+      let filelink = $(row).find("td:nth-child(3) a").attr("href");
+      if(/\?.*/.test(filelink)) filelink = filelink.replace(/\?.*/,"");
+      if(["изображение", "image"].indexOf(filetype) > -1) {
+        let thumb_img = "";
+        if([".gif", ".svg"].indexOf(filelink.substring(filelink.length - 4)) == -1) {
+          let regex = /(.*)\/fileservice\/file\/download(?:\/.*\/)(\d*)\/.*\/(\d*)\/.*\/((?:.*)\w{32}[^\/]*)/gm;
+          let thumb_subst = `$1/fileservice/file/thumbnail/h/$4/s/200x/a/$2/sc/$3`;
+          thumb_img = filelink.replace(regex, thumb_subst);
+        } else {
+          thumb_img = filelink;
+        }
+        $(row).find("td:nth-child(3)").append('<img src="'+thumb_img+'" style="display:block;max-width:200px;" />');
+      } else if(["видео", "video"].indexOf(filetype) > -1 || !isNaN(parseInt(filetype))) {
+        $(row).find("td:nth-child(3)").append('<video controls src="'+filelink+'" style="display:block;width:200px;height:112px;" />');
+      }
+    });
+  });
+}
+if(window.location.href.indexOf('/pl/fileindex/file/index') > -1) {
+  $(function(){
+    $('#fileindex-grid table tr').each(function(i, row){
+      let filetype = $(row).find("td:nth-child(4) span:last-child").text().trim().toLowerCase();
+      let filelink = $(row).find("td:nth-child(3) a").attr("href");
+      if(/\?.*/.test(filelink)) filelink = filelink.replace(/\?.*/,"");
+      if(["изображение", "image"].indexOf(filetype) > -1) {
+        console.log(filetype,filelink);
+        let thumb_img = "";
+        if([".gif", ".svg"].indexOf(filelink.substring(filelink.length - 4)) == -1) {
+          let regex = /(.*)\/fileservice\/file\/download(?:\/.*\/)(\d*)\/.*\/(\d*)\/.*\/((?:.*)\w{32}[^\/]*)/gm;
+          let thumb_subst = `$1/fileservice/file/thumbnail/h/$4/s/200x/a/$2/sc/$3`;
+          thumb_img = filelink.replace(regex, thumb_subst);
+        } else {
+          thumb_img = filelink;
+        }
+        $(row).find("td:nth-child(3)").append('<img src="'+thumb_img+'" style="display:block;max-width:200px;" />');
+      } else if(["видео", "video"].indexOf(filetype) > -1 || !isNaN(parseInt(filetype))) {
+        $(row).find("td:nth-child(3)").append('<video controls src="'+filelink+'" style="display:block;width:200px;height:112px;" />');
+      }
+    });
+  });
+}
+</script>
+
+
+<div id="w10870" class="talks-widget"></div>
+
+<script>
+	$( function() {
+		$('#w10870').talksWidget({
+			fullMode: false,
+			allowGuest: false,
+			openedConversationId: null,
+		});
+	} );
+</script>
+
+<div class="notice-widget" id="noticeWidget"></div>
+<script>
+	$( function() {
+		$('#noticeWidget').noticeWidget()
+
+			} );
+</script>
+<script src="/pl/nassets/2882bf02/select2.min.js?v=1685613221"></script>
+<script src="/pl/nassets/2882bf02/select2-kv.min.js?v=1685613221"></script>
+<script src="/pl/nassets/2882bf02/select2_locale_ru.js?v=1685613221"></script>
+<script src="/pl/nassets/8ce7462f/js/replace.js?v=1702380426"></script>
+<script src="https://vh-asset-static.vhcdn.com/vhstatic/gz/gc.ts.vh-bridge/app/19/vh.min.js"></script>
+<script src="/pl/nassets/8b8206a6/js/cdnfeedback.js?v=1685613220"></script>
+<script src="/pl/nassets/8b8206a6/js/videoplayer.js?v=1720001293"></script>
+<script src="/pl/nassets/8ad1d3a9/js/video-js.min.js?v=1685613220"></script>
+<script src="/pl/nassets/8ad1d3a9/js/plugins/videojs-seek-buttons.js?v=1685613220"></script>
+<script src="/pl/nassets/js/superlite-block-8a96a9f6b4b97885de23aec075a1fb4b.js?v=1720699100"></script>
+<script src="/pl/nassets/89bfd734/js/blueimp-gallery.min.js?v=1685613220"></script>
+<script src="/pl/nassets/89bfd734/js/jquery.blueimp-gallery.min.js?v=1685613220"></script>
+<script src="/pl/nassets/89bfd734/js/blueimp-gallery-indicator.js?v=1685613220"></script>
+<script src="/pl/nassets/add7304b/dist/fabric.min.js?v=1717407224"></script>
+<script src="/pl/nassets/add7304b/editor/js/editor.js?v=1685613220"></script>
+<script src="/pl/nassets/7cebc87a/js/clappr.min.js?v=1685613220"></script>
+<script src="/pl/nassets/7cebc87a/js/plugins/level-selector.min.js?v=1685613220"></script>
+<script src="/pl/nassets/6d11e62/answers.js?v=1687247235"></script>
+<script src="/pl/nassets/js/tags-21807f51d89013341f82fdbe08e42a0d.js?v=1720699100"></script>
+<script src="/pl/nassets/d1d6a1a3/widget.js?v=1685613220"></script>
+<script src="/pl/nassets/d1d6a1a3/checkbox.js?v=1685613220"></script>
+<script src="/pl/nassets/d1d6a1a3/date.js?v=1717407224"></script>
+<script src="/pl/nassets/d1d6a1a3/numeric.js?v=1685613220"></script>
+<script src="/pl/nassets/d1d6a1a3/select.js?v=1685613220"></script>
+<script src="/pl/nassets/d1d6a1a3/select_object.js?v=1717407224"></script>
+<script src="/pl/nassets/d1d6a1a3/string.js?v=1685613220"></script>
+<script src="/pl/nassets/d1d6a1a3/dateshift.js?v=1685613220"></script>
+<script src="/pl/nassets/js/custom-form-5462061817becae563e11111ad098a9e.js?v=1720699100"></script>
+<script src="/pl/nassets/a75f6419/yii.activeForm.js?v=1717407225"></script>
+<script src="/pl/nassets/ee5fb2dd/file_widget.js?v=1717407224"></script>
+<script src="/pl/nassets/811906ac/js/jquery.Jcrop.min.js?v=1685613220"></script>
+<script src="/pl/nassets/b52047c6/js/jquery.dataTables.min.js?v=1685613219"></script>
+<script src="/pl/nassets/99dd3b9f/tus.min.js?v=1685613220"></script>
+<script src="/pl/nassets/24d4d8eb/js/file-dialog.js?v=1720001293"></script>
+<script src="/pl/nassets/24d4d8eb/js/editable-image.js?v=1685613219"></script>
+<script src="/pl/nassets/24d4d8eb/js/folder.js?v=1720434753"></script>
+<script src="/pl/nassets/24d4d8eb/js/folder-upload.js?v=1685613219"></script>
+<script src="/pl/nassets/24d4d8eb/js/tus-uploader.js?v=1717407224"></script>
+<script src="/pl/nassets/24d4d8eb/js/folder-favorites.js?v=1685613219"></script>
+<script src="/pl/nassets/24d4d8eb/js/folder-covers.js?v=1685613219"></script>
+<script src="/pl/nassets/24d4d8eb/js/file-widget-with-dialog.js?v=1685613219"></script>
+<script src="/pl/nassets/24d4d8eb/js/folder-pixabay.js?v=1685613219"></script>
+<script src="/pl/nassets/24d4d8eb/js/frames/folder.js?v=1717407224"></script>
+<script src="/pl/nassets/24d4d8eb/js/frames/dialog.js?v=1702380426"></script>
+<script src="/pl/nassets/24d4d8eb/js/frames/grid.js?v=1685613219"></script>
+<script src="/pl/nassets/24d4d8eb/js/frames/gridLog.js?v=1702380426"></script>
+<script src="/pl/nassets/24d4d8eb/js/frames/statistics.js?v=1702380426"></script>
+<script src="/pl/nassets/24d4d8eb/js/frames/subtitles.js?v=1690974743"></script>
+<script src="/pl/nassets/6ee3a003/redactor.js?v=1717407224"></script>
+<script src="/pl/nassets/6ee3a003/ru.js?v=1685613220"></script>
+<script src="/pl/nassets/6ee3a003/p2br.js?v=1685613220"></script>
+<script src="/pl/nassets/6ee3a003/plugins/source.js?v=1685613220"></script>
+<script src="/pl/nassets/6ee3a003/plugins/typograph.js?v=1685613220"></script>
+<script src="/pl/nassets/6ee3a003/plugins/iconic.js?v=1685613220"></script>
+<script src="/pl/nassets/6ee3a003/plugins/inlinestyle.js?v=1685613220"></script>
+<script src="/pl/nassets/6ee3a003/plugins/table.js?v=1685613220"></script>
+<script src="/pl/nassets/6ee3a003/plugins/fontcolor.js?v=1685613220"></script>
+<script src="/pl/nassets/2c350652/js/questions-editor.js?v=1720001293"></script>
+<script src="/pl/nassets/2c350652/js/questions-editor-button.js?v=1685613221"></script>
+<script src="/pl/nassets/2c350652/js/testing-widget.js?v=1717407225"></script>
+<script src="/pl/nassets/a4dd4ed9/mission-addfields.js?v=1685613221"></script>
+<script src="/pl/nassets/49385fab/colpick.js?v=1717407224"></script>
+<script src="/pl/nassets/644c2834/js/light-menu.js?v=1702380426"></script>
+<script src="/pl/nassets/de51398c/notice.js?v=1685613220"></script>
+<script src="/pl/nassets/252bb789/build/tasks-block.js?v=1685613220"></script>
+<script src="/pl/nassets/50b87dd7/js/comment_rating_widget.js?v=1685613219"></script>
+<script src="/pl/nassets/f2afe282/audio.min.js?v=1702380426"></script>
+<script src="/pl/nassets/50b87dd7/js/conversation_widget.js?v=1690974743"></script>
+<script src="/pl/nassets/50b87dd7/js/conversation_controls.js?v=1685613219"></script>
+<script src="/pl/nassets/50b87dd7/js/talks_widget.js?v=1720001293"></script>
+<script>jQuery(function ($) {
+jQuery('#lessonAnswerForm').yiiActiveForm([], []);
+});</script><script async src="https://vhencapi13.gcfiles.net/st/stat.js?v=1720700236"></script>
+</body>
+</html>

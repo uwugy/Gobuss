@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Результаты Поиска - GoBus</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Логотип как ссылка на главную страницу -->
+        <a href="index.html">
+          <img src="img/GoBus.png" alt="GoBus" />
+        </a>
+        <ul>
+          <li><a href="index.html#home" class="link">Главная</a></li>
+          <li><a href="index.html#routes" class="link">Маршруты</a></li>
+          <li><a href="index.html#info" class="link">Информация</a></li>
+          <li><a href="index.html#contacts" class="link">Контакты</a></li>
+        </ul>
+        <!--  <a class="navi" href="#home">Главная</a>
+            <a class="navi" href="#routes">Маршруты</a>
+            <a class="navi" href="#info">Информация</a>
+            <a class="navi" href="#contacts">Контакты</a> -->
+        <button class="navi">Позвонить</button>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Результаты Поиска</h1>
+
+      <!-- Поисковая форма на второй странице -->
+      <div class="search-bar-container">
+        <input class="inA" type="text" id="inputA" placeholder="Откуда" />
+        <input class="inB" type="text" id="inputB" placeholder="Куда" />
+        <button type="submit" onclick="updateSearchResults()">Найти</button>
+      </div>
+
+      <div id="searchResults"></div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 GoBus</p>
+    </footer>
+
+    <script>
+      // Предустановленные маршруты
+      const routes = [
+        {
+          passport: "passport",
+          from: "Донецк",
+          to: "Киев",
+          fromDetail: "Ав Южный, Мотель, Макеевка",
+          toDetail: "Центральный ж/д вокзал Киева",
+          price: "300 €",
+          information:
+            "Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.",
+          passportNot: "passportNot",
+          fromNot: "Донецк",
+          toNot: "Киев",
+          fromDetailNot: "Ав Южный, Мотель, Макеевка",
+          toDetailNot: "Центральный ж/д вокзал Киева",
+          priceNot: "300 €",
+          informationNot:
+            "Дополнительная информация о маршруте, условиях поездки, времени отправления и прибытия и т.д.",
+        },
+        {
+          from: "Донецк",
+          to: "Львов",
+          fromDetail: "Ав Центральный",
+          toDetail: "Центральный автовокзал Львова",
+          price: "350 €",
+        },
+        {
+          from: "Харьков",
+          to: "Киев",
+          fromDetail: "Ав Южный",
+          toDetail: "Центральный ж/д вокзал Киева",
+          price: "250 €",
+        },
+        {
+          from: "Харьков",
+          to: "Львов",
+          fromDetail: "Ав Центральный",
+          toDetail: "Центральный автовокзал Львова",
+          price: "400 €",
+        },
+      ];
+
+      // Функция для получения параметров поиска из URL
+      function getSearchParams() {
+        const params = new URLSearchParams(window.location.search);
+        return {
+          a: params.get("a") ? decodeURIComponent(params.get("a")) : "",
+          b: params.get("b") ? decodeURIComponent(params.get("b")) : "",
+        };
+      }
+
+      // Функция для отображения результатов поиска
+      function displaySearchResults(searchParams) {
+        const resultsContainer = document.getElementById("searchResults");
+        resultsContainer.innerHTML = ""; // Очищаем контейнер перед обновлением
+        const matchingRoutes = routes.filter(
+          (route) =>
+            route.from.toLowerCase() === searchParams.a.toLowerCase() &&
+            route.to.toLowerCase() === searchParams.b.toLowerCase()
+        );
+
+        if (matchingRoutes.length > 0) {
+          matchingRoutes.forEach((route) => {
+            const offerElement = document.createElement("div");
+            offerElement.className = "";
+
+            const routeDetails = `
+                    
+    <div class="offer">
+        <div class="passport"> ${route.passport} </div>
+        <div class="offer-header">Маршрут: ${route.from} - ${route.to}</div>
+        <div class="route">
+            <div class="route-details">
+                <div class="city from-city">
+                    <p>${route.from}</p>
+                    <p>${route.fromDetail}</p>
+                </div>
+                <div class="city to-city">
+                    <p>${route.to}</p>
+                    <p>${route.toDetail}</p>
+                </div>
+            </div>
+            <div class="price-details">
+                <p>${route.price}</p>
+                <button class="details-btn">Подробности</button>
+            </div>
+        </div>
+        <div class="details">
+            <p>${route.information}</p>
+        </div>
+        </div>
+        
+
+        
+        <div class="offerr">
+            <div class="passport"> ${route.passportNot} </div>
+        <div class="offer-header">Маршрут: ${route.fromNot} - ${route.toNot}</div>
+        <div class="route">
+            <div class="route-details">
+                <div class="city from-city">
+                    <p>${route.fromNot}</p>
+                    <p>${route.fromDetailNot}</p>
+                </div>
+                <div class="city to-city">
+                    <p>${route.toNot}</p>
+                    <p>${route.toDetailNot}</p>
+                </div>
+            </div>
+            <div class="price-details">
+                <p>${route.priceNot}</p>
+                <button class="details-btn">Подробности</button>
+            </div>
+        </div>
+        <div class="details">
+            <p>${route.informationNot}</p>
+        </div>
+        </div>
+     
+                    `;
+            resultsContainer.classList.remove("no-route-found");
+
+            offerElement.innerHTML = routeDetails;
+            resultsContainer.appendChild(offerElement);
+          });
+
+          // Назначаем обработчики событий для всех кнопок "Подробности"
+          document.querySelectorAll(".details-btn").forEach((button) => {
+            button.addEventListener("click", function () {
+              const details =
+                this.parentElement.parentElement.nextElementSibling;
+              if (
+                details.style.display === "none" ||
+                details.style.display === ""
+              ) {
+                details.style.display = "block";
+                this.textContent = "Скрыть";
+              } else {
+                details.style.display = "none";
+                this.textContent = "Подробности";
+              }
+            });
+          });
+        } else {
+          resultsContainer.textContent = "Маршрут не найден";
+          resultsContainer.classList.add("no-route-found");
+        }
+      }
+
+      // Функция для обновления результатов поиска на текущей странице
+      function updateSearchResults() {
+        const inputA = document.getElementById("inputA").value.trim();
+        const inputB = document.getElementById("inputB").value.trim();
+        const searchParams = { a: inputA, b: inputB };
+        displaySearchResults(searchParams);
+      }
+
+      // Вызов функции отображения результатов при загрузке страницы
+      window.onload = function () {
+        const searchParams = getSearchParams();
+        // Устанавливаем значения в поля поиска
+        document.getElementById("inputA").value = searchParams.a;
+        document.getElementById("inputB").value = searchParams.b;
+        displaySearchResults(searchParams);
+      };
+    </script>
+  </body>
+</html>
