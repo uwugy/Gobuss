@@ -350,9 +350,7 @@ h3 {
   margin: 0px auto; /* Отступ сверху и снизу, и автоматические отступы по бокам для центрирования */
   max-width: 960px; /* Максимальная ширина карточки */
   width: 1000%;
-  /* position:fixed;
-  top: 60%;
-  left: 20%; right: 20%; */
+/* font-size: smaller; */
 }
 .offerr-header {
   display: flex;
