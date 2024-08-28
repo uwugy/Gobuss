@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "GoBus"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Gobuss"
+	}
+}
