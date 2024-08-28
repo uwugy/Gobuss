@@ -1006,7 +1006,7 @@ function displaySearchResults(searchParams) {
       offerElement.className = "";
 
       const routeDetails = `
-          <div class="passport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>При наличии паспорта РФ</a></div>
+          <div class="passport"><img class="imgpassport" src="./img/free-icon-passport-3125661 2.svg"/><a>При наличии паспорта РФ</a></div>
           <div class="offer">
             <div class="route">
               <div class="route-details">
@@ -1014,7 +1014,7 @@ function displaySearchResults(searchParams) {
                   <p>${route.from}</p>
                   <p class="from-to-det">${route.fromDetail}</p>
                 </div>
-                <div class="line"><img class="imgline" src="/img/Line 9.svg"/></div>
+                <div class="line"><img class="imgline" src="./img/Line 9.svg"/></div>
                 <div class="city to-city">
                   <p>${route.to}</p>
                   <p class="from-to-det">${route.toDetail}</p>
@@ -1025,11 +1025,11 @@ function displaySearchResults(searchParams) {
               </div>
               <div class="price-details">
                 <p class="Bus">
-                  <img class="imgBos Buuus" src="/img/микроавтобус.svg"/>
+                  <img class="imgBos Buuus" src="./img/микроавтобус.svg"/>
                   <a class="aBus Buuus">Автобус: Без остоновок </a>
                 </p>
-                <img class="img2Bos" src="/img/вай фай.svg"/>
-                <img class="img3Bos" src="/img/розетка.svg"/>
+                <img class="img2Bos" src="./img/вай фай.svg"/>
+                <img class="img3Bos" src="./img/розетка.svg"/>
                 <p class="Traveltime Buuus">
                   <a>${route.Traveltime} часов в пути без таможни</a>
                 </p>
@@ -1042,7 +1042,7 @@ function displaySearchResults(searchParams) {
             </div>
           </div>
   
-          <div class="passport offerrpassport"><img class="imgpassport" src="/img/free-icon-passport-3125661 2.svg"/><a>Без наличия паспорта РФ</a></div>
+          <div class="passport offerrpassport"><img class="imgpassport" src="./img/free-icon-passport-3125661 2.svg"/><a>Без наличия паспорта РФ</a></div>
           <div class="offerr">
             <div class="route">
               <div class="route-details">
@@ -1050,7 +1050,7 @@ function displaySearchResults(searchParams) {
                   <p>${route.fromNot}</p>
                   <p class="from-to-det">${route.fromDetailNot}</p>
                 </div>
-                <div class="line2"><img class="imgline2" src="/img/Line 9.svg"/></div>
+                <div class="line2"><img class="imgline2" src="./img/Line 9.svg"/></div>
                 <div class="city to-city">
                   <p>${route.toNot}</p>
                   <p class="from-to-det"><a>${route.toDetailNot}</a></p>
@@ -1061,11 +1061,11 @@ function displaySearchResults(searchParams) {
               </div>
               <div class="price-details">
                 <p class="Bus">
-                  <img class="imgBos" src="/img/микроавтобус.svg"/>
+                  <img class="imgBos" src="./img/микроавтобус.svg"/>
                   <a class="aBus">Автобус: Без остоновок </a>
                 </p>
-                <img class="img2Bos" src="/img/вай фай.svg"/>
-                <img class="img3Bos" src="/img/розетка.svg"/>
+                <img class="img2Bos" src="./img/вай фай.svg"/>
+                <img class="img3Bos" src="./img/розетка.svg"/>
                 <p class="Traveltime">
                   <a>${route.TraveltimeNot} часов в пути без таможни</a>
                 </p>
@@ -1154,7 +1154,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1175,7 +1175,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1196,7 +1196,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1217,7 +1217,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1238,7 +1238,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1259,7 +1259,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1280,7 +1280,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 250 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1301,7 +1301,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1322,7 +1322,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1343,7 +1343,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 150 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1364,7 +1364,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1385,7 +1385,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 250 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1406,7 +1406,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 250 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1427,7 +1427,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 250 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1448,7 +1448,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 250 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1469,7 +1469,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1490,7 +1490,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1511,7 +1511,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1532,7 +1532,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1553,7 +1553,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1574,7 +1574,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1595,7 +1595,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1616,7 +1616,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 370 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1637,7 +1637,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1658,7 +1658,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1681,7 +1681,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 250 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1702,7 +1702,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1723,7 +1723,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 150 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1744,7 +1744,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 330 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1765,7 +1765,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1786,7 +1786,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1807,7 +1807,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1828,7 +1828,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 450 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1849,7 +1849,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 450 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1870,7 +1870,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1891,7 +1891,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1912,7 +1912,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 250 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1933,7 +1933,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1954,7 +1954,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 200 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1975,7 +1975,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -1996,7 +1996,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2017,7 +2017,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2038,7 +2038,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 350 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2059,7 +2059,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 150 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2080,7 +2080,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 330 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2101,7 +2101,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2122,7 +2122,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2143,7 +2143,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 400 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2164,7 +2164,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 450 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2185,7 +2185,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 450 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2206,7 +2206,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2227,7 +2227,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
@@ -2248,7 +2248,7 @@ document.getElementById("toggleButton").addEventListener("click", function () {
                 >от 300 €
                 <img
                   class="search_icon-13"
-                  src="/icon_сontact/search_icon.png"
+                  src="./icon_сontact/search_icon.png"
                   alt="search_icon"
                 />
               </span>
