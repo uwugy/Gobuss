@@ -1038,7 +1038,7 @@ function displaySearchResults(searchParams) {
             </div>
             <div class="details" style="display:none;">
               <p>${route.information}</p>
-              <a class="details-btn2" href="https://youtu.be/x5HqcwD4Sxs?t=15">Подробности</a>
+              <a class="details-btn2" href="#contacts">Подробности</a>
             </div>
           </div>
   
@@ -1074,11 +1074,10 @@ function displaySearchResults(searchParams) {
             </div>
             <div class="details" style="display:none;">
               <p>${route.informationNot}</p>
-              <a class="details-btn2" href="https://youtu.be/x5HqcwD4Sxs?t=15">Подробности</a>
+              <a class="details-btn2" href="#contacts">Подробности</a>
             </div>
           </div>
         `;
-      AOS.init();
 
       offerElement.innerHTML = routeDetails;
       resultsContainer.appendChild(offerElement);
